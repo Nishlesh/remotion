@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="fig" x1="540" y1="520" x2="540" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b0d11"/>
+      <stop offset="1" stop-color="#151920"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="540" cy="560" rx="64" ry="72" fill="url(#fig)"/>
+  <path d="M476 620 C470 700 430 780 410 900 L430 1040 C490 1070 590 1070 650 1040 L670 900 C650 780 610 700 604 620 Z" fill="url(#fig)"/>
+  <path d="M430 900 C360 960 300 1040 280 1120 L800 1120 C760 1020 700 960 650 900 Z" fill="#0c0e12"/>
+  <path d="M500 630 C520 720 500 820 470 900" stroke="#1c222c" stroke-width="10" fill="none"/>
+</svg>
