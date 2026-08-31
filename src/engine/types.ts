@@ -56,9 +56,9 @@ export type SceneStills = {
 };
 
 export type CaptionSpec = {
-  /** On-screen text pulled from the spoken line. */
+  /** On-screen text pulled from the spoken line. Casing as spoken. */
   text: string;
-  /** Small editorial kicker (e.g. "01  ·  NIGHT"). */
+  /** Unused by CaptionBand. Kept so existing episode JSON does not break. */
   kicker: string;
   /** 0–1 bias on karaoke progress. 0.5 is even pacing. */
   highlightBias: number;

@@ -2,7 +2,7 @@
 
 Reusable **1080×1920 @ 30fps** engine for faceless vertical micro-documentaries (25–50 seconds). Locked voiceover is the source of truth. One spoken line becomes one Remotion scene file. Every scene imports a shared look + motion engine. Finished scenes drop onto one main timeline.
 
-This repo is not a vintage 12fps film-grain project. The house look is cinematic editorial stills: objects, rooms, silhouettes, slow Ken Burns / parallax / fake depth in code, cool/neutral grade, optional vignette, editorial captions.
+This repo is not a vintage 12fps film-grain project. The house look is cinematic editorial stills: objects, rooms, silhouettes, slow Ken Burns / parallax / fake depth in code, cool/neutral grade, optional vignette. Captions are locked **Karaoke Highlight** (Montserrat Black, 8px black stroke, active word `#FFE14A`).
 
 ## Quick start
 
@@ -40,12 +40,12 @@ maps to `voiceoverLineId: "vo-01"` in `episode.json`. The file imports `SceneFra
 | `voiceover[]` | Ordered lines: `id`, `text`, `approximateDurationSec`, optional `audioFile`. |
 | `scenes[]` | One per line: `voiceoverLineId`, `durationInFrames`, `stills` (bg + layers), `captions`, `motion`, optional `grade`. |
 | `audio` | Optional locked VO wav/mp3 + optional bed. If missing, JSON durations drive the timeline so preview still works. |
-| `fonts` | Overlay captions: bold display + body sans. |
+| `fonts` | Overlay captions are Karaoke Highlight (Montserrat Black 900). |
 | `grade` | Cool/neutral defaults inherited by every scene. |
 
 Stills: `{ src, x, y, scale, opacity, depth, blend? }`. `depth` 0 is background; 1 is foreground (extra parallax). Paths are relative to `public/` and loaded with `staticFile()`.
 
-Keep **key art out of y=1200–1440**. Karaoke Highlight captions live in that band (`CAPTION_BAND` in `src/engine/constants.ts`). `LookEngine` also lays a dark wash there so type stays readable.
+Keep **key art out of y=1200–1440**. Karaoke Highlight captions live in that band (`CAPTION_BAND` in `src/engine/constants.ts`): last-line baseline at y=1320, text x 140–940, max ~800px line, 3–6 word chunks. `LookEngine` also lays a dark wash there so type stays readable.
 
 ## What LookEngine does
 
@@ -60,7 +60,7 @@ Motion helpers live next to it (`src/engine/motion.ts`):
 - `useKenBurns` — slow push/pull/pan
 - `parallaxOffset` — fake depth from layered stills
 - `useEntrance` — spring fade/scale
-- `useKaraokeIndex` — word highlight paced from scene duration (no TTS)
+- `useKaraokeIndex` — per-word highlight paced from scene duration (no TTS). Only the current word is yellow; the rest of the chunk stays white.
 
 Tune **timing, scale, grade, caption, and motion** live in Remotion Studio. Those values are Remotion schema props (`src/engine/schemas.ts`). Stills stay in JSON.
 
@@ -73,7 +73,13 @@ Tune **timing, scale, grade, caption, and motion** live in Remotion Studio. Thos
 
 ## Fonts
 
-Captions use **Bebas Neue** (display kicker) + **DM Sans** (body), loaded via `@remotion/google-fonts`. Both are SIL Open Font License. If you cannot use Google Fonts, swap the loaders in `src/engine/fonts.ts` for another OFL display + sans pair and document it here.
+Captions use **Montserrat Black (900)** loaded via `@remotion/google-fonts/Montserrat` (SIL Open Font License). Do not use DM Sans or Bebas Neue for captions. The locked Karaoke Highlight look is:
+
+- Inactive words: 68px, fill `#FFFFFF`
+- Active word: 71px, fill `#FFE14A`
+- Stroke: 8px `#000000` on every word (two-layer span: back `WebkitTextStroke`, front fill)
+- Shadow: `0px 4px 0 rgba(0,0,0,0.55)`
+- Casing as spoken. Never all-caps. Never rewrite the line.
 
 ## Adding a new episode
 
@@ -111,5 +117,6 @@ Do **not** implement or reintroduce any of the following as the house look:
 - A `FilmTreatment` wrapper
 - Stop-motion judder as the default motion
 - Vintage film-soak color as the default grade
+- Caption styles that are not Karaoke Highlight (no kicker, no left bar, no underline, no dim-gray unspoken words, no “editorial sans / no stroke”)
 
 If you need texture, keep it in the stills (a real photograph of a room), not as a global 12fps treatment.

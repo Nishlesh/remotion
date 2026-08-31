@@ -1,19 +1,16 @@
-import {loadFont as loadBebasNeue} from '@remotion/google-fonts/BebasNeue';
-import {loadFont as loadDMSans} from '@remotion/google-fonts/DMSans';
+import {continueRender, delayRender} from 'remotion';
+import {loadFont} from '@remotion/google-fonts/Montserrat';
 
 /**
- * Overlay captions: bold display + body sans.
- * Bebas Neue and DM Sans are both SIL Open Font License (OFL) via Google Fonts.
+ * Locked Karaoke Highlight captions use Montserrat Black (weight 900).
+ * SIL Open Font License via Google Fonts. Do not use DM Sans or Bebas Neue here.
  */
-const bebas = loadBebasNeue('normal', {
-  weights: ['400'],
+const montserrat = loadFont('normal', {
+  weights: ['900'],
   subsets: ['latin'],
 });
 
-const dmSans = loadDMSans('normal', {
-  weights: ['400', '500', '700'],
-  subsets: ['latin'],
-});
+const fontHandle = delayRender('Montserrat Black 900');
+void montserrat.waitUntilDone().then(() => continueRender(fontHandle));
 
-export const displayFont = bebas.fontFamily;
-export const bodyFont = dmSans.fontFamily;
+export const montserratBlack = montserrat.fontFamily;

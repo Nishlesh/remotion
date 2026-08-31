@@ -1,4 +1,10 @@
-export {CAPTION_BAND, FPS, HEIGHT, WIDTH} from './constants';
+export {
+  CAPTION_BAND,
+  CAPTION_BASELINE_Y,
+  FPS,
+  HEIGHT,
+  WIDTH,
+} from './constants';
 export {LookEngine} from './LookEngine';
 export {SceneFrame} from './SceneFrame';
 export {CaptionBand} from './CaptionBand';
@@ -17,6 +23,6 @@ export {sceneSpecToProps, episodeDurationInFrames, getScene} from './duration';
 export type {EpisodeSpec, SceneSpec, VoiceoverLine} from './types';
 export type {SceneModule, RegisteredEpisode} from './registry';
 export {calculateSceneMetadata} from './registry';
-export {displayFont, bodyFont} from './fonts';
+export {montserratBlack} from './fonts';
 export {parseEpisode, episodeJsonSchema} from './episodeJson';
 export {calculateEpisodeMetadata} from './audio';
