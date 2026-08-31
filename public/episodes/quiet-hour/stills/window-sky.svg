@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="dusk" x1="540" y1="0" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1a2744"/>
+      <stop offset="0.28" stop-color="#2a3d5c"/>
+      <stop offset="0.48" stop-color="#6a5a6e"/>
+      <stop offset="0.58" stop-color="#c17a5c"/>
+      <stop offset="0.66" stop-color="#3a2a38"/>
+      <stop offset="1" stop-color="#0c1018"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="780" cy="820" r="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f0c9a0" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#f0c9a0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#dusk)"/>
+  <ellipse cx="780" cy="860" rx="260" ry="90" fill="url(#sun)"/>
+  <g fill="#0e121a" fill-opacity="0.92">
+    <rect x="40" y="900" width="70" height="220"/>
+    <rect x="120" y="860" width="48" height="260"/>
+    <rect x="178" y="910" width="90" height="210"/>
+    <rect x="280" y="840" width="56" height="280"/>
+    <rect x="348" y="880" width="120" height="240"/>
+    <rect x="480" y="820" width="64" height="300"/>
+    <rect x="556" y="870" width="88" height="250"/>
+    <rect x="656" y="800" width="52" height="320"/>
+    <rect x="720" y="850" width="140" height="270"/>
+    <rect x="872" y="890" width="70" height="230"/>
+    <rect x="952" y="830" width="88" height="290"/>
+  </g>
+  <g fill="#d7c4a0" fill-opacity="0.45">
+    <rect x="132" y="890" width="4" height="6"/>
+    <rect x="148" y="910" width="3" height="5"/>
+    <rect x="210" y="940" width="4" height="6"/>
+    <rect x="300" y="870" width="4" height="5"/>
+    <rect x="372" y="920" width="5" height="6"/>
+    <rect x="500" y="860" width="4" height="6"/>
+    <rect x="580" y="900" width="4" height="5"/>
+    <rect x="674" y="840" width="3" height="5"/>
+    <rect x="760" y="880" width="5" height="6"/>
+    <rect x="890" y="920" width="4" height="5"/>
+    <rect x="980" y="860" width="4" height="6"/>
+    <rect x="400" y="960" width="4" height="5"/>
+    <rect x="620" y="940" width="3" height="5"/>
+    <rect x="800" y="930" width="4" height="6"/>
+  </g>
+</svg>

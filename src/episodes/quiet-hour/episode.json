@@ -1,0 +1,488 @@
+{
+  "id": "quiet-hour",
+  "title": "The Quiet Hour",
+  "compositionId": "QuietHour",
+  "targetDurationSec": 31,
+  "fonts": {
+    "display": "Bebas Neue",
+    "body": "DM Sans"
+  },
+  "audio": {
+    "voiceover": null,
+    "bed": null
+  },
+  "grade": {
+    "contrast": 1.08,
+    "saturation": 0.78,
+    "brightness": 0.96,
+    "cool": 0.18,
+    "vignette": 0.55
+  },
+  "voiceover": [
+    {
+      "id": "vo-01",
+      "text": "There is an hour most people never keep.",
+      "approximateDurationSec": 4.2
+    },
+    {
+      "id": "vo-02",
+      "text": "A desk. A window. The city still awake.",
+      "approximateDurationSec": 4.0
+    },
+    {
+      "id": "vo-03",
+      "text": "You sit with a notebook and nothing to prove.",
+      "approximateDurationSec": 4.4
+    },
+    {
+      "id": "vo-04",
+      "text": "Focus is not a personality. It is a room you enter.",
+      "approximateDurationSec": 5.0
+    },
+    {
+      "id": "vo-05",
+      "text": "The light stays cool. The noise stays outside.",
+      "approximateDurationSec": 4.4
+    },
+    {
+      "id": "vo-06",
+      "text": "One page. One line. Then another.",
+      "approximateDurationSec": 3.8
+    },
+    {
+      "id": "vo-07",
+      "text": "The quiet hour is still there. You only have to keep it.",
+      "approximateDurationSec": 5.2
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "voiceoverLineId": "vo-01",
+      "durationInFrames": 126,
+      "fadeInFrames": 12,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "There is an hour most people never keep.",
+        "kicker": "01  ·  NIGHT",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.08,
+          "endScale": 1.16,
+          "startX": 0,
+          "endX": -16,
+          "startY": 8,
+          "endY": -20
+        },
+        "parallax": {"amount": 28},
+        "entrance": {"damping": 22}
+      },
+      "grade": {
+        "cool": 0.14,
+        "vignette": 0.62
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/desk-bg.svg",
+          "x": 0,
+          "y": 0,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "lamp",
+            "src": "episodes/quiet-hour/stills/desk-lamp.svg",
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "opacity": 0.92,
+            "depth": 0.72,
+            "blend": "screen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s02",
+      "voiceoverLineId": "vo-02",
+      "durationInFrames": 120,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "A desk. A window. The city still awake.",
+        "kicker": "02  ·  WINDOW",
+        "highlightBias": 0.5
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.06,
+          "endScale": 1.12,
+          "startX": -24,
+          "endX": 20,
+          "startY": 0,
+          "endY": -12
+        },
+        "parallax": {"amount": 36},
+        "entrance": {"damping": 20}
+      },
+      "grade": {
+        "cool": 0.16,
+        "saturation": 0.82
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/window-sky.svg",
+          "x": 0,
+          "y": -20,
+          "scale": 1.04,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "frame",
+            "src": "episodes/quiet-hour/stills/window-frame.svg",
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "opacity": 1,
+            "depth": 0.4
+          },
+          {
+            "id": "curtain",
+            "src": "episodes/quiet-hour/stills/window-curtain.svg",
+            "x": 12,
+            "y": 0,
+            "scale": 1.02,
+            "opacity": 0.95,
+            "depth": 0.78
+          }
+        ]
+      }
+    },
+    {
+      "id": "s03",
+      "voiceoverLineId": "vo-03",
+      "durationInFrames": 132,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "You sit with a notebook and nothing to prove.",
+        "kicker": "03  ·  PAGE",
+        "highlightBias": 0.48
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.1,
+          "endScale": 1.2,
+          "startX": 10,
+          "endX": -8,
+          "startY": 16,
+          "endY": -28
+        },
+        "parallax": {"amount": 32},
+        "entrance": {"damping": 18}
+      },
+      "grade": {
+        "cool": 0.12,
+        "brightness": 0.98
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/desk-bg.svg",
+          "x": 0,
+          "y": 20,
+          "scale": 1.04,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "notebook",
+            "src": "episodes/quiet-hour/stills/notebook-pages.svg",
+            "x": 0,
+            "y": -40,
+            "scale": 1.05,
+            "opacity": 1,
+            "depth": 0.55
+          },
+          {
+            "id": "pen",
+            "src": "episodes/quiet-hour/stills/notebook-pen.svg",
+            "x": 20,
+            "y": 10,
+            "scale": 1.08,
+            "opacity": 1,
+            "depth": 0.9
+          },
+          {
+            "id": "lamp",
+            "src": "episodes/quiet-hour/stills/desk-lamp.svg",
+            "x": -20,
+            "y": 0,
+            "scale": 1,
+            "opacity": 0.55,
+            "depth": 0.35,
+            "blend": "screen"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s04",
+      "voiceoverLineId": "vo-04",
+      "durationInFrames": 150,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "Focus is not a personality. It is a room you enter.",
+        "kicker": "04  ·  ROOM",
+        "highlightBias": 0.42
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.08,
+          "endScale": 1.14,
+          "startX": 0,
+          "endX": 0,
+          "startY": 24,
+          "endY": -18
+        },
+        "parallax": {"amount": 24},
+        "entrance": {"damping": 24}
+      },
+      "grade": {
+        "cool": 0.2,
+        "vignette": 0.7,
+        "brightness": 0.93
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/window-sky.svg",
+          "x": 0,
+          "y": -10,
+          "scale": 1.02,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "frame",
+            "src": "episodes/quiet-hour/stills/window-frame.svg",
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "opacity": 1,
+            "depth": 0.35
+          },
+          {
+            "id": "figure",
+            "src": "episodes/quiet-hour/stills/silhouette-figure.svg",
+            "x": 0,
+            "y": 40,
+            "scale": 1.04,
+            "opacity": 0.96,
+            "depth": 0.82
+          }
+        ]
+      }
+    },
+    {
+      "id": "s05",
+      "voiceoverLineId": "vo-05",
+      "durationInFrames": 132,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "The light stays cool. The noise stays outside.",
+        "kicker": "05  ·  EDGE",
+        "highlightBias": 0.5
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.1,
+          "endScale": 1.16,
+          "startX": 28,
+          "endX": -22,
+          "startY": 0,
+          "endY": -8
+        },
+        "parallax": {"amount": 40},
+        "entrance": {"damping": 21}
+      },
+      "grade": {
+        "cool": 0.22,
+        "saturation": 0.84
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/window-sky.svg",
+          "x": 0,
+          "y": -40,
+          "scale": 1.06,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "buildings",
+            "src": "episodes/quiet-hour/stills/city-buildings.svg",
+            "x": 0,
+            "y": 10,
+            "scale": 1.04,
+            "opacity": 1,
+            "depth": 0.45
+          },
+          {
+            "id": "haze",
+            "src": "episodes/quiet-hour/stills/city-haze.svg",
+            "x": 0,
+            "y": 0,
+            "scale": 1.02,
+            "opacity": 0.85,
+            "depth": 0.2,
+            "blend": "soft-light"
+          }
+        ]
+      }
+    },
+    {
+      "id": "s06",
+      "voiceoverLineId": "vo-06",
+      "durationInFrames": 114,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "captions": {
+        "text": "One page. One line. Then another.",
+        "kicker": "06  ·  LINE",
+        "highlightBias": 0.4
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.18,
+          "endScale": 1.28,
+          "startX": -12,
+          "endX": 8,
+          "startY": -10,
+          "endY": -36
+        },
+        "parallax": {"amount": 22},
+        "entrance": {"damping": 16}
+      },
+      "grade": {
+        "cool": 0.1,
+        "contrast": 1.12,
+        "brightness": 1.0
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/desk-bg.svg",
+          "x": 0,
+          "y": 40,
+          "scale": 1.12,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "notebook",
+            "src": "episodes/quiet-hour/stills/notebook-pages.svg",
+            "x": 0,
+            "y": -80,
+            "scale": 1.16,
+            "opacity": 1,
+            "depth": 0.6
+          },
+          {
+            "id": "pen",
+            "src": "episodes/quiet-hour/stills/notebook-pen.svg",
+            "x": 40,
+            "y": -20,
+            "scale": 1.2,
+            "opacity": 1,
+            "depth": 0.95
+          }
+        ]
+      }
+    },
+    {
+      "id": "s07",
+      "voiceoverLineId": "vo-07",
+      "durationInFrames": 156,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 18,
+      "captions": {
+        "text": "The quiet hour is still there. You only have to keep it.",
+        "kicker": "07  ·  KEEP",
+        "highlightBias": 0.46
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.18,
+          "endScale": 1.08,
+          "startX": 0,
+          "endX": 0,
+          "startY": -16,
+          "endY": 8
+        },
+        "parallax": {"amount": 20},
+        "entrance": {"damping": 26}
+      },
+      "grade": {
+        "cool": 0.17,
+        "vignette": 0.6,
+        "brightness": 0.95
+      },
+      "stills": {
+        "bg": {
+          "id": "bg",
+          "src": "episodes/quiet-hour/stills/window-sky.svg",
+          "x": 0,
+          "y": -8,
+          "scale": 1.02,
+          "opacity": 1,
+          "depth": 0
+        },
+        "layers": [
+          {
+            "id": "frame",
+            "src": "episodes/quiet-hour/stills/window-frame.svg",
+            "x": 0,
+            "y": 0,
+            "scale": 1,
+            "opacity": 1,
+            "depth": 0.32
+          },
+          {
+            "id": "figure",
+            "src": "episodes/quiet-hour/stills/silhouette-figure.svg",
+            "x": 0,
+            "y": 20,
+            "scale": 1.02,
+            "opacity": 0.94,
+            "depth": 0.7
+          },
+          {
+            "id": "curtain",
+            "src": "episodes/quiet-hour/stills/window-curtain.svg",
+            "x": 8,
+            "y": 0,
+            "scale": 1.02,
+            "opacity": 0.8,
+            "depth": 0.88
+          }
+        ]
+      }
+    }
+  ]
+}

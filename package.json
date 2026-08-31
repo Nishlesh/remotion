@@ -1,0 +1,30 @@
+{
+  "name": "focusstack-engine",
+  "version": "1.0.0",
+  "description": "FocusStack faceless vertical micro-documentary engine for Remotion",
+  "private": true,
+  "scripts": {
+    "preview": "remotion studio",
+    "render": "remotion render Github2008 out/github-2008.mp4 --timeout=120000",
+    "render:quiet-hour": "remotion render QuietHour out/quiet-hour.mp4",
+    "upgrade": "remotion upgrade",
+    "typecheck": "tsc"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@remotion/cli": "4.0.518",
+    "@remotion/google-fonts": "4.0.518",
+    "@remotion/media-utils": "4.0.518",
+    "@remotion/zod-types": "4.0.518",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.518",
+    "zod": "4.4.3"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  }
+}
