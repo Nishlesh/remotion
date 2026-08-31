@@ -87,70 +87,24 @@
           "startScale": 1.0,
           "endScale": 1.06,
           "startX": 0,
-          "endX": 6,
+          "endX": 8,
           "startY": 0,
-          "endY": -8
+          "endY": -12
         },
-        "parallax": {"amount": 24},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 22}
       },
       "stills": {
         "bg": {
-          "id": "room",
-          "src": "episodes/github-2008/stock/S03.jpg",
+          "id": "clock",
+          "src": "episodes/github-2008/generate/G01.png",
           "x": 0,
           "y": 0,
-          "scale": 1.02,
+          "scale": 1,
           "opacity": 1,
           "depth": 0
         },
-        "layers": [
-          {
-            "id": "rain",
-            "src": "episodes/github-2008/stock/S01.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.04,
-            "opacity": 0.78,
-            "depth": 0.32,
-            "shiftX": 8
-          },
-          {
-            "id": "laptop-left",
-            "src": "episodes/github-2008/generate/G05.png",
-            "x": -20,
-            "y": 560,
-            "width": 560,
-            "height": 420,
-            "scale": 1,
-            "opacity": 0.92,
-            "depth": 0.55
-          },
-          {
-            "id": "laptop-right",
-            "src": "episodes/github-2008/generate/G06.png",
-            "x": 540,
-            "y": 580,
-            "width": 540,
-            "height": 400,
-            "scale": 1,
-            "opacity": 0.92,
-            "depth": 0.58
-          },
-          {
-            "id": "clock",
-            "src": "episodes/github-2008/generate/G01.png",
-            "x": 190,
-            "y": 80,
-            "width": 700,
-            "height": 620,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.88,
-            "invertParallax": true,
-            "shiftX": -12
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -169,60 +123,25 @@
         "kenBurns": {
           "startScale": 1.0,
           "endScale": 1.07,
-          "startX": 0,
+          "startX": -10,
           "endX": 14,
           "startY": 0,
-          "endY": 18
+          "endY": 16
         },
-        "parallax": {"amount": 22},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 20}
       },
       "stills": {
         "bg": {
-          "id": "keyboard",
-          "src": "episodes/github-2008/stock/S04.jpg",
+          "id": "calendar",
+          "src": "episodes/github-2008/generate/G02.png",
           "x": 0,
           "y": 0,
-          "scale": 1.04,
+          "scale": 1,
           "opacity": 1,
           "depth": 0
         },
-        "layers": [
-          {
-            "id": "mug",
-            "src": "episodes/github-2008/stock/S05.jpg",
-            "x": 420,
-            "y": 40,
-            "width": 720,
-            "height": 520,
-            "scale": 1,
-            "opacity": 0.72,
-            "depth": 0.4
-          },
-          {
-            "id": "calendar",
-            "src": "episodes/github-2008/generate/G02.png",
-            "x": 80,
-            "y": 80,
-            "width": 920,
-            "height": 360,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.5
-          },
-          {
-            "id": "terminal",
-            "src": "episodes/github-2008/generate/G03.png",
-            "x": 90,
-            "y": 420,
-            "width": 900,
-            "height": 560,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.7,
-            "fadeInFrames": 24
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -241,12 +160,12 @@
         "kenBurns": {
           "startScale": 1.02,
           "endScale": 1.08,
-          "startX": -18,
-          "endX": 16,
-          "startY": 0,
-          "endY": -6
+          "startX": -20,
+          "endX": 18,
+          "startY": 4,
+          "endY": -8
         },
-        "parallax": {"amount": 26},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 24}
       },
       "stills": {
@@ -255,45 +174,11 @@
           "src": "episodes/github-2008/stock/S06.jpg",
           "x": 0,
           "y": 0,
-          "scale": 1.04,
+          "scale": 1,
           "opacity": 1,
           "depth": 0
         },
-        "layers": [
-          {
-            "id": "corridor",
-            "src": "episodes/github-2008/stock/S08.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.03,
-            "opacity": 0.35,
-            "depth": 0.18,
-            "blend": "soft-light"
-          },
-          {
-            "id": "bag",
-            "src": "episodes/github-2008/stock/S07.jpg",
-            "x": 40,
-            "y": 640,
-            "width": 520,
-            "height": 420,
-            "scale": 1,
-            "opacity": 0.88,
-            "depth": 0.48
-          },
-          {
-            "id": "badge",
-            "src": "episodes/github-2008/generate/G04.png",
-            "x": 200,
-            "y": 240,
-            "width": 680,
-            "height": 480,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.78,
-            "shiftX": 18
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -312,12 +197,12 @@
         "kenBurns": {
           "startScale": 1.0,
           "endScale": 1.04,
-          "startX": 0,
-          "endX": 6,
+          "startX": 4,
+          "endX": -6,
           "startY": 0,
-          "endY": -6
+          "endY": -10
         },
-        "parallax": {"amount": 14},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 20}
       },
       "stills": {
@@ -326,44 +211,11 @@
           "src": "episodes/github-2008/stock/S09.jpg",
           "x": 0,
           "y": 0,
-          "scale": 1.02,
+          "scale": 1,
           "opacity": 1,
-          "depth": 0,
-          "fadeOutFrames": 33
+          "depth": 0
         },
-        "layers": [
-          {
-            "id": "booth",
-            "src": "episodes/github-2008/stock/S11.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.04,
-            "opacity": 0.1,
-            "depth": 0.08
-          },
-          {
-            "id": "notebooks",
-            "src": "episodes/github-2008/stock/S12.jpg",
-            "x": 80,
-            "y": 720,
-            "width": 920,
-            "height": 280,
-            "scale": 1,
-            "opacity": 0.42,
-            "depth": 0.3
-          },
-          {
-            "id": "egg-rolls",
-            "src": "episodes/github-2008/stock/S10.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.04,
-            "opacity": 1,
-            "depth": 0.2,
-            "fromFrame": 70,
-            "fadeInFrames": 33
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -382,50 +234,25 @@
         "kenBurns": {
           "startScale": 1.06,
           "endScale": 1.0,
-          "startX": 0,
-          "endX": 0,
-          "startY": 4,
+          "startX": 8,
+          "endX": -8,
+          "startY": 6,
           "endY": -4
         },
-        "parallax": {"amount": 16},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 22}
       },
       "stills": {
         "bg": {
-          "id": "window",
-          "src": "episodes/github-2008/stock/S13.jpg",
+          "id": "editor",
+          "src": "episodes/github-2008/generate/G05.png",
           "x": 0,
           "y": 0,
-          "scale": 1.02,
+          "scale": 1,
           "opacity": 1,
           "depth": 0
         },
-        "layers": [
-          {
-            "id": "left-editor",
-            "src": "episodes/github-2008/generate/G05.png",
-            "x": -10,
-            "y": 80,
-            "width": 560,
-            "height": 1000,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.55,
-            "shiftX": -8
-          },
-          {
-            "id": "right-app",
-            "src": "episodes/github-2008/generate/G06.png",
-            "x": 530,
-            "y": 80,
-            "width": 560,
-            "height": 1000,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.55,
-            "shiftX": 8
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -445,11 +272,11 @@
           "startScale": 1.0,
           "endScale": 1.08,
           "startX": 0,
-          "endX": -6,
-          "startY": 8,
-          "endY": -16
+          "endX": -8,
+          "startY": 10,
+          "endY": -18
         },
-        "parallax": {"amount": 20},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 20}
       },
       "stills": {
@@ -458,48 +285,11 @@
           "src": "episodes/github-2008/stock/S14.jpg",
           "x": 0,
           "y": 0,
-          "scale": 1.04,
+          "scale": 1,
           "opacity": 1,
           "depth": 0
         },
-        "layers": [
-          {
-            "id": "napkin",
-            "src": "episodes/github-2008/generate/G07.png",
-            "x": 120,
-            "y": 280,
-            "width": 840,
-            "height": 640,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.52
-          },
-          {
-            "id": "weekend-cal",
-            "src": "episodes/github-2008/generate/G08.png",
-            "x": 180,
-            "y": 160,
-            "width": 720,
-            "height": 360,
-            "scale": 1,
-            "opacity": 0.95,
-            "depth": 0.7,
-            "shiftX": 10
-          },
-          {
-            "id": "egg-rolls",
-            "src": "episodes/github-2008/stock/S10.jpg",
-            "x": 40,
-            "y": 720,
-            "width": 460,
-            "height": 360,
-            "scale": 1,
-            "opacity": 0.9,
-            "depth": 0.4,
-            "fromFrame": 72,
-            "fadeInFrames": 15
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -516,67 +306,27 @@
       },
       "motion": {
         "kenBurns": {
-          "startScale": 1.0,
-          "endScale": 1.05,
-          "startX": 0,
-          "endX": 0,
-          "startY": 6,
+          "startScale": 1.02,
+          "endScale": 1.07,
+          "startX": -12,
+          "endX": 10,
+          "startY": 4,
           "endY": -10
         },
-        "parallax": {"amount": 16},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 24}
       },
       "stills": {
         "bg": {
-          "id": "winter",
-          "src": "episodes/github-2008/stock/S16.jpg",
+          "id": "invite",
+          "src": "episodes/github-2008/generate/G09.png",
           "x": 0,
           "y": 0,
-          "scale": 1.03,
+          "scale": 1,
           "opacity": 1,
-          "depth": 0,
-          "toFrame": 108,
-          "fadeOutFrames": 12
+          "depth": 0
         },
-        "layers": [
-          {
-            "id": "email",
-            "src": "episodes/github-2008/generate/G09.png",
-            "x": 120,
-            "y": 300,
-            "width": 840,
-            "height": 680,
-            "scale": 1,
-            "opacity": 1,
-            "depth": 0.6,
-            "toFrame": 108,
-            "fadeOutFrames": 12
-          },
-          {
-            "id": "cups",
-            "src": "episodes/github-2008/stock/S15.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.04,
-            "opacity": 1,
-            "depth": 0,
-            "fromFrame": 84,
-            "fadeInFrames": 12
-          },
-          {
-            "id": "third-chair",
-            "src": "episodes/github-2008/stock/S17.jpg",
-            "x": 80,
-            "y": 200,
-            "width": 920,
-            "height": 900,
-            "scale": 1,
-            "opacity": 0.92,
-            "depth": 0.45,
-            "fromFrame": 84,
-            "fadeInFrames": 12
-          }
-        ]
+        "layers": []
       }
     },
     {
@@ -593,71 +343,27 @@
       },
       "motion": {
         "kenBurns": {
-          "startScale": 1.0,
-          "endScale": 1.04,
+          "startScale": 1.04,
+          "endScale": 1.0,
           "startX": 0,
           "endX": 0,
-          "startY": 0,
-          "endY": -8
+          "startY": -8,
+          "endY": 4
         },
-        "parallax": {"amount": 12},
+        "parallax": {"amount": 0},
         "entrance": {"damping": 26}
       },
       "stills": {
         "bg": {
-          "id": "april-cal",
-          "src": "episodes/github-2008/generate/G10.png",
+          "id": "empty-table",
+          "src": "episodes/github-2008/stock/S20.jpg",
           "x": 0,
           "y": 0,
-          "scale": 1.02,
+          "scale": 1,
           "opacity": 1,
-          "depth": 0,
-          "toFrame": 76,
-          "fadeOutFrames": 10
+          "depth": 0
         },
-        "layers": [
-          {
-            "id": "door",
-            "src": "episodes/github-2008/stock/S18.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.03,
-            "opacity": 1,
-            "depth": 0.12,
-            "shiftX": 10,
-            "fromFrame": 56,
-            "toFrame": 154,
-            "fadeInFrames": 10,
-            "fadeOutFrames": 10
-          },
-          {
-            "id": "arch",
-            "src": "episodes/github-2008/stock/S19.jpg",
-            "x": 0,
-            "y": 0,
-            "width": 1080,
-            "height": 1200,
-            "scale": 1.04,
-            "opacity": 1,
-            "depth": 0.35,
-            "objectPosition": "center 32%",
-            "fromFrame": 134,
-            "toFrame": 202,
-            "fadeInFrames": 10,
-            "fadeOutFrames": 10
-          },
-          {
-            "id": "empty-table",
-            "src": "episodes/github-2008/stock/S20.jpg",
-            "x": 0,
-            "y": 0,
-            "scale": 1.02,
-            "opacity": 1,
-            "depth": 0.1,
-            "fromFrame": 182,
-            "fadeInFrames": 10
-          }
-        ]
+        "layers": []
       }
     }
   ]
