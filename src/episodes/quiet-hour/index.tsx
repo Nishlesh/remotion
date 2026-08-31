@@ -93,8 +93,6 @@ export const quietHourScenes: SceneModule[] = [
 export const quietHourEpisodeProps: EpisodeProps = {
   episodeId: quietHourSpec.id,
   title: quietHourSpec.title,
-  grade: quietHourSpec.grade,
-  captionScale: 1,
 };
 
 export const quietHourDurationInFrames = episodeDurationInFrames(quietHourSpec);

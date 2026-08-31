@@ -48,8 +48,6 @@ export type SceneProps = z.infer<typeof sceneSchema>;
 export const episodeSchema = z.object({
   episodeId: z.string(),
   title: z.string(),
-  grade: sceneSchema.shape.grade,
-  captionScale: z.number().min(0.85).max(1.2),
 });
 
 export type EpisodeProps = z.infer<typeof episodeSchema>;
