@@ -1,72 +1,708 @@
 {
-  "fps": 30,
-  "voiceover": "episodes/github-2008/audio/vo_concat.wav",
-  "durationSec": 42.185,
-  "gapSec": 0.1,
+  "episode": "github-2008",
+  "title": "GitHub started at 10:24 on a Friday night",
+  "engine": "kokoro-onnx",
+  "voice": "am_michael",
+  "speed": 0.95,
+  "lang": "en-us",
+  "sampleRate": 24000,
+  "gapSeconds": 0.1,
+  "audio": "/workspace/episodes/github-2008/audio/vo_concat.wav",
+  "totalDuration": 42.18533333333333,
+  "listenFlags": [
+    "word_count_mismatch:line1:groups=['\u0261\u02c8\u026at', 'h\u02c8\u028cb', 'st\u02c8\u0251\u02d0\u0279\u027e\u1d7bd', '\u00e6t', 't\u02c8\u025bn:tw\u02c8\u025bnti', 'f\u02c8\u0254\u02d0\u0279', '\u02cc\u0254n', '\u0250', 'f\u0279\u02c8a\u026ade\u026a', 'n\u02c8a\u026at.']:words=['GitHub', 'started', 'at', '10:24', 'on', 'a', 'Friday', 'night.']",
+    "word_count_mismatch:line2:groups=['k\u0279\u02c8\u026as', 'w\u02c8\u0254nst\u0279\u00e6\u03b8', 'm\u02cce\u026ad', '\u00f0\u0259', 'f\u02c8\u025c\u02d0st', 'k\u0259m\u02c8\u026at.', '\u0251\u02d0kt\u02c8o\u028ab\u025a', 'n\u02c8a\u026anti\u02d0n\u03b8,', 't\u02c8u\u02d0', '\u03b8\u02c8a\u028az\u0259nd', 's\u02c8\u025bv\u0259n.']:words=['Chris', 'Wanstrath', 'made', 'the', 'first', 'commit.', 'October', '19th,', '2007.']",
+    "word_count_mismatch:line8:groups=['\u02c8e\u026ap\u0279\u0259l', 't\u02c8\u025bn\u03b8,', 't\u02c8u\u02d0', '\u03b8\u02c8a\u028az\u0259nd', '\u02c8e\u026at.', '\u00f0e\u026a', '\u02c8o\u028ap\u0259nd', '\u026at', 't\u028a', '\u02c8\u025bv\u0279\u026aw\u02cc\u028cn.', '\u03b8\u0279\u02c8i\u02d0', 'tw\u02c8\u025bntis\u02c8\u028cm\u03b8\u026a\u014bz.', 'n\u02c8o\u028a', 'a\u028ats\u02c8a\u026ad', '\u026anv\u02c8\u025bstm\u0259nt.']:words=['April', '10th,', '2008.', 'They', 'opened', 'it', 'to', 'everyone.', 'Three', 'twenty-somethings.', 'No', 'outside', 'investment.']"
+  ],
   "lines": [
     {
-      "id": "vo-01",
-      "file": "episodes/github-2008/audio/01.wav",
-      "startSec": 0.0,
-      "endSec": 3.791,
-      "frames": 114,
-      "text": "GitHub started at 10:24 on a Friday night."
+      "i": 1,
+      "text": "GitHub started at 10:24 on a Friday night.",
+      "file": "01.wav",
+      "start": 0.0,
+      "end": 3.6906666666666665,
+      "duration": 3.6906666666666665,
+      "words": [
+        {
+          "word": "GitHub",
+          "start": 0.244,
+          "end": 0.744,
+          "lineStart": 0.244,
+          "lineEnd": 0.744
+        },
+        {
+          "word": "started",
+          "start": 0.819,
+          "end": 1.219,
+          "lineStart": 0.819,
+          "lineEnd": 1.219
+        },
+        {
+          "word": "at",
+          "start": 1.269,
+          "end": 1.369,
+          "lineStart": 1.269,
+          "lineEnd": 1.369
+        },
+        {
+          "word": "10:24",
+          "start": 1.444,
+          "end": 2.419,
+          "lineStart": 1.444,
+          "lineEnd": 2.419
+        },
+        {
+          "word": "on",
+          "start": 2.469,
+          "end": 2.544,
+          "lineStart": 2.469,
+          "lineEnd": 2.544
+        },
+        {
+          "word": "a",
+          "start": 2.569,
+          "end": 2.594,
+          "lineStart": 2.569,
+          "lineEnd": 2.594
+        },
+        {
+          "word": "Friday",
+          "start": 2.669,
+          "end": 3.094,
+          "lineStart": 2.669,
+          "lineEnd": 3.094
+        },
+        {
+          "word": "night.",
+          "start": 3.144,
+          "end": 3.6906666666666665,
+          "lineStart": 3.144,
+          "lineEnd": 3.6906666666666665
+        }
+      ]
     },
     {
-      "id": "vo-02",
-      "file": "episodes/github-2008/audio/02.wav",
-      "startSec": 3.791,
-      "endSec": 9.267,
-      "frames": 164,
-      "text": "Chris Wanstrath made the first commit. October 19th, 2007."
+      "i": 2,
+      "text": "Chris Wanstrath made the first commit. October 19th, 2007.",
+      "file": "02.wav",
+      "start": 3.7906666666666666,
+      "end": 9.166666666666668,
+      "duration": 5.376,
+      "words": [
+        {
+          "word": "Chris",
+          "start": 3.942,
+          "end": 4.192,
+          "lineStart": 0.15133333333333332,
+          "lineEnd": 0.4013333333333333
+        },
+        {
+          "word": "Wanstrath",
+          "start": 4.267,
+          "end": 4.917,
+          "lineStart": 0.47633333333333333,
+          "lineEnd": 1.1263333333333334
+        },
+        {
+          "word": "made",
+          "start": 4.967,
+          "end": 5.117,
+          "lineStart": 1.1763333333333332,
+          "lineEnd": 1.3263333333333334
+        },
+        {
+          "word": "the",
+          "start": 5.1419999999999995,
+          "end": 5.192,
+          "lineStart": 1.3513333333333333,
+          "lineEnd": 1.4013333333333333
+        },
+        {
+          "word": "first",
+          "start": 5.2669999999999995,
+          "end": 5.542,
+          "lineStart": 1.4763333333333333,
+          "lineEnd": 1.7513333333333334
+        },
+        {
+          "word": "commit.",
+          "start": 5.592,
+          "end": 6.417,
+          "lineStart": 1.8013333333333332,
+          "lineEnd": 2.626333333333333
+        },
+        {
+          "word": "October",
+          "start": 6.5169999999999995,
+          "end": 6.992,
+          "lineStart": 2.7263333333333333,
+          "lineEnd": 3.2013333333333334
+        },
+        {
+          "word": "19th,",
+          "start": 7.042,
+          "end": 7.742,
+          "lineStart": 3.251333333333333,
+          "lineEnd": 3.9513333333333334
+        },
+        {
+          "word": "2007.",
+          "start": 7.817,
+          "end": 9.166666666666668,
+          "lineStart": 4.0263333333333335,
+          "lineEnd": 5.376
+        }
+      ]
     },
     {
-      "id": "vo-03",
-      "file": "episodes/github-2008/audio/03.wav",
-      "startSec": 9.267,
-      "endSec": 15.361,
-      "frames": 183,
-      "text": "Tom Preston-Werner still had a day job. Tools developer at Powerset. Full time."
+      "i": 3,
+      "text": "Tom Preston-Werner still had a day job. Tools developer at Powerset. Full time.",
+      "file": "03.wav",
+      "start": 9.266666666666667,
+      "end": 15.261333333333333,
+      "duration": 5.994666666666666,
+      "words": [
+        {
+          "word": "Tom",
+          "start": 9.396666666666668,
+          "end": 9.671666666666667,
+          "lineStart": 0.13,
+          "lineEnd": 0.405
+        },
+        {
+          "word": "Preston-Werner",
+          "start": 9.721666666666668,
+          "end": 10.421666666666667,
+          "lineStart": 0.455,
+          "lineEnd": 1.155
+        },
+        {
+          "word": "still",
+          "start": 10.496666666666668,
+          "end": 10.721666666666668,
+          "lineStart": 1.23,
+          "lineEnd": 1.455
+        },
+        {
+          "word": "had",
+          "start": 10.771666666666668,
+          "end": 10.896666666666668,
+          "lineStart": 1.505,
+          "lineEnd": 1.63
+        },
+        {
+          "word": "a",
+          "start": 10.921666666666667,
+          "end": 10.971666666666668,
+          "lineStart": 1.655,
+          "lineEnd": 1.705
+        },
+        {
+          "word": "day",
+          "start": 11.021666666666668,
+          "end": 11.196666666666667,
+          "lineStart": 1.755,
+          "lineEnd": 1.93
+        },
+        {
+          "word": "job.",
+          "start": 11.246666666666668,
+          "end": 12.021666666666668,
+          "lineStart": 1.98,
+          "lineEnd": 2.755
+        },
+        {
+          "word": "Tools",
+          "start": 12.121666666666668,
+          "end": 12.496666666666668,
+          "lineStart": 2.855,
+          "lineEnd": 3.23
+        },
+        {
+          "word": "developer",
+          "start": 12.546666666666667,
+          "end": 13.021666666666668,
+          "lineStart": 3.28,
+          "lineEnd": 3.755
+        },
+        {
+          "word": "at",
+          "start": 13.071666666666667,
+          "end": 13.121666666666668,
+          "lineStart": 3.805,
+          "lineEnd": 3.855
+        },
+        {
+          "word": "Powerset.",
+          "start": 13.171666666666667,
+          "end": 14.146666666666668,
+          "lineStart": 3.905,
+          "lineEnd": 4.88
+        },
+        {
+          "word": "Full",
+          "start": 14.246666666666668,
+          "end": 14.496666666666668,
+          "lineStart": 4.98,
+          "lineEnd": 5.23
+        },
+        {
+          "word": "time.",
+          "start": 14.571666666666667,
+          "end": 15.261333333333333,
+          "lineStart": 5.305,
+          "lineEnd": 5.994666666666666
+        }
+      ]
     },
     {
-      "id": "vo-04",
-      "file": "episodes/github-2008/audio/04.wav",
-      "startSec": 15.361,
-      "endSec": 18.778,
-      "frames": 103,
-      "text": "Chris was consulting. They met every Saturday."
+      "i": 4,
+      "text": "Chris was consulting. They met every Saturday.",
+      "file": "04.wav",
+      "start": 15.361333333333333,
+      "end": 18.678,
+      "duration": 3.316666666666667,
+      "words": [
+        {
+          "word": "Chris",
+          "start": 15.491333333333333,
+          "end": 15.766333333333332,
+          "lineStart": 0.13,
+          "lineEnd": 0.405
+        },
+        {
+          "word": "was",
+          "start": 15.816333333333333,
+          "end": 15.941333333333333,
+          "lineStart": 0.455,
+          "lineEnd": 0.58
+        },
+        {
+          "word": "consulting.",
+          "start": 15.991333333333333,
+          "end": 17.016333333333332,
+          "lineStart": 0.63,
+          "lineEnd": 1.655
+        },
+        {
+          "word": "They",
+          "start": 17.066333333333333,
+          "end": 17.191333333333333,
+          "lineStart": 1.705,
+          "lineEnd": 1.83
+        },
+        {
+          "word": "met",
+          "start": 17.241333333333333,
+          "end": 17.46633333333333,
+          "lineStart": 1.88,
+          "lineEnd": 2.105
+        },
+        {
+          "word": "every",
+          "start": 17.541333333333334,
+          "end": 17.791333333333334,
+          "lineStart": 2.18,
+          "lineEnd": 2.43
+        },
+        {
+          "word": "Saturday.",
+          "start": 17.891333333333332,
+          "end": 18.668,
+          "lineStart": 2.53,
+          "lineEnd": 3.3066666666666666
+        }
+      ]
     },
     {
-      "id": "vo-05",
-      "file": "episodes/github-2008/audio/05.wav",
-      "startSec": 18.778,
-      "endSec": 23.145,
-      "frames": 131,
-      "text": "Tom built Grit and the interface. Chris built the Rails app."
+      "i": 5,
+      "text": "Tom built Grit and the interface. Chris built the Rails app.",
+      "file": "05.wav",
+      "start": 18.778,
+      "end": 23.044666666666664,
+      "duration": 4.266666666666667,
+      "words": [
+        {
+          "word": "Tom",
+          "start": 18.929333333333332,
+          "end": 19.25433333333333,
+          "lineStart": 0.15133333333333332,
+          "lineEnd": 0.47633333333333333
+        },
+        {
+          "word": "built",
+          "start": 19.304333333333332,
+          "end": 19.529333333333334,
+          "lineStart": 0.5263333333333333,
+          "lineEnd": 0.7513333333333333
+        },
+        {
+          "word": "Grit",
+          "start": 19.62933333333333,
+          "end": 19.979333333333333,
+          "lineStart": 0.8513333333333334,
+          "lineEnd": 1.2013333333333334
+        },
+        {
+          "word": "and",
+          "start": 20.029333333333334,
+          "end": 20.104333333333333,
+          "lineStart": 1.2513333333333334,
+          "lineEnd": 1.3263333333333334
+        },
+        {
+          "word": "the",
+          "start": 20.12933333333333,
+          "end": 20.20433333333333,
+          "lineStart": 1.3513333333333333,
+          "lineEnd": 1.4263333333333332
+        },
+        {
+          "word": "interface.",
+          "start": 20.25433333333333,
+          "end": 21.25433333333333,
+          "lineStart": 1.4763333333333333,
+          "lineEnd": 2.4763333333333333
+        },
+        {
+          "word": "Chris",
+          "start": 21.32933333333333,
+          "end": 21.57933333333333,
+          "lineStart": 2.5513333333333335,
+          "lineEnd": 2.8013333333333335
+        },
+        {
+          "word": "built",
+          "start": 21.654333333333334,
+          "end": 21.87933333333333,
+          "lineStart": 2.876333333333333,
+          "lineEnd": 3.1013333333333333
+        },
+        {
+          "word": "the",
+          "start": 21.929333333333332,
+          "end": 22.00433333333333,
+          "lineStart": 3.1513333333333335,
+          "lineEnd": 3.2263333333333333
+        },
+        {
+          "word": "Rails",
+          "start": 22.054333333333332,
+          "end": 22.37933333333333,
+          "lineStart": 3.2763333333333335,
+          "lineEnd": 3.6013333333333333
+        },
+        {
+          "word": "app.",
+          "start": 22.479333333333333,
+          "end": 23.044666666666664,
+          "lineStart": 3.7013333333333334,
+          "lineEnd": 4.266666666666667
+        }
+      ]
     },
     {
-      "id": "vo-06",
-      "file": "episodes/github-2008/audio/06.wav",
-      "startSec": 23.145,
-      "endSec": 27.874,
-      "frames": 142,
-      "text": "Three months of nights and weekends. Design and pricing on Saturday."
+      "i": 6,
+      "text": "Three months of nights and weekends. Design and pricing on Saturday.",
+      "file": "06.wav",
+      "start": 23.144666666666666,
+      "end": 27.774,
+      "duration": 4.629333333333333,
+      "words": [
+        {
+          "word": "Three",
+          "start": 23.324666666666666,
+          "end": 23.499666666666666,
+          "lineStart": 0.18,
+          "lineEnd": 0.355
+        },
+        {
+          "word": "months",
+          "start": 23.549666666666667,
+          "end": 23.749666666666666,
+          "lineStart": 0.405,
+          "lineEnd": 0.605
+        },
+        {
+          "word": "of",
+          "start": 23.774666666666665,
+          "end": 23.849666666666664,
+          "lineStart": 0.63,
+          "lineEnd": 0.705
+        },
+        {
+          "word": "nights",
+          "start": 23.899666666666665,
+          "end": 24.224666666666664,
+          "lineStart": 0.755,
+          "lineEnd": 1.08
+        },
+        {
+          "word": "and",
+          "start": 24.274666666666665,
+          "end": 24.349666666666664,
+          "lineStart": 1.13,
+          "lineEnd": 1.205
+        },
+        {
+          "word": "weekends.",
+          "start": 24.399666666666665,
+          "end": 25.349666666666664,
+          "lineStart": 1.255,
+          "lineEnd": 2.205
+        },
+        {
+          "word": "Design",
+          "start": 25.424666666666667,
+          "end": 25.949666666666666,
+          "lineStart": 2.28,
+          "lineEnd": 2.805
+        },
+        {
+          "word": "and",
+          "start": 25.999666666666666,
+          "end": 26.074666666666666,
+          "lineStart": 2.855,
+          "lineEnd": 2.93
+        },
+        {
+          "word": "pricing",
+          "start": 26.149666666666665,
+          "end": 26.674666666666667,
+          "lineStart": 3.005,
+          "lineEnd": 3.53
+        },
+        {
+          "word": "on",
+          "start": 26.724666666666664,
+          "end": 26.874666666666666,
+          "lineStart": 3.58,
+          "lineEnd": 3.73
+        },
+        {
+          "word": "Saturday.",
+          "start": 26.974666666666664,
+          "end": 27.774,
+          "lineStart": 3.83,
+          "lineEnd": 4.629333333333333
+        }
+      ]
     },
     {
-      "id": "vo-07",
-      "file": "episodes/github-2008/audio/07.wav",
-      "startSec": 27.874,
-      "endSec": 34.381,
-      "frames": 195,
-      "text": "They let friends in that January. PJ Hyett became the third co-founder a month later."
+      "i": 7,
+      "text": "They let friends in that January. PJ Hyett became the third co-founder a month later.",
+      "file": "07.wav",
+      "start": 27.874,
+      "end": 34.28066666666666,
+      "duration": 6.406666666666666,
+      "words": [
+        {
+          "word": "They",
+          "start": 28.046666666666667,
+          "end": 28.146666666666665,
+          "lineStart": 0.17266666666666666,
+          "lineEnd": 0.27266666666666667
+        },
+        {
+          "word": "let",
+          "start": 28.196666666666665,
+          "end": 28.371666666666666,
+          "lineStart": 0.32266666666666666,
+          "lineEnd": 0.49766666666666665
+        },
+        {
+          "word": "friends",
+          "start": 28.471666666666664,
+          "end": 28.871666666666666,
+          "lineStart": 0.5976666666666667,
+          "lineEnd": 0.9976666666666667
+        },
+        {
+          "word": "in",
+          "start": 28.921666666666667,
+          "end": 28.971666666666664,
+          "lineStart": 1.0476666666666667,
+          "lineEnd": 1.0976666666666666
+        },
+        {
+          "word": "that",
+          "start": 29.021666666666665,
+          "end": 29.171666666666667,
+          "lineStart": 1.1476666666666666,
+          "lineEnd": 1.2976666666666667
+        },
+        {
+          "word": "January.",
+          "start": 29.221666666666664,
+          "end": 30.371666666666666,
+          "lineStart": 1.3476666666666666,
+          "lineEnd": 2.4976666666666665
+        },
+        {
+          "word": "PJ",
+          "start": 30.626666666666665,
+          "end": 31.101666666666667,
+          "lineStart": 2.752666666666667,
+          "lineEnd": 3.227666666666667
+        },
+        {
+          "word": "Hyett",
+          "start": 31.176666666666666,
+          "end": 31.526666666666664,
+          "lineStart": 3.3026666666666666,
+          "lineEnd": 3.6526666666666667
+        },
+        {
+          "word": "became",
+          "start": 31.576666666666664,
+          "end": 31.951666666666664,
+          "lineStart": 3.702666666666667,
+          "lineEnd": 4.0776666666666666
+        },
+        {
+          "word": "the",
+          "start": 32.001666666666665,
+          "end": 32.07666666666667,
+          "lineStart": 4.127666666666666,
+          "lineEnd": 4.2026666666666666
+        },
+        {
+          "word": "third",
+          "start": 32.20166666666667,
+          "end": 32.501666666666665,
+          "lineStart": 4.3276666666666666,
+          "lineEnd": 4.627666666666666
+        },
+        {
+          "word": "co-founder",
+          "start": 32.57666666666667,
+          "end": 33.276666666666664,
+          "lineStart": 4.7026666666666666,
+          "lineEnd": 5.402666666666667
+        },
+        {
+          "word": "a",
+          "start": 33.32666666666667,
+          "end": 33.376666666666665,
+          "lineStart": 5.4526666666666666,
+          "lineEnd": 5.502666666666666
+        },
+        {
+          "word": "month",
+          "start": 33.42666666666666,
+          "end": 33.67666666666666,
+          "lineStart": 5.552666666666666,
+          "lineEnd": 5.802666666666666
+        },
+        {
+          "word": "later.",
+          "start": 33.72666666666667,
+          "end": 34.24066666666666,
+          "lineStart": 5.852666666666666,
+          "lineEnd": 6.366666666666666
+        }
+      ]
     },
     {
-      "id": "vo-08",
-      "file": "episodes/github-2008/audio/08.wav",
-      "startSec": 34.381,
-      "endSec": 42.185,
-      "frames": 234,
-      "text": "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment."
+      "i": 8,
+      "text": "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment.",
+      "file": "08.wav",
+      "start": 34.38066666666667,
+      "end": 42.18533333333334,
+      "duration": 7.804666666666667,
+      "words": [
+        {
+          "word": "April",
+          "start": 34.557,
+          "end": 34.882000000000005,
+          "lineStart": 0.17633333333333334,
+          "lineEnd": 0.5013333333333333
+        },
+        {
+          "word": "10th,",
+          "start": 34.957,
+          "end": 35.332,
+          "lineStart": 0.5763333333333334,
+          "lineEnd": 0.9513333333333334
+        },
+        {
+          "word": "2008.",
+          "start": 35.437000000000005,
+          "end": 36.862,
+          "lineStart": 1.0563333333333333,
+          "lineEnd": 2.481333333333333
+        },
+        {
+          "word": "They",
+          "start": 36.937000000000005,
+          "end": 37.087,
+          "lineStart": 2.5563333333333333,
+          "lineEnd": 2.7063333333333333
+        },
+        {
+          "word": "opened",
+          "start": 37.162000000000006,
+          "end": 37.512,
+          "lineStart": 2.781333333333333,
+          "lineEnd": 3.131333333333333
+        },
+        {
+          "word": "it",
+          "start": 37.537000000000006,
+          "end": 37.612,
+          "lineStart": 3.156333333333333,
+          "lineEnd": 3.231333333333333
+        },
+        {
+          "word": "to",
+          "start": 37.662000000000006,
+          "end": 37.762,
+          "lineStart": 3.281333333333333,
+          "lineEnd": 3.381333333333333
+        },
+        {
+          "word": "everyone.",
+          "start": 37.837,
+          "end": 38.512,
+          "lineStart": 3.4563333333333333,
+          "lineEnd": 4.131333333333334
+        },
+        {
+          "word": "Three",
+          "start": 38.762,
+          "end": 38.987,
+          "lineStart": 4.381333333333333,
+          "lineEnd": 4.606333333333333
+        },
+        {
+          "word": "twenty-somethings.",
+          "start": 39.037000000000006,
+          "end": 40.237,
+          "lineStart": 4.656333333333333,
+          "lineEnd": 5.856333333333333
+        },
+        {
+          "word": "No",
+          "start": 40.337,
+          "end": 40.587,
+          "lineStart": 5.956333333333333,
+          "lineEnd": 6.206333333333333
+        },
+        {
+          "word": "outside",
+          "start": 40.687000000000005,
+          "end": 41.287000000000006,
+          "lineStart": 6.306333333333333,
+          "lineEnd": 6.906333333333333
+        },
+        {
+          "word": "investment.",
+          "start": 41.337,
+          "end": 42.15533333333334,
+          "lineStart": 6.956333333333333,
+          "lineEnd": 7.774666666666667
+        }
+      ]
     }
   ]
 }
