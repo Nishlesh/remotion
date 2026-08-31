@@ -31,8 +31,9 @@ export const StillLayer: React.FC<StillLayerProps> = ({
   toFrame,
   fadeInFrames = 0,
   fadeOutFrames = 0,
-  objectPosition = 'center center',
-  transformOrigin = 'center center',
+  objectPosition = 'top',
+  transformOrigin = 'center top',
+  objectFit = 'fill',
   kenBurns,
   parallaxAmount,
 }) => {
@@ -88,7 +89,7 @@ export const StillLayer: React.FC<StillLayerProps> = ({
         style={{
           width: '100%',
           height: '100%',
-          objectFit: 'cover',
+          objectFit,
           objectPosition,
           transform: `scale(${s})`,
           transformOrigin,

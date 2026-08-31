@@ -5,7 +5,7 @@ export const HEIGHT = 1920;
 
 /**
  * Karaoke Highlight overlay lives here. Plates fill the full 1080×1920
- * canvas (object-fit cover), including this band — captions sit on photo.
+ * canvas (object-fit fill, 1:1), including this band — captions sit on photo.
  */
 export const CAPTION_BAND = {
   top: 1200,

@@ -58,8 +58,10 @@ export type StillLayer = {
   fadeInFrames?: number;
   fadeOutFrames?: number;
   objectPosition?: string;
-  /** CSS transform-origin for Ken Burns scale (e.g. figures in the lower third). */
+  /** CSS transform-origin for Ken Burns scale. Github2008 plates use `center top`. */
   transformOrigin?: string;
+  /** Mount mode. 1080×1920 plates use `fill` (1:1, no cover-scale). */
+  objectFit?: 'fill' | 'cover' | 'contain';
 };
 
 export type SceneStills = {

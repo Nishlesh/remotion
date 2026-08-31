@@ -45,7 +45,7 @@ maps to `voiceoverLineId: "vo-01"` in `episode.json`. The file imports `SceneFra
 
 Stills: `{ src, x, y, scale, opacity, depth, blend? }`. `depth` 0 is background; 1 is foreground (extra parallax). Paths are relative to `public/` and loaded with `staticFile()`.
 
-Plates mount **1080×1920** (`object-fit: cover`). Karaoke Highlight overlays y=1200–1440 on the photo. OS lockups are Remotion text via `OsLockup` at y≈180.
+Plates mount **1080×1920** 1:1 (`object-fit: fill`, not cover). Karaoke Highlight overlays y=1200–1440 on the photo. OS lockups are Remotion text via `OsLockup` at y≈180.
 
 ## What LookEngine does
 
