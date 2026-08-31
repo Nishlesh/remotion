@@ -91,12 +91,15 @@ Captions use **Montserrat Black (900)** loaded via `@remotion/google-fonts/Monts
 
 When a locked VO file exists, put it in `public/` and set `audio.voiceover`. `calculateEpisodeMetadata` will then drive duration from the wav/mp3. Until then, `durationInFrames` on each scene is `round(approximateDurationSec * 30)`.
 
+Episode 1 lives at `src/episodes/github-2008/` (composition `Github2008`). CaptionBand is disabled there so karaoke can be burned later. Stills clip to the 1080×1200 picture window. OS lockups are Remotion text via `OsLockup`.
+
 ## Scripts
 
 | Script | What it does |
 | --- | --- |
 | `npm run preview` | Opens Remotion Studio |
-| `npm run render` | Renders `QuietHour` to `out/quiet-hour.mp4` |
+| `npm run render` | Renders `Github2008` to `out/github-2008.mp4` |
+| `npm run render:quiet-hour` | Renders `QuietHour` to `out/quiet-hour.mp4` |
 | `npm run typecheck` | `tsc` |
 
 ## Legal / content

@@ -10,6 +10,15 @@ const stillLayerSchema = z.object({
   opacity: z.number(),
   depth: z.number(),
   blend: z.enum(['normal', 'screen', 'soft-light']).optional(),
+  invertParallax: z.boolean().optional(),
+  shiftX: z.number().optional(),
+  width: z.number().optional(),
+  height: z.number().optional(),
+  fromFrame: z.number().int().optional(),
+  toFrame: z.number().int().optional(),
+  fadeInFrames: z.number().int().optional(),
+  fadeOutFrames: z.number().int().optional(),
+  objectPosition: z.string().optional(),
 });
 
 const gradeSchema = z.object({
@@ -39,6 +48,7 @@ export const episodeJsonSchema = z.object({
     })
     .optional(),
   grade: gradeSchema,
+  captionsEnabled: z.boolean().optional(),
   voiceover: z.array(
     z.object({
       id: z.string(),
@@ -72,6 +82,14 @@ export const episodeJsonSchema = z.object({
         entrance: z.object({damping: z.number()}),
       }),
       grade: gradeSchema.partial().optional(),
+      osLockup: z
+        .object({
+          text: z.string(),
+          y: z.number(),
+          size: z.enum(['large', 'plate']).optional(),
+        })
+        .nullable()
+        .optional(),
       stills: z.object({
         bg: stillLayerSchema,
         layers: z.array(stillLayerSchema),

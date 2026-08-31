@@ -48,11 +48,27 @@ export type StillLayer = {
   /** 0 = background (moves with Ken Burns only), 1 = foreground (extra parallax). */
   depth: number;
   blend?: 'normal' | 'screen' | 'soft-light';
+  invertParallax?: boolean;
+  /** Extra horizontal travel over the scene, in pixels. */
+  shiftX?: number;
+  width?: number;
+  height?: number;
+  fromFrame?: number;
+  toFrame?: number;
+  fadeInFrames?: number;
+  fadeOutFrames?: number;
+  objectPosition?: string;
 };
 
 export type SceneStills = {
   bg: StillLayer;
   layers: StillLayer[];
+};
+
+export type OsLockupSpec = {
+  text: string;
+  y: number;
+  size?: 'large' | 'plate';
 };
 
 export type CaptionSpec = {
@@ -82,6 +98,7 @@ export type SceneSpec = {
   grade?: Partial<GradeSpec>;
   fadeInFrames?: number;
   fadeOutFrames?: number;
+  osLockup?: OsLockupSpec | null;
 };
 
 export type EpisodeAudio = {
@@ -105,4 +122,6 @@ export type EpisodeSpec = {
   audio?: EpisodeAudio;
   fonts?: EpisodeFonts;
   grade: GradeSpec;
+  /** Default true. Github2008 hides CaptionBand so Caption Agent can burn karaoke later. */
+  captionsEnabled?: boolean;
 };

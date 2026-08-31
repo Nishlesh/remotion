@@ -1,0 +1,72 @@
+{
+  "fps": 30,
+  "voiceover": "episodes/github-2008/audio/vo_concat.wav",
+  "durationSec": 42.185,
+  "gapSec": 0.1,
+  "lines": [
+    {
+      "id": "vo-01",
+      "file": "episodes/github-2008/audio/01.wav",
+      "startSec": 0.0,
+      "endSec": 3.791,
+      "frames": 114,
+      "text": "GitHub started at 10:24 on a Friday night."
+    },
+    {
+      "id": "vo-02",
+      "file": "episodes/github-2008/audio/02.wav",
+      "startSec": 3.791,
+      "endSec": 9.267,
+      "frames": 164,
+      "text": "Chris Wanstrath made the first commit. October 19th, 2007."
+    },
+    {
+      "id": "vo-03",
+      "file": "episodes/github-2008/audio/03.wav",
+      "startSec": 9.267,
+      "endSec": 15.361,
+      "frames": 183,
+      "text": "Tom Preston-Werner still had a day job. Tools developer at Powerset. Full time."
+    },
+    {
+      "id": "vo-04",
+      "file": "episodes/github-2008/audio/04.wav",
+      "startSec": 15.361,
+      "endSec": 18.778,
+      "frames": 103,
+      "text": "Chris was consulting. They met every Saturday."
+    },
+    {
+      "id": "vo-05",
+      "file": "episodes/github-2008/audio/05.wav",
+      "startSec": 18.778,
+      "endSec": 23.145,
+      "frames": 131,
+      "text": "Tom built Grit and the interface. Chris built the Rails app."
+    },
+    {
+      "id": "vo-06",
+      "file": "episodes/github-2008/audio/06.wav",
+      "startSec": 23.145,
+      "endSec": 27.874,
+      "frames": 142,
+      "text": "Three months of nights and weekends. Design and pricing on Saturday."
+    },
+    {
+      "id": "vo-07",
+      "file": "episodes/github-2008/audio/07.wav",
+      "startSec": 27.874,
+      "endSec": 34.381,
+      "frames": 195,
+      "text": "They let friends in that January. PJ Hyett became the third co-founder a month later."
+    },
+    {
+      "id": "vo-08",
+      "file": "episodes/github-2008/audio/08.wav",
+      "startSec": 34.381,
+      "endSec": 42.185,
+      "frames": 234,
+      "text": "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment."
+    }
+  ]
+}

@@ -27,4 +27,11 @@ export const CAPTION_STROKE = '#000000';
 export const CAPTION_MIN_CHUNK_WORDS = 3;
 export const CAPTION_MAX_CHUNK_WORDS = 6;
 
-export const TARGET_DURATION_SEC = {min: 25, max: 50} as const;
+export const PICTURE_WINDOW = {
+  x: 0,
+  y: 0,
+  width: 1080,
+  height: 1200,
+} as const;
+
+export const FALLOFF_TOP = 1440;

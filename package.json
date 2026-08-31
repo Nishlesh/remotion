@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "preview": "remotion studio",
-    "render": "remotion render QuietHour out/quiet-hour.mp4",
+    "render": "remotion render Github2008 out/github-2008.mp4 --timeout=120000",
+    "render:quiet-hour": "remotion render QuietHour out/quiet-hour.mp4",
     "upgrade": "remotion upgrade",
     "typecheck": "tsc"
   },

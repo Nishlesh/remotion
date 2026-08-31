@@ -8,7 +8,8 @@ export {
 export {LookEngine} from './LookEngine';
 export {SceneFrame} from './SceneFrame';
 export {CaptionBand} from './CaptionBand';
-export {StillLayer} from './StillLayer';
+export {PictureWindow, StillLayer} from './StillLayer';
+export {OsLockup} from './OsLockup';
 export {EpisodeTimeline} from './EpisodeTimeline';
 export {
   useEntrance,
