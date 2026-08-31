@@ -1,12 +1,11 @@
 import React from 'react';
 import {AbsoluteFill} from 'remotion';
 import {CaptionBand} from './CaptionBand';
-import {FALLOFF_TOP, HEIGHT, WIDTH} from './constants';
 import {LookEngine} from './LookEngine';
 import {useEntrance, useKenBurns, useSceneFade} from './motion';
 import {OsLockup} from './OsLockup';
 import type {SceneProps} from './schemas';
-import {PictureWindow, StillLayer} from './StillLayer';
+import {StillLayer} from './StillLayer';
 import type {SceneSpec} from './types';
 
 type SceneFrameProps = SceneProps & {
@@ -35,47 +34,34 @@ export const SceneFrame: React.FC<SceneFrameProps> = ({
 
   return (
     <LookEngine grade={grade} opacity={fade}>
-      <PictureWindow>
-        <AbsoluteFill
-          style={{
-            opacity: entrance.opacity,
-            transform: `translateY(${entrance.y}px) scale(${entrance.scale})`,
-          }}
-        >
+      <AbsoluteFill
+        style={{
+          opacity: entrance.opacity,
+          transform: `translateY(${entrance.y}px) scale(${entrance.scale})`,
+        }}
+      >
+        <StillLayer
+          {...spec.stills.bg}
+          kenBurns={kenBurns}
+          parallaxAmount={motion.parallax.amount}
+        />
+        {spec.stills.layers.map((layer) => (
           <StillLayer
-            {...spec.stills.bg}
+            key={layer.id}
+            {...layer}
             kenBurns={kenBurns}
             parallaxAmount={motion.parallax.amount}
           />
-          {spec.stills.layers.map((layer) => (
-            <StillLayer
-              key={layer.id}
-              {...layer}
-              kenBurns={kenBurns}
-              parallaxAmount={motion.parallax.amount}
-            />
-          ))}
-          {children}
-        </AbsoluteFill>
-        {spec.osLockup ? (
-          <OsLockup
-            text={spec.osLockup.text}
-            y={spec.osLockup.y}
-            size={spec.osLockup.size}
-          />
-        ) : null}
-      </PictureWindow>
-      <div
-        style={{
-          position: 'absolute',
-          left: 0,
-          top: FALLOFF_TOP,
-          width: WIDTH,
-          height: HEIGHT - FALLOFF_TOP,
-          backgroundColor: '#07090d',
-          pointerEvents: 'none',
-        }}
-      />
+        ))}
+        {children}
+      </AbsoluteFill>
+      {spec.osLockup ? (
+        <OsLockup
+          text={spec.osLockup.text}
+          y={spec.osLockup.y}
+          size={spec.osLockup.size}
+        />
+      ) : null}
       {showCaptions ? (
         <CaptionBand
           kicker={caption.kicker}

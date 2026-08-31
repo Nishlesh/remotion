@@ -9,7 +9,7 @@ type OsLockupProps = {
 
 /**
  * On-screen date/time/status plate. Remotion text, never burned into stills.
- * Lives in the picture window (typically y=140–380). Never in the caption band.
+ * Typically y≈180. Overlay on the full-canvas still, not a cropped window.
  */
 export const OsLockup: React.FC<OsLockupProps> = ({
   text,

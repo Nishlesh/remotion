@@ -19,6 +19,7 @@ const stillLayerSchema = z.object({
   fadeInFrames: z.number().int().optional(),
   fadeOutFrames: z.number().int().optional(),
   objectPosition: z.string().optional(),
+  transformOrigin: z.string().optional(),
 });
 
 const gradeSchema = z.object({

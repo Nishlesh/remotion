@@ -45,14 +45,13 @@ maps to `voiceoverLineId: "vo-01"` in `episode.json`. The file imports `SceneFra
 
 Stills: `{ src, x, y, scale, opacity, depth, blend? }`. `depth` 0 is background; 1 is foreground (extra parallax). Paths are relative to `public/` and loaded with `staticFile()`.
 
-Keep **key art out of y=1200–1440**. Karaoke Highlight captions live in that band (`CAPTION_BAND` in `src/engine/constants.ts`): last-line baseline at y=1320, text x 140–940, max ~800px line, 3–6 word chunks. `LookEngine` also lays a dark wash there so type stays readable.
+Plates mount **1080×1920** (`object-fit: cover`). Karaoke Highlight overlays y=1200–1440 on the photo. OS lockups are Remotion text via `OsLockup` at y≈180.
 
 ## What LookEngine does
 
 `LookEngine` is the shared wrapper every scene renders through:
 
 - Cool/neutral grade (contrast / saturation / brightness / cool multiply / optional vignette)
-- Caption-safe darkness over y=1200–1440
 - Overflow crop for Ken Burns
 
 Motion helpers live next to it (`src/engine/motion.ts`):
@@ -91,7 +90,7 @@ Captions use **Montserrat Black (900)** loaded via `@remotion/google-fonts/Monts
 
 When a locked VO file exists, put it in `public/` and set `audio.voiceover`. `calculateEpisodeMetadata` will then drive duration from the wav/mp3. Until then, `durationInFrames` on each scene is `round(approximateDurationSec * 30)`.
 
-Episode 1 lives at `src/episodes/github-2008/` (composition `Github2008`). CaptionBand is disabled there so karaoke can be burned later. Stills clip to the 1080×1200 picture window. OS lockups are Remotion text via `OsLockup`.
+Episode 1 lives at `src/episodes/github-2008/` (composition `Github2008`). CaptionBand is disabled there so karaoke can be burned later. Stills fill the full 1080×1920 canvas. OS lockups are Remotion text via `OsLockup`.
 
 ## Scripts
 

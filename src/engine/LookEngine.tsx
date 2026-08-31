@@ -10,8 +10,8 @@ type LookEngineProps = {
 };
 
 /**
- * Shared look wrapper. Every scene imports this so grade, vignette, and
- * caption-safe darkness are inherited — write once, inherit everywhere.
+ * Shared look wrapper. Every scene imports this so grade and vignette
+ * are inherited — write once, inherit everywhere.
  *
  * This is a cinematic editorial stills look: cool/neutral grade, optional
  * vignette, slow motion living in the still stack. It is NOT a vintage
@@ -63,15 +63,6 @@ export const LookEngine: React.FC<LookEngineProps> = ({
           }}
         />
       ) : null}
-
-      {/* Caption-safe wash over y=1200–1440 so type always sits on darkness. */}
-      <AbsoluteFill
-        style={{
-          background:
-            'linear-gradient(to bottom, transparent 1080px, rgba(6, 8, 12, 0.42) 1200px, rgba(6, 8, 12, 0.58) 1320px, rgba(6, 8, 12, 0.50) 1440px, rgba(6, 8, 12, 0.22) 1580px, transparent 1760px)',
-          pointerEvents: 'none',
-        }}
-      />
     </AbsoluteFill>
   );
 };

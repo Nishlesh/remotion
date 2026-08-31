@@ -58,6 +58,8 @@ export type StillLayer = {
   fadeInFrames?: number;
   fadeOutFrames?: number;
   objectPosition?: string;
+  /** CSS transform-origin for Ken Burns scale (e.g. figures in the lower third). */
+  transformOrigin?: string;
 };
 
 export type SceneStills = {

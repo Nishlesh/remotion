@@ -6,7 +6,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from 'remotion';
-import {PICTURE_WINDOW} from './constants';
+import {HEIGHT, PICTURE_WINDOW, WIDTH} from './constants';
 import {parallaxOffset, type KenBurnsState} from './motion';
 import type {StillLayer as StillLayerSpec} from './types';
 
@@ -32,6 +32,7 @@ export const StillLayer: React.FC<StillLayerProps> = ({
   fadeInFrames = 0,
   fadeOutFrames = 0,
   objectPosition = 'center center',
+  transformOrigin = 'center center',
   kenBurns,
   parallaxAmount,
 }) => {
@@ -65,8 +66,8 @@ export const StillLayer: React.FC<StillLayerProps> = ({
   const tx = x + (invertParallax ? -offset.x : offset.x) + drift;
   const ty = y + offset.y;
   const s = scale * offset.scale;
-  const layerWidth = width ?? PICTURE_WINDOW.width;
-  const layerHeight = height ?? PICTURE_WINDOW.height;
+  const layerWidth = width ?? WIDTH;
+  const layerHeight = height ?? HEIGHT;
 
   return (
     <div
@@ -90,14 +91,14 @@ export const StillLayer: React.FC<StillLayerProps> = ({
           objectFit: 'cover',
           objectPosition,
           transform: `scale(${s})`,
-          transformOrigin: 'center center',
+          transformOrigin,
         }}
       />
     </div>
   );
 };
 
-/** Clip stills, plates, and OS lockups to the 1080×1200 picture window. */
+/** Full-canvas plate clip (1080×1920). Overflow hidden for Ken Burns. */
 export const PictureWindow: React.FC<{children: React.ReactNode}> = ({
   children,
 }) => {

@@ -89,7 +89,7 @@
           "startX": 0,
           "endX": 8,
           "startY": 0,
-          "endY": -12
+          "endY": 6
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 22}
@@ -100,9 +100,13 @@
           "src": "episodes/github-2008/generate/G01.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
-          "depth": 0
+          "depth": 0,
+          "objectPosition": "center 20%",
+          "transformOrigin": "50% 22%"
         },
         "layers": []
       }
@@ -122,11 +126,11 @@
       "motion": {
         "kenBurns": {
           "startScale": 1.0,
-          "endScale": 1.07,
-          "startX": -10,
-          "endX": 14,
+          "endScale": 1.06,
+          "startX": -8,
+          "endX": 10,
           "startY": 0,
-          "endY": 16
+          "endY": 8
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 20}
@@ -137,6 +141,8 @@
           "src": "episodes/github-2008/generate/G02.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
           "depth": 0
@@ -158,25 +164,29 @@
       },
       "motion": {
         "kenBurns": {
-          "startScale": 1.02,
-          "endScale": 1.08,
-          "startX": -20,
-          "endX": 18,
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": -10,
+          "endX": 8,
           "startY": 4,
-          "endY": -8
+          "endY": -6
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 24}
       },
       "stills": {
         "bg": {
-          "id": "office",
-          "src": "episodes/github-2008/stock/S06.jpg",
+          "id": "badge",
+          "src": "episodes/github-2008/generate/G04.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
-          "depth": 0
+          "depth": 0,
+          "objectPosition": "center 28%",
+          "transformOrigin": "50% 28%"
         },
         "layers": []
       }
@@ -196,11 +206,11 @@
       "motion": {
         "kenBurns": {
           "startScale": 1.0,
-          "endScale": 1.04,
+          "endScale": 1.05,
           "startX": 4,
           "endX": -6,
           "startY": 0,
-          "endY": -10
+          "endY": -8
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 20}
@@ -211,6 +221,8 @@
           "src": "episodes/github-2008/stock/S09.jpg",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
           "depth": 0
@@ -248,6 +260,8 @@
           "src": "episodes/github-2008/generate/G05.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
           "depth": 0
@@ -270,24 +284,28 @@
       "motion": {
         "kenBurns": {
           "startScale": 1.0,
-          "endScale": 1.08,
+          "endScale": 1.06,
           "startX": 0,
-          "endX": -8,
-          "startY": 10,
-          "endY": -18
+          "endX": -6,
+          "startY": 4,
+          "endY": -8
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 20}
       },
       "stills": {
         "bg": {
-          "id": "kitchen",
-          "src": "episodes/github-2008/stock/S14.jpg",
+          "id": "napkin",
+          "src": "episodes/github-2008/generate/G07.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
-          "depth": 0
+          "depth": 0,
+          "objectPosition": "center center",
+          "transformOrigin": "50% 48%"
         },
         "layers": []
       }
@@ -306,12 +324,12 @@
       },
       "motion": {
         "kenBurns": {
-          "startScale": 1.02,
-          "endScale": 1.07,
-          "startX": -12,
-          "endX": 10,
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": -8,
+          "endX": 8,
           "startY": 4,
-          "endY": -10
+          "endY": -6
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 24}
@@ -322,6 +340,8 @@
           "src": "episodes/github-2008/generate/G09.png",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
           "depth": 0
@@ -343,25 +363,29 @@
       },
       "motion": {
         "kenBurns": {
-          "startScale": 1.04,
-          "endScale": 1.0,
+          "startScale": 1.0,
+          "endScale": 1.06,
           "startX": 0,
-          "endX": 0,
-          "startY": -8,
-          "endY": 4
+          "endX": 4,
+          "startY": 0,
+          "endY": 0
         },
         "parallax": {"amount": 0},
         "entrance": {"damping": 26}
       },
       "stills": {
         "bg": {
-          "id": "empty-table",
-          "src": "episodes/github-2008/stock/S20.jpg",
+          "id": "silhouettes",
+          "src": "episodes/github-2008/stock/S19.jpg",
           "x": 0,
           "y": 0,
+          "width": 1080,
+          "height": 1920,
           "scale": 1,
           "opacity": 1,
-          "depth": 0
+          "depth": 0,
+          "objectPosition": "center 78%",
+          "transformOrigin": "50% 78%"
         },
         "layers": []
       }

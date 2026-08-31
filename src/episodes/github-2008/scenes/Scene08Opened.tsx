@@ -1,7 +1,7 @@
 /**
  * Spoken line vo-08 → scene file.
  * "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment."
- * One still for the whole scene: empty table.
+ * One still for the whole scene: S19 arch silhouettes (lower third).
  */
 import React from 'react';
 import {sceneSpecToProps} from '../../../engine';

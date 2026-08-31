@@ -4,8 +4,8 @@ export const WIDTH = 1080;
 export const HEIGHT = 1920;
 
 /**
- * Karaoke Highlight captions live here. Key art and stills must keep this
- * band visually clear so type never collides with objects.
+ * Karaoke Highlight overlay lives here. Plates fill the full 1080×1920
+ * canvas (object-fit cover), including this band — captions sit on photo.
  */
 export const CAPTION_BAND = {
   top: 1200,
@@ -27,11 +27,12 @@ export const CAPTION_STROKE = '#000000';
 export const CAPTION_MIN_CHUNK_WORDS = 3;
 export const CAPTION_MAX_CHUNK_WORDS = 6;
 
+/** Full-canvas plate. Stills mount 1080×1920 1:1 — no 1200px crop. */
 export const PICTURE_WINDOW = {
   x: 0,
   y: 0,
-  width: 1080,
-  height: 1200,
+  width: WIDTH,
+  height: HEIGHT,
 } as const;
 
 export const FALLOFF_TOP = 1440;
