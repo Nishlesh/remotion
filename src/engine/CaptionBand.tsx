@@ -77,10 +77,10 @@ export const CaptionBand: React.FC<CaptionBandProps> = ({
             <div
               style={{
                 fontFamily: bodyFont,
-                fontSize: 46,
+                fontSize: 40,
                 fontWeight: 500,
-                lineHeight: 1.18,
-                letterSpacing: -0.4,
+                lineHeight: 1.22,
+                letterSpacing: -0.3,
                 color: '#E8EEF4',
               }}
             >

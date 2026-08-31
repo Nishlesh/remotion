@@ -20,7 +20,7 @@ import {
 export const RemotionRoot: React.FC = () => {
   return (
     <>
-      <Folder name={quietHourSpec.title}>
+      <Folder name="Quiet-Hour">
         <Composition
           id={quietHourSpec.compositionId}
           component={QuietHourEpisode}
