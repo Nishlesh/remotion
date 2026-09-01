@@ -6,5 +6,5 @@
   "title": "Fixture: kitchen-table ship",
   "famousEntity": "Kitchen-table ship",
   "compositionId": "FixturePipeline",
-  "status": "qa"
+  "status": "package"
 }

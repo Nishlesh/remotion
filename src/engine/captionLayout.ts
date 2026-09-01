@@ -1,6 +1,5 @@
 import {
   CAPTION_INACTIVE_SIZE,
-  CAPTION_MAX_CHUNK_WORDS,
   CAPTION_MAX_LINE_WIDTH,
   CAPTION_STROKE_PX,
 } from './constants';
@@ -122,7 +121,6 @@ export const wouldOverflowTwoLines = (
  * - Do not rewrite words.
  * - Sentence-final .!? ends a chunk.
  * - Max two wrapped lines per chunk (~800px at 68px Black).
- * - Soft 3–6 word preference when a sentence is long and still fits.
  */
 export const chunkSpokenLine = (words: string[]): string[][] => {
   if (words.length === 0) {
@@ -142,11 +140,6 @@ export const chunkSpokenLine = (words: string[]): string[][] => {
 
   for (const word of words) {
     if (wouldOverflowTwoLines(chunk, word)) {
-      flush();
-    } else if (
-      chunk.length >= CAPTION_MAX_CHUNK_WORDS &&
-      !isSentenceFinalWord(word)
-    ) {
       flush();
     }
 

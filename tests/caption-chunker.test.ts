@@ -27,6 +27,17 @@ describe('caption chunker', () => {
     expect(chunks.flat().join(' ')).toBe(spoken);
   });
 
+  it('does not split a sentence at 6 words if two lines still fit', () => {
+    const spoken = 'I am in on a to go now then.';
+    const words = splitWords(spoken);
+    expect(words.length).toBeGreaterThan(6);
+    const chunks = chunkSpokenLine(words);
+    expect(chunks.flat()).toEqual(words);
+    expect(isSentenceFinalWord(words[words.length - 1])).toBe(true);
+    // Short words must not be force-cut at 6 when they still fit 2 lines.
+    expect(chunks[0].length).toBeGreaterThan(6);
+  });
+
   it('wraps a chunk to at most two lines', () => {
     const words = splitWords(
       'That choice became the company Keep the next one in FocusStack extra filler words here',
