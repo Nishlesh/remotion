@@ -5,9 +5,13 @@ import {
   HEIGHT,
   WIDTH,
   calculateEpisodeMetadata,
+  calculateFactoryActiveMetadata,
   calculateSceneMetadata,
+  FactoryPlayer,
   sceneSchema,
 } from './engine';
+import type {EpisodeSpec} from './engine/types';
+import {episodeJsonSchema} from './engine/episodeJson';
 import {
   QuietHourEpisode,
   quietHourDurationInFrames,
@@ -24,6 +28,25 @@ import {
   github2008Scenes,
   github2008Spec,
 } from './episodes/github-2008';
+import {
+  FixturePipelineEpisode,
+  fixturePipelineDurationInFrames,
+  fixturePipelineEpisodeProps,
+  fixturePipelineEpisodeSchema,
+  fixturePipelineScenes,
+  fixturePipelineSpec,
+} from './episodes/_fixture-pipeline';
+import {z} from 'zod';
+
+const factoryActiveSchema = z.object({
+  spec: episodeJsonSchema,
+});
+
+type FactoryActiveProps = {spec: EpisodeSpec};
+
+const FactoryActive: React.FC<FactoryActiveProps> = ({spec}) => {
+  return <FactoryPlayer spec={spec} />;
+};
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -81,6 +104,44 @@ export const RemotionRoot: React.FC = () => {
             calculateMetadata={calculateSceneMetadata}
           />
         ))}
+      </Folder>
+      <Folder name="Factory">
+        <Composition
+          id={fixturePipelineSpec.compositionId}
+          component={FixturePipelineEpisode}
+          schema={fixturePipelineEpisodeSchema}
+          defaultProps={fixturePipelineEpisodeProps}
+          durationInFrames={fixturePipelineDurationInFrames}
+          fps={FPS}
+          width={WIDTH}
+          height={HEIGHT}
+          calculateMetadata={calculateEpisodeMetadata(fixturePipelineSpec)}
+        />
+        {fixturePipelineScenes.map((scene) => (
+          <Composition
+            key={scene.compositionId}
+            id={scene.compositionId}
+            component={scene.component}
+            schema={sceneSchema}
+            defaultProps={scene.defaultProps}
+            durationInFrames={scene.defaultProps.timing.durationInFrames}
+            fps={FPS}
+            width={WIDTH}
+            height={HEIGHT}
+            calculateMetadata={calculateSceneMetadata}
+          />
+        ))}
+        <Composition
+          id="FactoryActive"
+          component={FactoryActive}
+          schema={factoryActiveSchema}
+          defaultProps={{spec: fixturePipelineSpec}}
+          durationInFrames={fixturePipelineDurationInFrames}
+          fps={FPS}
+          width={WIDTH}
+          height={HEIGHT}
+          calculateMetadata={calculateFactoryActiveMetadata}
+        />
       </Folder>
     </>
   );

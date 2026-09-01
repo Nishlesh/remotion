@@ -28,6 +28,8 @@ const gradeSchema = z.object({
   saturation: z.number(),
   brightness: z.number(),
   cool: z.number(),
+  warm: z.number().default(0),
+  grain: z.number().default(0),
   vignette: z.number(),
 });
 
@@ -36,7 +38,7 @@ export const episodeJsonSchema = z.object({
   id: z.string(),
   title: z.string(),
   compositionId: z.string(),
-  targetDurationSec: z.number().min(25).max(50),
+  targetDurationSec: z.number().min(1).max(50),
   fonts: z
     .object({
       display: z.string(),

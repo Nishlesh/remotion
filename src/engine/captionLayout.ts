@@ -2,7 +2,6 @@ import {
   CAPTION_INACTIVE_SIZE,
   CAPTION_MAX_CHUNK_WORDS,
   CAPTION_MAX_LINE_WIDTH,
-  CAPTION_MIN_CHUNK_WORDS,
   CAPTION_STROKE_PX,
 } from './constants';
 import {montserratBlack} from './fonts';
@@ -95,10 +94,35 @@ export const wrapChunkLines = (words: string[]): string[][] => {
   return lines.filter((line) => line.length > 0);
 };
 
+const SENTENCE_END = /[.!?]$/;
+
+export const isSentenceFinalWord = (word: string): boolean =>
+  SENTENCE_END.test(word.trim());
+
 /**
- * Split a spoken line into chunks of 3–6 words. Fill line 1 until the next
- * word would overflow ~800px, then line 2; if line 2 would overflow, start
- * a new chunk.
+ * True when adding `word` would force a third visual line at 68px Black.
+ * wrapChunkLines dumps overflow onto line 2, so we detect that case here.
+ */
+export const wouldOverflowTwoLines = (
+  chunk: string[],
+  word: string,
+): boolean => {
+  if (chunk.length === 0) {
+    return false;
+  }
+  const lines = wrapChunkLines(chunk);
+  if (lines.length <= 1) {
+    return false;
+  }
+  return !canFitOnLine(lines[1], word);
+};
+
+/**
+ * Split spoken words into karaoke chunks.
+ * - Do not rewrite words.
+ * - Sentence-final .!? ends a chunk.
+ * - Max two wrapped lines per chunk (~800px at 68px Black).
+ * - Soft 3–6 word preference when a sentence is long and still fits.
  */
 export const chunkSpokenLine = (words: string[]): string[][] => {
   if (words.length === 0) {
@@ -107,7 +131,6 @@ export const chunkSpokenLine = (words: string[]): string[][] => {
 
   const chunks: string[][] = [];
   let chunk: string[] = [];
-  let lines: string[][] = [[]];
 
   const flush = () => {
     if (chunk.length === 0) {
@@ -115,47 +138,31 @@ export const chunkSpokenLine = (words: string[]): string[][] => {
     }
     chunks.push(chunk);
     chunk = [];
-    lines = [[]];
   };
 
   for (const word of words) {
-    if (chunk.length >= CAPTION_MAX_CHUNK_WORDS) {
+    if (wouldOverflowTwoLines(chunk, word)) {
+      flush();
+    } else if (
+      chunk.length >= CAPTION_MAX_CHUNK_WORDS &&
+      !isSentenceFinalWord(word)
+    ) {
       flush();
     }
 
-    const line = lines[lines.length - 1];
-    const fitsHere = line.length === 0 || canFitOnLine(line, word);
+    chunk.push(word);
 
-    if (fitsHere) {
-      line.push(word);
-      chunk.push(word);
-      continue;
+    if (isSentenceFinalWord(word)) {
+      flush();
     }
-
-    if (lines.length === 1) {
-      const wrapped: string[] = [word];
-      if (
-        chunk.length >= CAPTION_MIN_CHUNK_WORDS ||
-        lineVisualWidth(wrapped) > CAPTION_MAX_LINE_WIDTH
-      ) {
-        // Start line 2 of this chunk.
-        lines.push(wrapped);
-        chunk.push(word);
-        continue;
-      }
-      lines.push(wrapped);
-      chunk.push(word);
-      continue;
-    }
-
-    flush();
-    chunk = [word];
-    lines = [[word]];
   }
 
   flush();
   return chunks;
 };
+
+export const splitAndChunkSpokenText = (text: string): string[][] =>
+  chunkSpokenLine(splitWords(text));
 
 export const locateWord = (
   chunks: string[][],

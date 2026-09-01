@@ -1,124 +1,183 @@
-# FocusStack Remotion engine
+# Before It Was Famous — Shorts factory
 
-Reusable **1080×1920 @ 30fps** engine for faceless vertical micro-documentaries (25–50 seconds). Locked voiceover is the source of truth. One spoken line becomes one Remotion scene file. Every scene imports a shared look + motion engine. Finished scenes drop onto one main timeline.
+Production pipeline for **Before It Was Famous** (`@beforeitwasfamous`) YouTube Shorts.
 
-This repo is not a vintage 12fps film-grain project. The house look is cinematic editorial stills: objects, rooms, silhouettes, slow Ken Burns / parallax / fake depth in code, cool/neutral grade, optional vignette. Captions are locked **Karaoke Highlight** (Montserrat Black, 8px black stroke, active word `#FFE14A`).
+This repo keeps the Remotion look engine that already worked (1080×1920, VO-driven duration, Ken Burns, Karaoke Highlight preview) and adds the rest of the factory as code: typed episode folders, a single CLI, karaoke burn, QA, and human file gates.
+
+FocusStack ([usefocusstack.com](https://usefocusstack.com)) is a **Level-2 natural close**, never an ad, never the channel. Would someone watch the episode if FocusStack did not exist? If no, reject the story.
+
+**Never auto-publish.** There are no social posting APIs.
 
 ## Quick start
 
 ```bash
-npm install
-npm run preview    # Remotion Studio
-npm run render     # mp4 of the sample episode → out/quiet-hour.mp4
+pnpm install
+pnpm fixture:media          # synthetic wav + 1080×1920 stills + timestamps
+pnpm test
+pnpm factory status --episode _fixture-pipeline
+pnpm preview                # Remotion Studio
 ```
 
-Sample episode: **The Quiet Hour** (7 lines, 31 seconds). No TTS, no paid still APIs, no brand logos, no real-person likenesses. Stills are in-repo SVGs.
+Fixture assemble + karaoke (requires Remotion + ffmpeg):
 
-## How an episode is built
-
-1. Write a locked voiceover (ordered lines).
-2. Emit an episode JSON that matches `EpisodeSpec` (`src/engine/types.ts`). A factory can emit this file; `parseEpisode()` validates it.
-3. Add stills under `public/episodes/<id>/stills/` (layered SVGs/PNGs).
-4. Add **one scene file per spoken line** under `src/episodes/<id>/scenes/`.
-5. Register those files on the episode timeline (`src/episodes/<id>/index.ts`) and in `src/Root.tsx`.
-
-Clone-don't-rebuild: later episodes copy the engine, swap JSON + stills + scene files. Do not fork a new Remotion project.
-
-### Scene file ↔ voiceover line
-
-```
-src/episodes/quiet-hour/scenes/Scene01QuietHour.tsx
+```bash
+pnpm factory render --episode _fixture-pipeline
+# → episodes/_fixture-pipeline/render/assemble.mp4
+# → episodes/_fixture-pipeline/render/karaoke.ass
+# → episodes/_fixture-pipeline/render/final.mp4
 ```
 
-maps to `voiceoverLineId: "vo-01"` in `episode.json`. The file imports `SceneFrame` / `LookEngine` from `src/engine`. Preview that composition alone in Studio (`QuietHour-01`) or watch it sequenced on `QuietHour`.
+Equivalent Remotion command if you skip the CLI:
 
-### JSON spec (minimum)
+```bash
+pnpm exec remotion render FixturePipeline out/fixture-pipeline.mp4 --timeout=180000
+```
 
-| Field | Role |
+If ffmpeg or Remotion are missing, CI tests skip the burn and print that command. Production lock is still **1080×1920**, never 1088×1920.
+
+## Pipeline (never skip)
+
+```
+discover → score → research → FACT_APPROVED → hooks/script → TTS
+       → NARRATION_LOCKED → storyboard 8–12 → stills → Remotion assemble
+       → karaoke from FINAL audio → QA → package → (publish stub)
+```
+
+```bash
+pnpm factory <stage> --episode <slug>
+pnpm factory run --episode <slug> --until qa
+```
+
+Stages: `discover` `score` `research` `script` `audio` `storyboard` `assets` `render` `qa` `package` `publish`.
+
+| Gate file | Required before |
 | --- | --- |
-| `id`, `title`, `targetDurationSec` | Episode identity. Duration must be 25–50s. |
-| `voiceover[]` | Ordered lines: `id`, `text`, `approximateDurationSec`, optional `audioFile`. |
-| `scenes[]` | One per line: `voiceoverLineId`, `durationInFrames`, `stills` (bg + layers), `captions`, `motion`, optional `grade`. |
-| `audio` | Optional locked VO wav/mp3 + optional bed. If missing, JSON durations drive the timeline so preview still works. |
-| `fonts` | Overlay captions are Karaoke Highlight (Montserrat Black 900). |
-| `grade` | Cool/neutral defaults inherited by every scene. |
+| `episodes/<slug>/FACT_APPROVED` | `script` (production) |
+| `episodes/<slug>/NARRATION_LOCKED` | `storyboard` (production) |
+| `episodes/<slug>/PUBLISH_GO` | `publish` — and publish still refuses to post |
 
-Stills: `{ src, x, y, scale, opacity, depth, blend? }`. `depth` 0 is background; 1 is foreground (extra parallax). Paths are relative to `public/` and loaded with `staticFile()`.
+Score lock: **≥70**, pivotal **≥3/5**, **two reliable sources**, fits **≤50s**.
 
-Plates mount **1080×1920** 1:1 (`object-fit: fill`, not cover). Karaoke Highlight overlays y=1200–1440 on the photo. OS lockups are Remotion text via `OsLockup` at y≈180.
+Discover / research start as structured stubs + prompt templates. They do not invent facts. Set `OPENAI_API_KEY` to use the OpenAI-compatible interface (default model name `gpt-5.6-sol`). Without a key, `FACTORY_LLM=mock`.
 
-## What LookEngine does
+## Copy engine (hard lock)
 
-`LookEngine` is the shared wrapper every scene renders through:
+FAMOUS ENTITY → unexpected beginning → human detail → constraint → choice → consequence → realization → viewer → FocusStack.
 
-- Cool/neutral grade (contrast / saturation / brightness / cool multiply / optional vignette)
-- Overflow crop for Ken Burns
+- Cadence: 3–12 word clauses, fragments legal, ~80–100 spoken words
+- Gold shape: Airbnb / Spanx micro-doc (not Wikipedia)
+- Fame test: unknown founders cannot lead; famous product/company leads
+- Drop rule: spoken script keeps only hook, one human detail, one constraint, one choice, one consequence, one meaning, one CTA
+- CTA callbacks **this** story. No sale-price ending
+- Script ≠ N Remotion stills
+- `FACT_APPROVED` before script. Never invent facts
 
-Motion helpers live next to it (`src/engine/motion.ts`):
+## Remotion engine (kept)
 
-- `useKenBurns` — slow push/pull/pan
-- `parallaxOffset` — fake depth from layered stills
-- `useEntrance` — spring fade/scale
-- `useKaraokeIndex` — per-word highlight paced from scene duration (no TTS). Only the current word is yellow; the rest of the chunk stays white.
+`src/engine` is the compositor from the prior Github 2008 work, extended not replaced:
 
-Tune **timing, scale, grade, caption, and motion** live in Remotion Studio. Those values are Remotion schema props (`src/engine/schemas.ts`). Stills stay in JSON.
+- **1080×1920 @ 30fps** full bleed (`WIDTH=1080` — never 1088)
+- VO is source of truth; `calculateEpisodeMetadata` reads the wav
+- Shared `LookEngine`: grade, **warm**, **grain**, vignette as tunables
+- Ken Burns on already cover-cropped 1080×1920 plates (`object-fit: fill`)
+- `CaptionBand` for Studio preview (Karaoke Highlight)
+- Production captions: **ffmpeg `ass` filter only** (never `subtitles`)
+- Existing compositions: `Github2008`, `QuietHour`, `FixturePipeline`, `FactoryActive`
 
-## Output
+Channel default grade is Magnates-style warm film + grain. Github 2008 keeps its cool/neutral grade (grain 0).
 
-- Size: **1080×1920**
-- Frame rate: **30fps**
-- Sample composition id: `QuietHour`
-- Per-line compositions: `QuietHour-01` … `QuietHour-07`
+Do not clone third-party 12fps kits, prompts, or assets.
 
-## Fonts
+## Karaoke Highlight (burn)
 
-Captions use **Montserrat Black (900)** loaded via `@remotion/google-fonts/Montserrat` (SIL Open Font License). Do not use DM Sans or Bebas Neue for captions. The locked Karaoke Highlight look is:
+- Montserrat Black
+- Inactive 68px white, active 71px `#FFE14A`, 8px black stroke
+- Max 2 lines, last-line baseline y=1320
+- Sentence-final `.!?` ends a chunk
+- Do not rewrite spoken words
+- ASS PlayRes **1080×1920**, Alignment **2**, MarginL/R **140**, MarginV **600**
+- Active word `{\c&H4AE1FF&\fs71}` over the full visible chunk
+- Font file: `assets/fonts/Montserrat-Black.ttf`
 
-- Inactive words: 68px, fill `#FFFFFF`
-- Active word: 71px, fill `#FFE14A`
-- Stroke: 8px `#000000` on every word (two-layer span: back `WebkitTextStroke`, front fill)
-- Shadow: `0px 4px 0 rgba(0,0,0,0.55)`
-- Casing as spoken. Never all-caps. Never rewrite the line.
+## Voice / TTS
 
-## Adding a new episode
+Production path:
 
-1. Copy `src/episodes/quiet-hour/` and `public/episodes/quiet-hour/`.
-2. Replace `episode.json` (new VO lines + still paths + motion).
-3. Add one scene file per new line (copy `Scene01QuietHour.tsx`, change `SCENE_ID` / `VOICEOVER_LINE_ID`).
-4. Wire the files in that episode's `index.ts` and add a `<Folder>` in `src/Root.tsx`.
-5. Point `npm run render` at the new composition id if you want that to be the default.
+1. Install `kokoro-onnx` + models under `tools/models/` (`kokoro-v1.0.onnx`, `voices-v1.0.bin`)
+2. `pip install -r requirements.txt` plus `kokoro-onnx soundfile numpy`
+3. `tools/tts_kokoro.py` — voice `am_michael`, speed **0.95**, **24 kHz**
+4. One spoken line = one WAV, then concat (`LINE_GAP_SEC=0.1`)
+5. Word-level timestamps in `audio/timestamps.json`
 
-When a locked VO file exists, put it in `public/` and set `audio.voiceover`. `calculateEpisodeMetadata` will then drive duration from the wav/mp3. Until then, `durationInFrames` on each scene is `round(approximateDurationSec * 30)`.
+This VM often cannot run kokoro-onnx. The factory then uses **fixture TTS**: 24 kHz tone WAV + even word timestamps from the spoken text (no rewritten words). Documented, not a fake production read. Create `NARRATION_LOCKED` only after a real listen.
 
-Episode 1 lives at `src/episodes/github-2008/` (composition `Github2008`). CaptionBand is disabled there so karaoke can be burned later. Stills fill the full 1080×1920 canvas. OS lockups are Remotion text via `OsLockup`.
+## Stills
+
+1. Wikimedia / Unsplash / Pexels / Pixabay first (official APIs / download pages)
+2. Generate gaps only. No unauthorized logos. No copyrighted scrapes
+3. **Always cover-crop to 1080×1920** (`tools/cover_crop.py` via Pillow; ffmpeg fallback)
+4. Record `licenses.json`
+5. Hero in y≈80–1100; y=1200–1440 stays photo — never paint a caption bar into the still
+6. Identity plate per named person if they appear more than once
+
+## Episode folders
+
+```
+episodes/<slug>/
+  meta.json
+  discovery.json  score.json  research.json
+  FACT_APPROVED                 # human
+  script.json
+  audio/01.wav … vo_concat.wav timestamps.json
+  NARRATION_LOCKED              # human
+  storyboard.json
+  stills/  stock/  generate/  licenses.json
+  remotion.json
+  render/assemble.mp4 karaoke.ass final.mp4
+  qa.json
+  package/
+  PUBLISH_GO                    # human, still does not post
+```
+
+Remotion stills/audio are synced to `public/episodes/<slug>/` at the assets/render stages.
+
+## QA (deterministic)
+
+- width/height **1080×1920**, fail on **1088**
+- duration ≤ 50.0s (production also ≥ 25s; fixtures may be shorter)
+- `FACT_APPROVED` present (production)
+- timestamps words === spoken words
+- stills exist
+
+```bash
+pnpm factory qa --episode _fixture-pipeline
+```
+
+## Tests
+
+```bash
+pnpm test
+pnpm typecheck
+```
+
+Coverage: schema, caption chunker, cover-crop math, duration/1088 gates, copy engine, human gates, karaoke ASS. Fixture render is attempted when ffmpeg + Remotion exist; otherwise skipped with the command in this README.
+
+## Secrets
+
+See `.env.example`. Keys via env only. Never commit `.env`.
 
 ## Scripts
 
-| Script | What it does |
+| Script | What |
 | --- | --- |
-| `npm run preview` | Opens Remotion Studio |
-| `npm run render` | Renders `Github2008` to `out/github-2008.mp4` |
-| `npm run render:quiet-hour` | Renders `QuietHour` to `out/quiet-hour.mp4` |
-| `npm run typecheck` | `tsc` |
+| `pnpm factory …` | Pipeline CLI |
+| `pnpm fixture:media` | Build fixture wav/stills/timestamps |
+| `pnpm preview` | Remotion Studio |
+| `pnpm render` | Github2008 sample |
+| `pnpm render:fixture` | Fixture assemble + karaoke |
+| `pnpm test` | Vitest |
+| `pnpm typecheck` | `tsc` |
 
-## Legal / content
+## Legal
 
-Do not add unauthorized logos, real-person likenesses, Google-scraped brand photos, or generated founder faces. Placeholder stills in this repo are abstract rooms, objects, and silhouettes drawn as SVG.
-
-This project does not implement TTS.
-
-## DO NOT
-
-Do **not** implement or reintroduce any of the following as the house look:
-
-- Scan lines
-- `grain.jpg` multiply (or any film-grain texture)
-- Grunge colour-burn overlays
-- Gate-weave / film jitter
-- Posterize-to-12fps stutter
-- A `FilmTreatment` wrapper
-- Stop-motion judder as the default motion
-- Vintage film-soak color as the default grade
-- Caption styles that are not Karaoke Highlight (no kicker, no left bar, no underline, no dim-gray unspoken words, no “editorial sans / no stroke”)
-
-If you need texture, keep it in the stills (a real photograph of a room), not as a global 12fps treatment.
+Do not add unauthorized logos, scrape copyrighted stills, or invent biography. Placeholder fixture stills are synthetic color plates. Github 2008 stills in `public/` are from the prior engine work and stay episode-local.

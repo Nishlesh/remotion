@@ -9,17 +9,23 @@ import type {EpisodeSpec} from './types';
 export const calculateEpisodeMetadata = (
   spec: EpisodeSpec,
 ): CalculateMetadataFunction<EpisodeProps> => {
-  return async () => {
-    const fallback = {durationInFrames: episodeDurationInFrames(spec)};
-    const vo = spec.audio?.voiceover;
-    if (!vo) {
-      return fallback;
-    }
-    try {
-      const seconds = await getAudioDurationInSeconds(staticFile(vo));
-      return {durationInFrames: Math.max(1, Math.round(seconds * FPS))};
-    } catch {
-      return fallback;
-    }
-  };
+  return async () => metadataFromSpec(spec);
+};
+
+export const calculateFactoryActiveMetadata: CalculateMetadataFunction<{
+  spec: EpisodeSpec;
+}> = async ({props}) => metadataFromSpec(props.spec);
+
+const metadataFromSpec = async (spec: EpisodeSpec) => {
+  const fallback = {durationInFrames: episodeDurationInFrames(spec)};
+  const vo = spec.audio?.voiceover;
+  if (!vo) {
+    return fallback;
+  }
+  try {
+    const seconds = await getAudioDurationInSeconds(staticFile(vo));
+    return {durationInFrames: Math.max(1, Math.round(seconds * FPS))};
+  } catch {
+    return fallback;
+  }
 };

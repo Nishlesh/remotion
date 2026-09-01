@@ -33,8 +33,12 @@ export type GradeSpec = {
   contrast: number;
   saturation: number;
   brightness: number;
-  /** Cool/neutral wash 0–1. This engine is tasteful cool/neutral, not a warm film soak. */
+  /** Cool wash 0–1. Engine demos may use this; channel default is warm film. */
   cool: number;
+  /** Warm film wash 0–1. Before It Was Famous default. */
+  warm: number;
+  /** Procedural grain 0–1. Tunable, not a cloned 12fps FilmTreatment. */
+  grain: number;
   vignette: number;
 };
 

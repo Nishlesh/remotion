@@ -5,3 +5,10 @@ dist
 out
 *.log
 .cache
+__pycache__/
+*.pyc
+tools/models/
+episodes/*/.cache/
+episodes/*/render/*.mp4
+episodes/*/package/*.mp4
+*.crop-tmp.jpg

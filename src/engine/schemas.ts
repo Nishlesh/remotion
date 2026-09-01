@@ -34,6 +34,8 @@ export const sceneSchema = z.object({
     saturation: z.number().min(0.4).max(1.2),
     brightness: z.number().min(0.7).max(1.2),
     cool: z.number().min(0).max(0.45),
+    warm: z.number().min(0).max(0.45),
+    grain: z.number().min(0).max(1),
     vignette: z.number().min(0).max(1),
   }),
   caption: z.object({

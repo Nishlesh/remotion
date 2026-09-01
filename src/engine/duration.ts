@@ -28,8 +28,13 @@ export const mergeGrade = (
   base: GradeSpec,
   override?: Partial<GradeSpec>,
 ): GradeSpec => ({
-  ...base,
-  ...override,
+  contrast: override?.contrast ?? base.contrast,
+  saturation: override?.saturation ?? base.saturation,
+  brightness: override?.brightness ?? base.brightness,
+  cool: override?.cool ?? base.cool,
+  warm: override?.warm ?? base.warm ?? 0,
+  grain: override?.grain ?? base.grain ?? 0,
+  vignette: override?.vignette ?? base.vignette,
 });
 
 export const sceneSpecToProps = (
