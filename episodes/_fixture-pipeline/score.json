@@ -1,0 +1,24 @@
+{
+  "slug": "_fixture-pipeline",
+  "famousEntity": "Kitchen-table ship",
+  "total": 70,
+  "pass": true,
+  "threshold": 70,
+  "pivotal": 3,
+  "sourceCount": 2,
+  "fitsFiftySeconds": true,
+  "watchWithoutFocusStack": true,
+  "fameTestPass": true,
+  "breakdown": {
+    "fame": 20,
+    "unexpectedBeginning": 15,
+    "humanStakes": 15,
+    "visualSpine": 10,
+    "runtimeFit": 10
+  },
+  "reasons": ["Fixture slug. Production scoring still requires ≥70, pivotal ≥3/5, two sources, ≤50s."],
+  "sources": [
+    {"title": "Fixture (in-repo)", "url": "https://github.com/Nishlesh/remotion"},
+    {"title": "Factory README", "url": "https://github.com/Nishlesh/remotion"}
+  ]
+}

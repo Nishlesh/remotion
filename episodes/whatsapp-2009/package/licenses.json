@@ -1,0 +1,121 @@
+[
+  {
+    "stillId": "still-01",
+    "file": "stills/still-01.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-02",
+    "file": "stills/still-02.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-03",
+    "file": "stills/still-03.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-04",
+    "file": "stills/still-04.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-05",
+    "file": "stills/still-05.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-06",
+    "file": "stills/still-06.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-07",
+    "file": "stills/still-07.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-08",
+    "file": "stills/still-08.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-09",
+    "file": "stills/still-09.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-10",
+    "file": "stills/still-10.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-11",
+    "file": "stills/still-11.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-12",
+    "file": "stills/still-12.jpg",
+    "source": "generate",
+    "license": "generated-gap",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-13",
+    "file": "stills/still-13.jpg",
+    "source": "generate",
+    "license": "operator-session-screenshot",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920,
+    "notes": "FocusStack session UI (38:03, Started 9:44 PM) composited onto the locked desk photo. PIL cover-cropped 1080x1920. Not a generated night-desk person.",
+    "query": "FocusStack session screenshot"
+  }
+]

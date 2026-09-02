@@ -1,0 +1,410 @@
+{
+  "id": "github-2008",
+  "title": "Github 2008",
+  "compositionId": "Github2008",
+  "targetDurationSec": 42.185,
+  "captionsEnabled": false,
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Montserrat"
+  },
+  "audio": {
+    "voiceover": "episodes/github-2008/audio/vo_concat.wav",
+    "bed": null
+  },
+  "grade": {
+    "contrast": 1.06,
+    "saturation": 0.82,
+    "brightness": 0.97,
+    "cool": 0.14,
+    "vignette": 0.4
+  },
+  "voiceover": [
+    {
+      "id": "vo-01",
+      "text": "GitHub started at 10:24 on a Friday night.",
+      "approximateDurationSec": 3.791,
+      "audioFile": "episodes/github-2008/audio/01.wav"
+    },
+    {
+      "id": "vo-02",
+      "text": "Chris Wanstrath made the first commit. October 19th, 2007.",
+      "approximateDurationSec": 5.476,
+      "audioFile": "episodes/github-2008/audio/02.wav"
+    },
+    {
+      "id": "vo-03",
+      "text": "Tom Preston-Werner still had a day job. Tools developer at Powerset. Full time.",
+      "approximateDurationSec": 6.094,
+      "audioFile": "episodes/github-2008/audio/03.wav"
+    },
+    {
+      "id": "vo-04",
+      "text": "Chris was consulting. They met every Saturday.",
+      "approximateDurationSec": 3.417,
+      "audioFile": "episodes/github-2008/audio/04.wav"
+    },
+    {
+      "id": "vo-05",
+      "text": "Tom built Grit and the interface. Chris built the Rails app.",
+      "approximateDurationSec": 4.367,
+      "audioFile": "episodes/github-2008/audio/05.wav"
+    },
+    {
+      "id": "vo-06",
+      "text": "Three months of nights and weekends. Design and pricing on Saturday.",
+      "approximateDurationSec": 4.729,
+      "audioFile": "episodes/github-2008/audio/06.wav"
+    },
+    {
+      "id": "vo-07",
+      "text": "They let friends in that January. PJ Hyett became the third co-founder a month later.",
+      "approximateDurationSec": 6.507,
+      "audioFile": "episodes/github-2008/audio/07.wav"
+    },
+    {
+      "id": "vo-08",
+      "text": "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment.",
+      "approximateDurationSec": 7.804,
+      "audioFile": "episodes/github-2008/audio/08.wav"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "s01",
+      "voiceoverLineId": "vo-01",
+      "durationInFrames": 114,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 8,
+      "osLockup": {"text": "10:24 pm", "y": 180, "size": "large"},
+      "captions": {
+        "text": "GitHub started at 10:24 on a Friday night.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 22}
+      },
+      "stills": {
+        "bg": {
+          "id": "clock",
+          "src": "episodes/github-2008/generate/G01.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s02",
+      "voiceoverLineId": "vo-02",
+      "durationInFrames": 164,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": {"text": "Oct 19, 2007", "y": 180, "size": "plate"},
+      "captions": {
+        "text": "Chris Wanstrath made the first commit. October 19th, 2007.",
+        "kicker": "",
+        "highlightBias": 0.48
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": -8,
+          "endX": 10,
+          "startY": 0,
+          "endY": 8
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 20}
+      },
+      "stills": {
+        "bg": {
+          "id": "calendar",
+          "src": "episodes/github-2008/generate/G02.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s03",
+      "voiceoverLineId": "vo-03",
+      "durationInFrames": 183,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": {"text": "Day job", "y": 180, "size": "plate"},
+      "captions": {
+        "text": "Tom Preston-Werner still had a day job. Tools developer at Powerset. Full time.",
+        "kicker": "",
+        "highlightBias": 0.46
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": -10,
+          "endX": 8,
+          "startY": 4,
+          "endY": -6
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 24}
+      },
+      "stills": {
+        "bg": {
+          "id": "badge",
+          "src": "episodes/github-2008/generate/G04.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s04",
+      "voiceoverLineId": "vo-04",
+      "durationInFrames": 103,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": {"text": "Every Saturday", "y": 180, "size": "plate"},
+      "captions": {
+        "text": "Chris was consulting. They met every Saturday.",
+        "kicker": "",
+        "highlightBias": 0.5
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.05,
+          "startX": 4,
+          "endX": -6,
+          "startY": 0,
+          "endY": -8
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 20}
+      },
+      "stills": {
+        "bg": {
+          "id": "brunch",
+          "src": "episodes/github-2008/stock/S09.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s05",
+      "voiceoverLineId": "vo-05",
+      "durationInFrames": 131,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Tom built Grit and the interface. Chris built the Rails app.",
+        "kicker": "",
+        "highlightBias": 0.47
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.06,
+          "endScale": 1.0,
+          "startX": 8,
+          "endX": -8,
+          "startY": 6,
+          "endY": -4
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 22}
+      },
+      "stills": {
+        "bg": {
+          "id": "editor",
+          "src": "episodes/github-2008/generate/G05.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s06",
+      "voiceoverLineId": "vo-06",
+      "durationInFrames": 142,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Three months of nights and weekends. Design and pricing on Saturday.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -6,
+          "startY": 4,
+          "endY": -8
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 20}
+      },
+      "stills": {
+        "bg": {
+          "id": "napkin",
+          "src": "episodes/github-2008/generate/G07.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s07",
+      "voiceoverLineId": "vo-07",
+      "durationInFrames": 195,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": {"text": "Invite only", "y": 180, "size": "plate"},
+      "captions": {
+        "text": "They let friends in that January. PJ Hyett became the third co-founder a month later.",
+        "kicker": "",
+        "highlightBias": 0.44
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": -8,
+          "endX": 8,
+          "startY": 4,
+          "endY": -6
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 24}
+      },
+      "stills": {
+        "bg": {
+          "id": "invite",
+          "src": "episodes/github-2008/generate/G09.png",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "s08",
+      "voiceoverLineId": "vo-08",
+      "durationInFrames": 234,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 18,
+      "osLockup": {"text": "No outside investment", "y": 180, "size": "plate"},
+      "captions": {
+        "text": "April 10th, 2008. They opened it to everyone. Three twenty-somethings. No outside investment.",
+        "kicker": "",
+        "highlightBias": 0.46
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1.0,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 4,
+          "startY": 0,
+          "endY": 0
+        },
+        "parallax": {"amount": 0},
+        "entrance": {"damping": 26}
+      },
+      "stills": {
+        "bg": {
+          "id": "silhouettes",
+          "src": "episodes/github-2008/stock/S19.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    }
+  ]
+}

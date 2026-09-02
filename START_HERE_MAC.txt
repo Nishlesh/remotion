@@ -1,0 +1,18 @@
+BEFORE IT WAS FAMOUS — LOCAL ONLY (not cloud)
+=============================================
+
+1. Unzip to e.g.  ~/Projects/before-it-was-famous-local
+
+2. Put the video in your Mac Downloads:
+     mkdir -p ~/Downloads/Before-It-Was-Famous
+     cp -R Downloads/Before-It-Was-Famous/dyson-5126 ~/Downloads/Before-It-Was-Famous/
+     open ~/Downloads/Before-It-Was-Famous/dyson-5126
+
+3. Open in Cursor DESKTOP — File → Open Folder → this folder
+   (Do not use a Cloud Agent for day-to-day work.)
+
+4.   pnpm install
+     pnpm factory status --episode dyson-5126
+     pnpm preview
+
+5. After new renders:  pnpm export -- <slug>

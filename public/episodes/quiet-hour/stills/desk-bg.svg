@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="room" x1="540" y1="0" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#10161f"/>
+      <stop offset="0.42" stop-color="#141c27"/>
+      <stop offset="0.62" stop-color="#1a222c"/>
+      <stop offset="1" stop-color="#0c1016"/>
+    </linearGradient>
+    <linearGradient id="desk" x1="540" y1="980" x2="540" y2="1920" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1c1714"/>
+      <stop offset="0.35" stop-color="#161310"/>
+      <stop offset="1" stop-color="#0a0908"/>
+    </linearGradient>
+    <linearGradient id="winGlow" x1="540" y1="160" x2="540" y2="760" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#8aa3bb" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#3d4f63" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="lampPool" cx="280" cy="1040" r="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c4a574" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#c4a574" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#room)"/>
+  <rect x="210" y="168" width="660" height="620" fill="url(#winGlow)"/>
+  <rect x="198" y="156" width="684" height="16" fill="#1b222c"/>
+  <rect x="198" y="772" width="684" height="22" fill="#171d26"/>
+  <rect x="198" y="156" width="18" height="638" fill="#1b222c"/>
+  <rect x="864" y="156" width="18" height="638" fill="#1b222c"/>
+  <rect x="528" y="156" width="10" height="638" fill="#1a212b" fill-opacity="0.7"/>
+  <rect x="198" y="460" width="684" height="8" fill="#1a212b" fill-opacity="0.55"/>
+  <rect x="0" y="980" width="1080" height="940" fill="url(#desk)"/>
+  <path d="M0 980 L1080 940 L1080 1020 L0 1060 Z" fill="#221c18"/>
+  <ellipse cx="280" cy="1080" rx="260" ry="70" fill="url(#lampPool)"/>
+  <rect x="70" y="1010" width="220" height="8" fill="#2a241f" rx="1"/>
+  <rect x="92" y="1026" width="160" height="4" fill="#2e2721"/>
+  <rect x="118" y="1038" width="90" height="3" fill="#322b24"/>
+  <ellipse cx="820" cy="1070" rx="46" ry="14" fill="#1a1613"/>
+  <path d="M800 1048 C800 1034 840 1034 840 1048 L836 1070 C836 1078 804 1078 804 1070 Z" fill="#1d1916"/>
+  <rect x="814" y="1008" width="12" height="42" rx="3" fill="#2a2420"/>
+</svg>

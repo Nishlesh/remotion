@@ -1,0 +1,11 @@
+{
+  "totalDuration": 35.69000000000001,
+  "sampleRate": 24000,
+  "voice": "am_michael",
+  "speed": 0.95,
+  "engine": "silent-timing-bed",
+  "usedFallback": true,
+  "silentTimingBed": true,
+  "narrationLocked": false,
+  "next": "Kokoro could not run. Silent timing bed only. See AUDIO_BLOCKED. Do not treat this as a production read."
+}

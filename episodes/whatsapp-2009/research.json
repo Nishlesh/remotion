@@ -1,0 +1,172 @@
+{
+  "slug": "whatsapp-2009",
+  "famousEntity": "WhatsApp",
+  "promptPath": "prompts/research.md",
+  "sources": [
+    {
+      "id": "s-olson-forbes-2014-02-19",
+      "title": "Exclusive: The Rags-To-Riches Tale Of How Jan Koum Built WhatsApp Into Facebook's New $19 Billion Baby",
+      "url": "https://www.forbes.com/sites/parmyolson/2014/02/19/exclusive-inside-story-how-jan-koum-built-whatsapp-into-facebooks-new-19-billion-baby/",
+      "publisher": "Forbes",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2. Parmy Olson exclusive, Feb 19, 2014 (updated Apr 23, 2014). Interviews with Jan Koum, Brian Acton, Alex Fishman. Photo caption: Koum signing paperwork on the door of his old welfare office (photo courtesy of Jan Koum)."
+    },
+    {
+      "id": "s-facebook-newsroom-2014-02-19",
+      "title": "Facebook to Acquire WhatsApp",
+      "url": "https://about.fb.com/news/2014/02/facebook-to-acquire-whatsapp/",
+      "publisher": "Facebook Newsroom",
+      "accessed": "2026-09-02",
+      "notes": "Tier 1. Dated February 19, 2014. Announced approximately $16 billion: $4 billion cash and about $12 billion in Facebook shares, plus $3 billion RSUs vesting over four years."
+    },
+    {
+      "id": "s-whatsapp-blog-status-2017",
+      "title": "WhatsApp Status",
+      "url": "https://web.archive.org/web/20170223061647/http://blog.whatsapp.com/10000630/WhatsApp-Status",
+      "publisher": "WhatsApp Blog (Jan Koum)",
+      "accessed": "2026-09-02",
+      "notes": "Tier 1 first-person, Feb 20, 2017. Wayback capture. Original idea was a status app for contacts, months before messaging. Company birthday February 24. Messaging added summer 2009."
+    },
+    {
+      "id": "s-abc-2014-02-20",
+      "title": "WhatsApp Founder Was on Food Stamps, Rejected From Facebook",
+      "url": "https://abcnews.go.com/Business/facebook-makes-billionaire-college-dropout-family-food-stamps/story?id=22601936",
+      "publisher": "ABC News",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2 contemporaneous wrap, Feb 20, 2014. Attributes Ukraine/age 16 and status-app origin to Forbes; food-stamp assistance to Bloomberg. Notes Koum turns 38 on Monday (Feb 24, 2014). Also reports Facebook job rejections — sourced, excluded from spoken origin."
+    },
+    {
+      "id": "s-bloomberg-2014-02-20",
+      "title": "WhatsApp's Founder Goes From Food Stamps to Billionaire",
+      "url": "https://www.bloomberg.com/news/articles/2014-02-20/whatsapp-s-founder-goes-from-food-stamps-to-billionaire",
+      "publisher": "Bloomberg (Adam Satariano)",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2. Paywalled in this run. ABC News cites it for food-stamp assistance. Title and byline confirmed from the live Bloomberg URL and later citations. Full body not independently reread here."
+    },
+    {
+      "id": "s-forbes-africa-2014-05",
+      "title": "Calling the american dream",
+      "url": "https://www.forbesafrica.com/technology/2014/05/01/calling-american-dream",
+      "publisher": "Forbes Africa",
+      "accessed": "2026-09-02",
+      "notes": "Reprint/adaptation of Olson's magazine narrative. Adds 101 Moffett Boulevard and that Jim Goetz suggested the signing location. Treat street address and Goetz suggestion as Olson-magazine secondary, not independently confirmed against CA records."
+    },
+    {
+      "id": "s-apple-newsroom-2009-03-17",
+      "title": "Apple Previews Developer Beta of iPhone OS 3.0",
+      "url": "https://www.apple.com/newsroom/2009/03/17Apple-Previews-Developer-Beta-of-iPhone-OS-3-0/",
+      "publisher": "Apple Newsroom",
+      "accessed": "2026-09-02",
+      "notes": "Tier 1. March 17, 2009: iPhone OS 3.0 beta includes Apple Push Notification service. Consumer release promised that summer."
+    },
+    {
+      "id": "s-appleinsider-2009-06-17",
+      "title": "Apple releases iPhone Software 3.0",
+      "url": "https://appleinsider.com/articles/09/06/17/apple_releases_iphone_software_3_0",
+      "publisher": "AppleInsider",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2. June 17, 2009 consumer release of iPhone Software 3.0. Corroborates Olson's 'June 2009' push-notification date."
+    },
+    {
+      "id": "s-bi-forum-note-2014-03-07",
+      "title": "The Founder Of WhatsApp Posted This Unassuming Note In A Forum Five Years Ago",
+      "url": "https://www.businessinsider.com/jan-koum-whatsapp-note-2014-3",
+      "publisher": "Business Insider",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2. Reprints a forum note attributed to Koum describing WhatsApp as an availability-status app before you call someone. Secondary reprint of a forum post; wording supports status-not-chat origin."
+    },
+    {
+      "id": "s-forbes-profile-koum",
+      "title": "Jan Koum",
+      "url": "https://www.forbes.com/profile/jan-koum/",
+      "publisher": "Forbes",
+      "accessed": "2026-09-02",
+      "notes": "Forbes biography page. 'Immigrated to California from Ukraine with his mother at age 16 and swept floors to make ends meet.' 'Signed the deal to sell WhatsApp to Facebook in an abandoned building where he once collected food stamps as a teenager.'"
+    }
+  ],
+  "facts": [
+    {
+      "id": "f-status-origin",
+      "claim": "WhatsApp began as a status app: statuses next to names in the address book (on a call, battery low, at the gym), not as a messenger.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-whatsapp-blog-status-2017", "s-bi-forum-note-2014-03-07"],
+      "spine": "unexpected_beginning"
+    },
+    {
+      "id": "f-iphone-jan-2009",
+      "claim": "In January 2009 Koum bought an iPhone and started using the App Store; the status-app idea was discussed then.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-abc-2014-02-20"],
+      "spine": "famous_entity"
+    },
+    {
+      "id": "f-incorporated-birthday",
+      "claim": "On his birthday, February 24, 2009, he incorporated WhatsApp Inc. in California. The app had not been written yet. WhatsApp later treated February 24 as the company birthday.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-whatsapp-blog-status-2017", "s-abc-2014-02-20"],
+      "spine": "famous_entity"
+    },
+    {
+      "id": "f-ukraine-sixteen",
+      "claim": "At 16, Koum and his mother immigrated to Mountain View from Ukraine (Olson: 1992) and got a small two-bedroom apartment through government assistance.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-abc-2014-02-20", "s-forbes-profile-koum"],
+      "spine": "human_detail"
+    },
+    {
+      "id": "f-grocery-floors",
+      "claim": "His mother babysat. Koum swept the floor of a grocery store to help make ends meet. Olson does not call him a janitor.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-forbes-profile-koum"],
+      "spine": "human_detail"
+    },
+    {
+      "id": "f-food-stamps",
+      "claim": "Koum once stood in line at the former North County Social Services office in Mountain View to collect food stamps. ABC, citing Bloomberg, says the family relied on food-stamp assistance.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-abc-2014-02-20", "s-forbes-profile-koum"],
+      "spine": "human_detail"
+    },
+    {
+      "id": "f-early-crashes",
+      "claim": "Early WhatsApp kept crashing or getting stuck. After a frisbee game Koum said he should fold and look for a job. Acton told him he would be an idiot to quit and to give it a few more months.",
+      "sourceIds": ["s-olson-forbes-2014-02-19"],
+      "spine": "constraint"
+    },
+    {
+      "id": "f-apple-push-june-2009",
+      "claim": "Apple launched push notifications for third-party apps with iPhone OS 3.0 in June 2009 (previewed March 17, 2009; consumer release June 17, 2009).",
+      "sourceIds": ["s-apple-newsroom-2009-03-17", "s-appleinsider-2009-06-17", "s-olson-forbes-2014-02-19"],
+      "spine": "choice"
+    },
+    {
+      "id": "f-pings-became-messages",
+      "claim": "Koum updated WhatsApp so a status change ('Can't talk, I'm at the gym') pinged everyone in the network. Fishman's friends used jokey custom statuses as messages. Fishman: 'At some point it sort of became instant messaging.' Koum realized he had inadvertently created a messaging service. Official blog: messaging was added in the summer of 2009, months after the status idea.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-whatsapp-blog-status-2017"],
+      "spine": "choice"
+    },
+    {
+      "id": "f-became-whatsapp",
+      "claim": "That status-ping behavior is the turn from a status app into WhatsApp-as-messenger. Olson: Koum then released WhatsApp 2.0 with a messaging component and watched active users swell to 250,000.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-whatsapp-blog-status-2017"],
+      "spine": "consequence"
+    },
+    {
+      "id": "f-signed-food-stamps-office",
+      "claim": "On the day the Facebook deal was announced, Koum, Acton, and Sequoia's Jim Goetz drove from WhatsApp's Mountain View headquarters to a disused white building across the railroad tracks — the former North County Social Services office — and inked the agreement there. Forbes published a photo, courtesy of Koum, of him signing on the door.",
+      "sourceIds": ["s-olson-forbes-2014-02-19", "s-forbes-profile-koum"],
+      "spine": "realization"
+    },
+    {
+      "id": "f-facebook-announced-16b",
+      "claim": "Facebook announced on February 19, 2014 a definitive agreement to acquire WhatsApp for approximately $16 billion, including $4 billion in cash and approximately $12 billion in Facebook shares, plus an additional $3 billion in RSUs to founders and employees vesting over four years. Do not use $19B in this episode. Price is sourced here and must not be the last spoken beat if used.",
+      "sourceIds": ["s-facebook-newsroom-2014-02-19"],
+      "spine": "viewer"
+    }
+  ],
+  "unknown": [
+    "California Secretary of State articles-of-incorporation image was not retrieved in this run. Olson and the official WhatsApp blog support February 24, 2009 as incorporation / company birthday. Secondary directories list WhatsApp Inc. C3107761 — treat the entity number as unproven here.",
+    "Exact grocery-store employer name is unproven. Olson: 'swept the floor of a grocery store.' Later writeups (e.g. CNBC 2017) say 'janitor.' Spoken copy must not say janitor.",
+    "Whether both Koum and his mother personally collected food stamps, versus Koum standing in that line, is not separately documented beyond Olson ('once stood in line to collect food stamps') and ABC/Bloomberg ('family relied on food stamp assistance').",
+    "Street address 101 Moffett Boulevard and the claim that Jim Goetz suggested the signing location appear in Forbes Africa's reprint of the Olson magazine story. The Feb 19 exclusive names the former North County Social Services office but not the street number. Leave the street address out of spoken copy.",
+    "Koum and Acton applied and failed to work at Facebook after leaving Yahoo (Olson; Acton: 'We're part of the Facebook reject club'; ABC cites Acton's Aug 9, 2009 tweet). Sourced, but excluded from the spoken script. Do not invent or use Facebook rejecting him as the origin of WhatsApp.",
+    "Bloomberg Feb 20, 2014 full text was paywalled (403) in this run. ABC cites it for food stamps. Do not treat unread Bloomberg sentences as proven.",
+    "Olson Feb 19 exclusive headline uses $19 billion (cash+stock+RSUs shorthand). Official announcement is about $16 billion cash and stock. Spoken script omits the dollar figure.",
+    "Identity plates later (not for this stop): Jan Koum appears throughout; Brian Acton and Alex Fishman appear in the Olson reporting. Famous product still leads. Do not open on Koum."
+  ],
+  "inventedFactsForbidden": true
+}

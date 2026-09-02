@@ -1,0 +1,18 @@
+---
+description: Production locks for 9:16 Shorts — dimensions, voice, stills, runtime
+globs: src/engine/**/*,src/factory/**/*,public/episodes/**/*
+alwaysApply: false
+---
+
+# Production locks
+
+- **1080×1920 full bleed. NEVER 1088×1920.**
+- Never paint a caption band into stills. Hero y≈80–1100. Karaoke band y=1200–1440 stays photo.
+- Voice: Kokoro-82M via kokoro-onnx, `am_michael`, speed 0.95, 24 kHz. One spoken line = one WAV then concat. Word-level timestamps required.
+- If kokoro-onnx cannot run, use fixture TTS fallback (documented). Do not fake a human read as production.
+- Magnates photoreal cinematic stills (warm film, grain, shallow DoF). Identity plate per named person if they appear more than once.
+- No unauthorized logos. Wikimedia / Unsplash / Pexels / Pixabay first; generate gaps; record licenses.
+- Always PIL cover-crop stills to 1080×1920 (`tools/cover_crop.py`; ffmpeg fallback). Image models ignore 9:16.
+- Runtime 25–50s, never above 50.0. Target 35–45. Fixture slugs may be shorter.
+- Shared grade / grain / Ken Burns are tunables on `LookEngine`. Do not clone third-party 12fps kits.
+- Channel brand is Before It Was Famous, not FocusStack.

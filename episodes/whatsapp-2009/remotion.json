@@ -1,0 +1,713 @@
+{
+  "id": "whatsapp-2009",
+  "title": "WhatsApp 2009: status pings",
+  "compositionId": "WhatsApp2009",
+  "targetDurationSec": 35.69000000000001,
+  "captionsEnabled": false,
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Montserrat"
+  },
+  "audio": {
+    "voiceover": "episodes/whatsapp-2009/audio/vo_concat.wav",
+    "bed": null
+  },
+  "grade": {
+    "contrast": 1.08,
+    "saturation": 0.9,
+    "brightness": 0.97,
+    "cool": 0,
+    "warm": 0.16,
+    "grain": 0.28,
+    "vignette": 0.42
+  },
+  "voiceover": [
+    {
+      "id": "vo-01",
+      "text": "Years before WhatsApp was worth billions, its founder was collecting food stamps.",
+      "approximateDurationSec": 3.7100000000000004,
+      "audioFile": "episodes/whatsapp-2009/audio/01.wav"
+    },
+    {
+      "id": "vo-02",
+      "text": "In 2009, Jan Koum built a tiny iPhone app that let people post statuses beside their names.",
+      "approximateDurationSec": 5.11,
+      "audioFile": "episodes/whatsapp-2009/audio/02.wav"
+    },
+    {
+      "id": "vo-03",
+      "text": "It wasn't even a messaging app.",
+      "approximateDurationSec": 2.0300000000000002,
+      "audioFile": "episodes/whatsapp-2009/audio/03.wav"
+    },
+    {
+      "id": "vo-04",
+      "text": "Then Apple introduced push notifications.",
+      "approximateDurationSec": 1.75,
+      "audioFile": "episodes/whatsapp-2009/audio/04.wav"
+    },
+    {
+      "id": "vo-05",
+      "text": "People started using those notifications to talk.",
+      "approximateDurationSec": 2.31,
+      "audioFile": "episodes/whatsapp-2009/audio/05.wav"
+    },
+    {
+      "id": "vo-06",
+      "text": "Koum noticed.",
+      "approximateDurationSec": 1.6,
+      "audioFile": "episodes/whatsapp-2009/audio/06.wav"
+    },
+    {
+      "id": "vo-07",
+      "text": "And WhatsApp became a messenger.",
+      "approximateDurationSec": 1.75,
+      "audioFile": "episodes/whatsapp-2009/audio/07.wav"
+    },
+    {
+      "id": "vo-08",
+      "text": "Years later, Facebook acquired it for billions.",
+      "approximateDurationSec": 2.31,
+      "audioFile": "episodes/whatsapp-2009/audio/08.wav"
+    },
+    {
+      "id": "vo-09",
+      "text": "Koum signed the deal at a social services office—",
+      "approximateDurationSec": 2.8700000000000006,
+      "audioFile": "episodes/whatsapp-2009/audio/09.wav"
+    },
+    {
+      "id": "vo-10",
+      "text": "the same kind of office where he once collected food stamps.",
+      "approximateDurationSec": 3.43,
+      "audioFile": "episodes/whatsapp-2009/audio/10.wav"
+    },
+    {
+      "id": "vo-11",
+      "text": "He didn't know what WhatsApp would become.",
+      "approximateDurationSec": 2.31,
+      "audioFile": "episodes/whatsapp-2009/audio/11.wav"
+    },
+    {
+      "id": "vo-12",
+      "text": "He just kept building.",
+      "approximateDurationSec": 1.6,
+      "audioFile": "episodes/whatsapp-2009/audio/12.wav"
+    },
+    {
+      "id": "vo-13",
+      "text": "If you're building something after work, FocusStack helps you keep showing up.",
+      "approximateDurationSec": 3.7100000000000004,
+      "audioFile": "episodes/whatsapp-2009/audio/13.wav"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "b01",
+      "voiceoverLineId": "vo-01",
+      "durationInFrames": 111,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Years before WhatsApp was worth billions, its founder was collecting food stamps.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-01",
+          "src": "episodes/whatsapp-2009/stills/still-01.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b02",
+      "voiceoverLineId": "vo-02",
+      "durationInFrames": 153,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "In 2009, Jan Koum built a tiny iPhone app that let people post statuses beside their names.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-02",
+          "src": "episodes/whatsapp-2009/stills/still-02.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b03",
+      "voiceoverLineId": "vo-03",
+      "durationInFrames": 61,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "It wasn't even a messaging app.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-03",
+          "src": "episodes/whatsapp-2009/stills/still-03.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b04",
+      "voiceoverLineId": "vo-04",
+      "durationInFrames": 53,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Then Apple introduced push notifications.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-04",
+          "src": "episodes/whatsapp-2009/stills/still-04.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b05",
+      "voiceoverLineId": "vo-05",
+      "durationInFrames": 69,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "People started using those notifications to talk.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-05",
+          "src": "episodes/whatsapp-2009/stills/still-05.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b06",
+      "voiceoverLineId": "vo-06",
+      "durationInFrames": 48,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Koum noticed.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-06",
+          "src": "episodes/whatsapp-2009/stills/still-06.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b07",
+      "voiceoverLineId": "vo-07",
+      "durationInFrames": 53,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "And WhatsApp became a messenger.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-07",
+          "src": "episodes/whatsapp-2009/stills/still-07.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b08",
+      "voiceoverLineId": "vo-08",
+      "durationInFrames": 69,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Years later, Facebook acquired it for billions.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-08",
+          "src": "episodes/whatsapp-2009/stills/still-08.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b09",
+      "voiceoverLineId": "vo-09",
+      "durationInFrames": 86,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Koum signed the deal at a social services office—",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-09",
+          "src": "episodes/whatsapp-2009/stills/still-09.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b10",
+      "voiceoverLineId": "vo-10",
+      "durationInFrames": 103,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "the same kind of office where he once collected food stamps.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-10",
+          "src": "episodes/whatsapp-2009/stills/still-10.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b11",
+      "voiceoverLineId": "vo-11",
+      "durationInFrames": 69,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "He didn't know what WhatsApp would become.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-11",
+          "src": "episodes/whatsapp-2009/stills/still-11.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b12",
+      "voiceoverLineId": "vo-12",
+      "durationInFrames": 48,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "He just kept building.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-12",
+          "src": "episodes/whatsapp-2009/stills/still-12.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b13",
+      "voiceoverLineId": "vo-13",
+      "durationInFrames": 111,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "If you're building something after work, FocusStack helps you keep showing up.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.025,
+          "startX": 0,
+          "endX": 2,
+          "startY": 0,
+          "endY": 2
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "grade": {
+        "contrast": 1.02,
+        "saturation": 0.96,
+        "brightness": 1,
+        "cool": 0,
+        "warm": 0.04,
+        "grain": 0.08,
+        "vignette": 0.18
+      },
+      "stills": {
+        "bg": {
+          "id": "still-13",
+          "src": "episodes/whatsapp-2009/stills/still-13.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    }
+  ]
+}

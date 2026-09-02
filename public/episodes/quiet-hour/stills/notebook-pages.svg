@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="paper" x1="420" y1="620" x2="760" y2="1100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6dcc8"/>
+      <stop offset="1" stop-color="#cfc3ab"/>
+    </linearGradient>
+    <linearGradient id="paperL" x1="300" y1="640" x2="520" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d8cfbb"/>
+      <stop offset="1" stop-color="#c2b59c"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(0,-40)">
+    <path d="M220 640 L520 620 L540 1120 L200 1120 Z" fill="url(#paperL)"/>
+    <path d="M540 622 L860 650 L880 1130 L540 1120 Z" fill="url(#paper)"/>
+    <path d="M520 620 L540 622 L540 1120 L520 1118 Z" fill="#b7aa90"/>
+    <g stroke="#6d6456" stroke-opacity="0.28" stroke-width="2">
+      <line x1="270" y1="720" x2="490" y2="708"/>
+      <line x1="268" y1="754" x2="492" y2="742"/>
+      <line x1="266" y1="788" x2="488" y2="776"/>
+      <line x1="264" y1="822" x2="486" y2="812"/>
+      <line x1="580" y1="730" x2="820" y2="744"/>
+      <line x1="582" y1="766" x2="822" y2="780"/>
+      <line x1="584" y1="802" x2="818" y2="814"/>
+    </g>
+    <rect x="300" y="1140" width="420" height="14" rx="2" fill="#1a1613" fill-opacity="0.35"/>
+  </g>
+</svg>

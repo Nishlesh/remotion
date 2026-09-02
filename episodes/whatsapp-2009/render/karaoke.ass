@@ -1,0 +1,118 @@
+[Script Info]
+Title: Before It Was Famous Karaoke Highlight
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Montserrat Black,68,&H00FFFFFF,&H00FFFFFF,&H00000000&,&H00000000,-1,0,0,0,100,100,0,0,1,8,0,2,140,140,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.08,0:00:00.34,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Years{\c&H00FFFFFF&\fs68} before WhatsApp was
+Dialogue: 0,0:00:00.34,0:00:00.64,Karaoke,,0,0,0,,Years {\c&H4AE1FF&\fs71}before{\c&H00FFFFFF&\fs68} WhatsApp was
+Dialogue: 0,0:00:00.64,0:00:01.05,Karaoke,,0,0,0,,Years before {\c&H4AE1FF&\fs71}WhatsApp{\c&H00FFFFFF&\fs68} was
+Dialogue: 0,0:00:01.05,0:00:01.21,Karaoke,,0,0,0,,Years before WhatsApp {\c&H4AE1FF&\fs71}was{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:01.21,0:00:01.46,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}worth{\c&H00FFFFFF&\fs68} billions, its founder was
+Dialogue: 0,0:00:01.46,0:00:01.93,Karaoke,,0,0,0,,worth {\c&H4AE1FF&\fs71}billions,{\c&H00FFFFFF&\fs68} its founder was
+Dialogue: 0,0:00:01.93,0:00:02.08,Karaoke,,0,0,0,,worth billions, {\c&H4AE1FF&\fs71}its{\c&H00FFFFFF&\fs68} founder was
+Dialogue: 0,0:00:02.08,0:00:02.44,Karaoke,,0,0,0,,worth billions, its {\c&H4AE1FF&\fs71}founder{\c&H00FFFFFF&\fs68} was
+Dialogue: 0,0:00:02.44,0:00:02.59,Karaoke,,0,0,0,,worth billions, its founder {\c&H4AE1FF&\fs71}was{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:02.59,0:00:03.11,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}collecting{\c&H00FFFFFF&\fs68} food stamps.
+Dialogue: 0,0:00:03.11,0:00:03.31,Karaoke,,0,0,0,,collecting {\c&H4AE1FF&\fs71}food{\c&H00FFFFFF&\fs68} stamps.
+Dialogue: 0,0:00:03.31,0:00:03.67,Karaoke,,0,0,0,,collecting food {\c&H4AE1FF&\fs71}stamps.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:03.89,0:00:04.02,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}In{\c&H00FFFFFF&\fs68} 2009, Jan Koum built a tiny iPhone
+Dialogue: 0,0:00:04.02,0:00:04.36,Karaoke,,0,0,0,,In {\c&H4AE1FF&\fs71}2009,{\c&H00FFFFFF&\fs68} Jan Koum built a tiny iPhone
+Dialogue: 0,0:00:04.36,0:00:04.56,Karaoke,,0,0,0,,In 2009, {\c&H4AE1FF&\fs71}Jan{\c&H00FFFFFF&\fs68} Koum built a tiny iPhone
+Dialogue: 0,0:00:04.56,0:00:04.82,Karaoke,,0,0,0,,In 2009, Jan {\c&H4AE1FF&\fs71}Koum{\c&H00FFFFFF&\fs68} built a tiny iPhone
+Dialogue: 0,0:00:04.82,0:00:05.15,Karaoke,,0,0,0,,In 2009, Jan Koum {\c&H4AE1FF&\fs71}built{\c&H00FFFFFF&\fs68} a tiny iPhone
+Dialogue: 0,0:00:05.15,0:00:05.22,Karaoke,,0,0,0,,In 2009, Jan Koum built {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68} tiny iPhone
+Dialogue: 0,0:00:05.22,0:00:05.49,Karaoke,,0,0,0,,In 2009, Jan Koum built a {\c&H4AE1FF&\fs71}tiny{\c&H00FFFFFF&\fs68} iPhone
+Dialogue: 0,0:00:05.49,0:00:05.89,Karaoke,,0,0,0,,In 2009, Jan Koum built a tiny {\c&H4AE1FF&\fs71}iPhone{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:05.89,0:00:06.09,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}app{\c&H00FFFFFF&\fs68} that let people post statuses
+Dialogue: 0,0:00:06.09,0:00:06.35,Karaoke,,0,0,0,,app {\c&H4AE1FF&\fs71}that{\c&H00FFFFFF&\fs68} let people post statuses
+Dialogue: 0,0:00:06.35,0:00:06.55,Karaoke,,0,0,0,,app that {\c&H4AE1FF&\fs71}let{\c&H00FFFFFF&\fs68} people post statuses
+Dialogue: 0,0:00:06.55,0:00:06.95,Karaoke,,0,0,0,,app that let {\c&H4AE1FF&\fs71}people{\c&H00FFFFFF&\fs68} post statuses
+Dialogue: 0,0:00:06.95,0:00:07.22,Karaoke,,0,0,0,,app that let people {\c&H4AE1FF&\fs71}post{\c&H00FFFFFF&\fs68} statuses
+Dialogue: 0,0:00:07.22,0:00:07.75,Karaoke,,0,0,0,,app that let people post {\c&H4AE1FF&\fs71}statuses{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:07.75,0:00:08.15,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}beside{\c&H00FFFFFF&\fs68} their names.
+Dialogue: 0,0:00:08.15,0:00:08.48,Karaoke,,0,0,0,,beside {\c&H4AE1FF&\fs71}their{\c&H00FFFFFF&\fs68} names.
+Dialogue: 0,0:00:08.48,0:00:08.88,Karaoke,,0,0,0,,beside their {\c&H4AE1FF&\fs71}names.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:09.10,0:00:09.25,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}It{\c&H00FFFFFF&\fs68} wasn't even a messaging app.
+Dialogue: 0,0:00:09.25,0:00:09.69,Karaoke,,0,0,0,,It {\c&H4AE1FF&\fs71}wasn't{\c&H00FFFFFF&\fs68} even a messaging app.
+Dialogue: 0,0:00:09.69,0:00:09.98,Karaoke,,0,0,0,,It wasn't {\c&H4AE1FF&\fs71}even{\c&H00FFFFFF&\fs68} a messaging app.
+Dialogue: 0,0:00:09.98,0:00:10.05,Karaoke,,0,0,0,,It wasn't even {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68} messaging app.
+Dialogue: 0,0:00:10.05,0:00:10.72,Karaoke,,0,0,0,,It wasn't even a {\c&H4AE1FF&\fs71}messaging{\c&H00FFFFFF&\fs68} app.
+Dialogue: 0,0:00:10.72,0:00:11.01,Karaoke,,0,0,0,,It wasn't even a messaging {\c&H4AE1FF&\fs71}app.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:11.23,0:00:11.41,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Then{\c&H00FFFFFF&\fs68} Apple introduced push
+Dialogue: 0,0:00:11.41,0:00:11.63,Karaoke,,0,0,0,,Then {\c&H4AE1FF&\fs71}Apple{\c&H00FFFFFF&\fs68} introduced push
+Dialogue: 0,0:00:11.63,0:00:12.07,Karaoke,,0,0,0,,Then Apple {\c&H4AE1FF&\fs71}introduced{\c&H00FFFFFF&\fs68} push
+Dialogue: 0,0:00:12.07,0:00:12.24,Karaoke,,0,0,0,,Then Apple introduced {\c&H4AE1FF&\fs71}push{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:12.24,0:00:12.86,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}notifications.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:13.08,0:00:13.39,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}People{\c&H00FFFFFF&\fs68} started using those notifications
+Dialogue: 0,0:00:13.39,0:00:13.74,Karaoke,,0,0,0,,People {\c&H4AE1FF&\fs71}started{\c&H00FFFFFF&\fs68} using those notifications
+Dialogue: 0,0:00:13.74,0:00:13.99,Karaoke,,0,0,0,,People started {\c&H4AE1FF&\fs71}using{\c&H00FFFFFF&\fs68} those notifications
+Dialogue: 0,0:00:13.99,0:00:14.25,Karaoke,,0,0,0,,People started using {\c&H4AE1FF&\fs71}those{\c&H00FFFFFF&\fs68} notifications
+Dialogue: 0,0:00:14.25,0:00:14.91,Karaoke,,0,0,0,,People started using those {\c&H4AE1FF&\fs71}notifications{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:14.91,0:00:15.02,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}to{\c&H00FFFFFF&\fs68} talk.
+Dialogue: 0,0:00:15.02,0:00:15.27,Karaoke,,0,0,0,,to {\c&H4AE1FF&\fs71}talk.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:15.49,0:00:15.98,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Koum{\c&H00FFFFFF&\fs68} noticed.
+Dialogue: 0,0:00:15.98,0:00:16.97,Karaoke,,0,0,0,,Koum {\c&H4AE1FF&\fs71}noticed.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:17.19,0:00:17.36,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}And{\c&H00FFFFFF&\fs68} WhatsApp became a
+Dialogue: 0,0:00:17.36,0:00:17.83,Karaoke,,0,0,0,,And {\c&H4AE1FF&\fs71}WhatsApp{\c&H00FFFFFF&\fs68} became a
+Dialogue: 0,0:00:17.83,0:00:18.18,Karaoke,,0,0,0,,And WhatsApp {\c&H4AE1FF&\fs71}became{\c&H00FFFFFF&\fs68} a
+Dialogue: 0,0:00:18.18,0:00:18.24,Karaoke,,0,0,0,,And WhatsApp became {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:18.24,0:00:18.82,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}messenger.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:19.04,0:00:19.31,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Years{\c&H00FFFFFF&\fs68} later, Facebook acquired it
+Dialogue: 0,0:00:19.31,0:00:19.63,Karaoke,,0,0,0,,Years {\c&H4AE1FF&\fs71}later,{\c&H00FFFFFF&\fs68} Facebook acquired it
+Dialogue: 0,0:00:19.63,0:00:20.05,Karaoke,,0,0,0,,Years later, {\c&H4AE1FF&\fs71}Facebook{\c&H00FFFFFF&\fs68} acquired it
+Dialogue: 0,0:00:20.05,0:00:20.48,Karaoke,,0,0,0,,Years later, Facebook {\c&H4AE1FF&\fs71}acquired{\c&H00FFFFFF&\fs68} it
+Dialogue: 0,0:00:20.48,0:00:20.59,Karaoke,,0,0,0,,Years later, Facebook acquired {\c&H4AE1FF&\fs71}it{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:20.59,0:00:20.75,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}for{\c&H00FFFFFF&\fs68} billions.
+Dialogue: 0,0:00:20.75,0:00:21.23,Karaoke,,0,0,0,,for {\c&H4AE1FF&\fs71}billions.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:21.45,0:00:21.72,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Koum{\c&H00FFFFFF&\fs68} signed the deal at a social
+Dialogue: 0,0:00:21.72,0:00:22.12,Karaoke,,0,0,0,,Koum {\c&H4AE1FF&\fs71}signed{\c&H00FFFFFF&\fs68} the deal at a social
+Dialogue: 0,0:00:22.12,0:00:22.32,Karaoke,,0,0,0,,Koum signed {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} deal at a social
+Dialogue: 0,0:00:22.32,0:00:22.59,Karaoke,,0,0,0,,Koum signed the {\c&H4AE1FF&\fs71}deal{\c&H00FFFFFF&\fs68} at a social
+Dialogue: 0,0:00:22.59,0:00:22.72,Karaoke,,0,0,0,,Koum signed the deal {\c&H4AE1FF&\fs71}at{\c&H00FFFFFF&\fs68} a social
+Dialogue: 0,0:00:22.72,0:00:22.79,Karaoke,,0,0,0,,Koum signed the deal at {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68} social
+Dialogue: 0,0:00:22.79,0:00:23.19,Karaoke,,0,0,0,,Koum signed the deal at a {\c&H4AE1FF&\fs71}social{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:23.19,0:00:23.73,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}services{\c&H00FFFFFF&\fs68} office— the same kind of office
+Dialogue: 0,0:00:23.73,0:00:24.42,Karaoke,,0,0,0,,services {\c&H4AE1FF&\fs71}office—{\c&H00FFFFFF&\fs68} the same kind of office
+Dialogue: 0,0:00:24.42,0:00:24.62,Karaoke,,0,0,0,,services office— {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} same kind of office
+Dialogue: 0,0:00:24.62,0:00:24.88,Karaoke,,0,0,0,,services office— the {\c&H4AE1FF&\fs71}same{\c&H00FFFFFF&\fs68} kind of office
+Dialogue: 0,0:00:24.88,0:00:25.15,Karaoke,,0,0,0,,services office— the same {\c&H4AE1FF&\fs71}kind{\c&H00FFFFFF&\fs68} of office
+Dialogue: 0,0:00:25.15,0:00:25.28,Karaoke,,0,0,0,,services office— the same kind {\c&H4AE1FF&\fs71}of{\c&H00FFFFFF&\fs68} office
+Dialogue: 0,0:00:25.28,0:00:25.68,Karaoke,,0,0,0,,services office— the same kind of {\c&H4AE1FF&\fs71}office{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:25.68,0:00:26.01,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}where{\c&H00FFFFFF&\fs68} he once collected food
+Dialogue: 0,0:00:26.01,0:00:26.14,Karaoke,,0,0,0,,where {\c&H4AE1FF&\fs71}he{\c&H00FFFFFF&\fs68} once collected food
+Dialogue: 0,0:00:26.14,0:00:26.41,Karaoke,,0,0,0,,where he {\c&H4AE1FF&\fs71}once{\c&H00FFFFFF&\fs68} collected food
+Dialogue: 0,0:00:26.41,0:00:27.00,Karaoke,,0,0,0,,where he once {\c&H4AE1FF&\fs71}collected{\c&H00FFFFFF&\fs68} food
+Dialogue: 0,0:00:27.00,0:00:27.27,Karaoke,,0,0,0,,where he once collected {\c&H4AE1FF&\fs71}food{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:27.27,0:00:27.73,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}stamps.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:27.95,0:00:28.07,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}He{\c&H00FFFFFF&\fs68} didn't know what WhatsApp would
+Dialogue: 0,0:00:28.07,0:00:28.44,Karaoke,,0,0,0,,He {\c&H4AE1FF&\fs71}didn't{\c&H00FFFFFF&\fs68} know what WhatsApp would
+Dialogue: 0,0:00:28.44,0:00:28.68,Karaoke,,0,0,0,,He didn't {\c&H4AE1FF&\fs71}know{\c&H00FFFFFF&\fs68} what WhatsApp would
+Dialogue: 0,0:00:28.68,0:00:28.92,Karaoke,,0,0,0,,He didn't know {\c&H4AE1FF&\fs71}what{\c&H00FFFFFF&\fs68} WhatsApp would
+Dialogue: 0,0:00:28.92,0:00:29.41,Karaoke,,0,0,0,,He didn't know what {\c&H4AE1FF&\fs71}WhatsApp{\c&H00FFFFFF&\fs68} would
+Dialogue: 0,0:00:29.41,0:00:29.71,Karaoke,,0,0,0,,He didn't know what WhatsApp {\c&H4AE1FF&\fs71}would{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:29.71,0:00:30.14,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}become.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:30.36,0:00:30.52,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}He{\c&H00FFFFFF&\fs68} just kept building.
+Dialogue: 0,0:00:30.52,0:00:30.83,Karaoke,,0,0,0,,He {\c&H4AE1FF&\fs71}just{\c&H00FFFFFF&\fs68} kept building.
+Dialogue: 0,0:00:30.83,0:00:31.14,Karaoke,,0,0,0,,He just {\c&H4AE1FF&\fs71}kept{\c&H00FFFFFF&\fs68} building.
+Dialogue: 0,0:00:31.14,0:00:31.84,Karaoke,,0,0,0,,He just kept {\c&H4AE1FF&\fs71}building.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:32.06,0:00:32.17,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}If{\c&H00FFFFFF&\fs68} you're building something after
+Dialogue: 0,0:00:32.17,0:00:32.49,Karaoke,,0,0,0,,If {\c&H4AE1FF&\fs71}you're{\c&H00FFFFFF&\fs68} building something after
+Dialogue: 0,0:00:32.49,0:00:32.92,Karaoke,,0,0,0,,If you're {\c&H4AE1FF&\fs71}building{\c&H00FFFFFF&\fs68} something after
+Dialogue: 0,0:00:32.92,0:00:33.40,Karaoke,,0,0,0,,If you're building {\c&H4AE1FF&\fs71}something{\c&H00FFFFFF&\fs68} after
+Dialogue: 0,0:00:33.40,0:00:33.67,Karaoke,,0,0,0,,If you're building something {\c&H4AE1FF&\fs71}after{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:33.67,0:00:33.94,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}work,{\c&H00FFFFFF&\fs68} FocusStack helps you keep
+Dialogue: 0,0:00:33.94,0:00:34.47,Karaoke,,0,0,0,,work, {\c&H4AE1FF&\fs71}FocusStack{\c&H00FFFFFF&\fs68} helps you keep
+Dialogue: 0,0:00:34.47,0:00:34.74,Karaoke,,0,0,0,,work, FocusStack {\c&H4AE1FF&\fs71}helps{\c&H00FFFFFF&\fs68} you keep
+Dialogue: 0,0:00:34.74,0:00:34.90,Karaoke,,0,0,0,,work, FocusStack helps {\c&H4AE1FF&\fs71}you{\c&H00FFFFFF&\fs68} keep
+Dialogue: 0,0:00:34.90,0:00:35.11,Karaoke,,0,0,0,,work, FocusStack helps you {\c&H4AE1FF&\fs71}keep{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:35.11,0:00:35.49,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}showing{\c&H00FFFFFF&\fs68} up.
+Dialogue: 0,0:00:35.49,0:00:35.65,Karaoke,,0,0,0,,showing {\c&H4AE1FF&\fs71}up.{\c&H00FFFFFF&\fs68}
