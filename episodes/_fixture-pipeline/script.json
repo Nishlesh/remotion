@@ -1,0 +1,30 @@
+{
+  "slug": "_fixture-pipeline",
+  "famousEntity": "Kitchen-table ship",
+  "selectedHookId": "h1",
+  "hooks": [
+    {"id": "h1", "text": "The first version shipped from a kitchen table.", "selected": true},
+    {"id": "h2", "text": "They had one weekend. No spare rooms."}
+  ],
+  "spine": {
+    "famous_entity": "Kitchen-table ship",
+    "unexpected_beginning": "The first version shipped from a kitchen table.",
+    "human_detail": "They had one weekend.",
+    "constraint": "No spare rooms.",
+    "choice": "That choice became the company.",
+    "consequence": "The whole company.",
+    "realization": "The table was enough.",
+    "viewer": "Keep the next one.",
+    "focusstack": "Keep the next one in FocusStack."
+  },
+  "spoken": "The first version shipped from a kitchen table. They had one weekend. No spare rooms. That choice became the company. Keep the next one in FocusStack.",
+  "spokenWordCount": 26,
+  "lines": [
+    {"id": "vo-01", "text": "The first version shipped from a kitchen table.", "spine": "unexpected_beginning"},
+    {"id": "vo-02", "text": "They had one weekend. No spare rooms.", "spine": "constraint"},
+    {"id": "vo-03", "text": "That choice became the company. Keep the next one in FocusStack.", "spine": "focusstack"}
+  ],
+  "cta": "Keep the next one in FocusStack.",
+  "dropRuleApplied": true,
+  "factApproved": true
+}

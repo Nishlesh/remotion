@@ -1,0 +1,188 @@
+{
+  "id": "_fixture-pipeline",
+  "title": "Fixture: kitchen-table ship",
+  "compositionId": "FixturePipeline",
+  "targetDurationSec": 8.53,
+  "captionsEnabled": false,
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Montserrat"
+  },
+  "audio": {
+    "voiceover": "episodes/_fixture-pipeline/audio/vo_concat.wav",
+    "bed": null
+  },
+  "grade": {
+    "contrast": 1.08,
+    "saturation": 0.9,
+    "brightness": 0.97,
+    "cool": 0,
+    "warm": 0.16,
+    "grain": 0.28,
+    "vignette": 0.42
+  },
+  "voiceover": [
+    {
+      "id": "vo-01",
+      "text": "The first version shipped from a kitchen table.",
+      "approximateDurationSec": 2.5900000000000003,
+      "audioFile": "episodes/_fixture-pipeline/audio/01.wav"
+    },
+    {
+      "id": "vo-02",
+      "text": "They had one weekend. No spare rooms.",
+      "approximateDurationSec": 2.31,
+      "audioFile": "episodes/_fixture-pipeline/audio/02.wav"
+    },
+    {
+      "id": "vo-03",
+      "text": "That choice became the company. Keep the next one in FocusStack.",
+      "approximateDurationSec": 3.43,
+      "audioFile": "episodes/_fixture-pipeline/audio/03.wav"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "b01",
+      "voiceoverLineId": "vo-01",
+      "durationInFrames": 78,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 8,
+      "osLockup": {
+        "text": "Kitchen table",
+        "y": 180,
+        "size": "plate"
+      },
+      "captions": {
+        "text": "The first version shipped from a kitchen table.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-01",
+          "src": "episodes/_fixture-pipeline/stills/still-01.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b02",
+      "voiceoverLineId": "vo-02",
+      "durationInFrames": 69,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "They had one weekend. No spare rooms.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-02",
+          "src": "episodes/_fixture-pipeline/stills/still-02.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b03",
+      "voiceoverLineId": "vo-03",
+      "durationInFrames": 103,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "That choice became the company. Keep the next one in FocusStack.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-03",
+          "src": "episodes/_fixture-pipeline/stills/still-03.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    }
+  ]
+}

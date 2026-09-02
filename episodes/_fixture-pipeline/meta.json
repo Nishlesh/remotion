@@ -1,0 +1,10 @@
+{
+  "slug": "_fixture-pipeline",
+  "kind": "fixture",
+  "channel": "Before It Was Famous",
+  "handle": "@beforeitwasfamous",
+  "title": "Fixture: kitchen-table ship",
+  "famousEntity": "Kitchen-table ship",
+  "compositionId": "FixturePipeline",
+  "status": "package"
+}

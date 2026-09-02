@@ -1,0 +1,19 @@
+{
+  "slug": "_fixture-pipeline",
+  "famousEntity": "Kitchen-table ship",
+  "promptPath": "prompts/research.md",
+  "sources": [
+    {"id": "s1", "title": "Fixture (in-repo)", "url": "https://github.com/Nishlesh/remotion"},
+    {"id": "s2", "title": "Factory README", "url": "https://github.com/Nishlesh/remotion"}
+  ],
+  "facts": [
+    {
+      "id": "f1",
+      "claim": "This fixture is synthetic and must never air as history.",
+      "sourceIds": ["s1"],
+      "spine": "famous_entity"
+    }
+  ],
+  "unknown": [],
+  "inventedFactsForbidden": true
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="fig" x1="540" y1="480" x2="560" y2="1180" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#07090d"/>
+      <stop offset="1" stop-color="#12151c"/>
+    </linearGradient>
+  </defs>
+  <!-- seated figure from behind, no face, no likeness -->
+  <ellipse cx="538" cy="548" rx="58" ry="66" fill="url(#fig)"/>
+  <path d="M510 604 C518 628 522 650 518 676" stroke="#0a0c10" stroke-width="22" stroke-linecap="round"/>
+  <path d="M430 680 C448 650 490 638 538 638 C586 638 628 650 646 680 C668 720 678 780 672 860 C664 960 650 1040 638 1108 L442 1108 C428 1020 412 930 408 850 C404 770 412 720 430 680 Z" fill="url(#fig)"/>
+  <path d="M448 1108 C430 1140 360 1188 300 1220 L780 1220 C720 1170 650 1130 632 1108 Z" fill="#0a0c10"/>
+  <path d="M420 860 C360 900 310 980 292 1080" stroke="#0a0c10" stroke-width="36" stroke-linecap="round"/>
+  <path d="M660 860 C710 900 750 970 768 1060" stroke="#0a0c10" stroke-width="28" stroke-linecap="round"/>
+</svg>

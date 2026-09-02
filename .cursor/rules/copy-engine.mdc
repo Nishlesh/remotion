@@ -1,0 +1,18 @@
+---
+description: Copy engine hard lock for Before It Was Famous scripts
+globs: src/factory/copy/**/*,src/factory/stages/script.ts,episodes/**/script.json
+alwaysApply: false
+---
+
+# Copy engine (hard lock)
+
+FAMOUS ENTITY → unexpected beginning → human detail → constraint → choice → consequence → realization → viewer → FocusStack.
+
+- Cadence: 3–12 word clauses. Fragments legal. ~80–100 spoken words.
+- Gold shape: Airbnb/Spanx micro-doc cadence (not Wikipedia).
+- Fame test: unknown founders cannot lead; famous product/company leads.
+- Drop rule: spoken script keeps only hook, one human detail, one constraint, one choice, one consequence, one meaning, one CTA.
+- CTA callbacks THIS story. No sale-price ending.
+- Script ≠ N Remotion stills.
+- `FACT_APPROVED` before script. Never invent facts.
+- FocusStack (https://usefocusstack.com) is a Level-2 natural close, never an ad, never the hook.

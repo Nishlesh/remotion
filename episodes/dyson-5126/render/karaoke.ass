@@ -1,0 +1,96 @@
+[Script Info]
+Title: Before It Was Famous Karaoke Highlight
+ScriptType: v4.00+
+WrapStyle: 2
+ScaledBorderAndShadow: yes
+PlayResX: 1080
+PlayResY: 1920
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Karaoke,Montserrat Black,68,&H00FFFFFF,&H00FFFFFF,&H00000000&,&H00000000,-1,0,0,0,100,100,0,0,1,8,0,2,140,140,600,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.00,0:00:00.59,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Before{\c&H00FFFFFF&\fs68} Dyson's bagless vacuum
+Dialogue: 0,0:00:00.59,0:00:01.17,Karaoke,,0,0,0,,Before {\c&H4AE1FF&\fs71}Dyson's{\c&H00FFFFFF&\fs68} bagless vacuum
+Dialogue: 0,0:00:01.17,0:00:01.76,Karaoke,,0,0,0,,Before Dyson's {\c&H4AE1FF&\fs71}bagless{\c&H00FFFFFF&\fs68} vacuum
+Dialogue: 0,0:00:01.76,0:00:02.35,Karaoke,,0,0,0,,Before Dyson's bagless {\c&H4AE1FF&\fs71}vacuum{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:02.35,0:00:02.93,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}conquered{\c&H00FFFFFF&\fs68} living rooms, he built 5,126
+Dialogue: 0,0:00:02.93,0:00:03.52,Karaoke,,0,0,0,,conquered {\c&H4AE1FF&\fs71}living{\c&H00FFFFFF&\fs68} rooms, he built 5,126
+Dialogue: 0,0:00:03.52,0:00:04.20,Karaoke,,0,0,0,,conquered living {\c&H4AE1FF&\fs71}rooms,{\c&H00FFFFFF&\fs68} he built 5,126
+Dialogue: 0,0:00:04.20,0:00:05.04,Karaoke,,0,0,0,,conquered living rooms, {\c&H4AE1FF&\fs71}he{\c&H00FFFFFF&\fs68} built 5,126
+Dialogue: 0,0:00:05.04,0:00:05.87,Karaoke,,0,0,0,,conquered living rooms, he {\c&H4AE1FF&\fs71}built{\c&H00FFFFFF&\fs68} 5,126
+Dialogue: 0,0:00:05.87,0:00:06.71,Karaoke,,0,0,0,,conquered living rooms, he built {\c&H4AE1FF&\fs71}5,126{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:06.71,0:00:07.54,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}that{\c&H00FFFFFF&\fs68} failed.
+Dialogue: 0,0:00:07.54,0:00:08.38,Karaoke,,0,0,0,,that {\c&H4AE1FF&\fs71}failed.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:08.48,0:00:08.88,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}He{\c&H00FFFFFF&\fs68} wanted a vacuum cleaner that would
+Dialogue: 0,0:00:08.88,0:00:09.27,Karaoke,,0,0,0,,He {\c&H4AE1FF&\fs71}wanted{\c&H00FFFFFF&\fs68} a vacuum cleaner that would
+Dialogue: 0,0:00:09.27,0:00:09.67,Karaoke,,0,0,0,,He wanted {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68} vacuum cleaner that would
+Dialogue: 0,0:00:09.67,0:00:10.06,Karaoke,,0,0,0,,He wanted a {\c&H4AE1FF&\fs71}vacuum{\c&H00FFFFFF&\fs68} cleaner that would
+Dialogue: 0,0:00:10.06,0:00:10.46,Karaoke,,0,0,0,,He wanted a vacuum {\c&H4AE1FF&\fs71}cleaner{\c&H00FFFFFF&\fs68} that would
+Dialogue: 0,0:00:10.46,0:00:10.86,Karaoke,,0,0,0,,He wanted a vacuum cleaner {\c&H4AE1FF&\fs71}that{\c&H00FFFFFF&\fs68} would
+Dialogue: 0,0:00:10.86,0:00:11.25,Karaoke,,0,0,0,,He wanted a vacuum cleaner that {\c&H4AE1FF&\fs71}would{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:11.25,0:00:11.65,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}not{\c&H00FFFFFF&\fs68} lose suction.
+Dialogue: 0,0:00:11.65,0:00:12.04,Karaoke,,0,0,0,,not {\c&H4AE1FF&\fs71}lose{\c&H00FFFFFF&\fs68} suction.
+Dialogue: 0,0:00:12.04,0:00:12.44,Karaoke,,0,0,0,,not lose {\c&H4AE1FF&\fs71}suction.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:12.54,0:00:13.13,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Prototype{\c&H00FFFFFF&\fs68} after prototype for five
+Dialogue: 0,0:00:13.13,0:00:13.72,Karaoke,,0,0,0,,Prototype {\c&H4AE1FF&\fs71}after{\c&H00FFFFFF&\fs68} prototype for five
+Dialogue: 0,0:00:13.72,0:00:14.32,Karaoke,,0,0,0,,Prototype after {\c&H4AE1FF&\fs71}prototype{\c&H00FFFFFF&\fs68} for five
+Dialogue: 0,0:00:14.32,0:00:14.91,Karaoke,,0,0,0,,Prototype after prototype {\c&H4AE1FF&\fs71}for{\c&H00FFFFFF&\fs68} five
+Dialogue: 0,0:00:14.91,0:00:15.50,Karaoke,,0,0,0,,Prototype after prototype for {\c&H4AE1FF&\fs71}five{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:15.50,0:00:16.09,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}years.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:16.19,0:00:16.75,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Manufacturers{\c&H00FFFFFF&\fs68} still rejected the one
+Dialogue: 0,0:00:16.75,0:00:17.31,Karaoke,,0,0,0,,Manufacturers {\c&H4AE1FF&\fs71}still{\c&H00FFFFFF&\fs68} rejected the one
+Dialogue: 0,0:00:17.31,0:00:17.87,Karaoke,,0,0,0,,Manufacturers still {\c&H4AE1FF&\fs71}rejected{\c&H00FFFFFF&\fs68} the one
+Dialogue: 0,0:00:17.87,0:00:18.43,Karaoke,,0,0,0,,Manufacturers still rejected {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} one
+Dialogue: 0,0:00:18.43,0:00:18.99,Karaoke,,0,0,0,,Manufacturers still rejected the {\c&H4AE1FF&\fs71}one{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:18.99,0:00:19.55,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}that{\c&H00FFFFFF&\fs68} worked.
+Dialogue: 0,0:00:19.55,0:00:20.10,Karaoke,,0,0,0,,that {\c&H4AE1FF&\fs71}worked.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:20.20,0:00:20.83,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Bags{\c&H00FFFFFF&\fs68} paid their bills.
+Dialogue: 0,0:00:20.83,0:00:21.45,Karaoke,,0,0,0,,Bags {\c&H4AE1FF&\fs71}paid{\c&H00FFFFFF&\fs68} their bills.
+Dialogue: 0,0:00:21.45,0:00:22.08,Karaoke,,0,0,0,,Bags paid {\c&H4AE1FF&\fs71}their{\c&H00FFFFFF&\fs68} bills.
+Dialogue: 0,0:00:22.08,0:00:22.70,Karaoke,,0,0,0,,Bags paid their {\c&H4AE1FF&\fs71}bills.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:22.80,0:00:23.38,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}So{\c&H00FFFFFF&\fs68} he stopped asking permission.
+Dialogue: 0,0:00:23.38,0:00:23.96,Karaoke,,0,0,0,,So {\c&H4AE1FF&\fs71}he{\c&H00FFFFFF&\fs68} stopped asking permission.
+Dialogue: 0,0:00:23.96,0:00:24.54,Karaoke,,0,0,0,,So he {\c&H4AE1FF&\fs71}stopped{\c&H00FFFFFF&\fs68} asking permission.
+Dialogue: 0,0:00:24.54,0:00:25.12,Karaoke,,0,0,0,,So he stopped {\c&H4AE1FF&\fs71}asking{\c&H00FFFFFF&\fs68} permission.
+Dialogue: 0,0:00:25.12,0:00:25.70,Karaoke,,0,0,0,,So he stopped asking {\c&H4AE1FF&\fs71}permission.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:25.80,0:00:26.35,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}He{\c&H00FFFFFF&\fs68} sold the machine himself.
+Dialogue: 0,0:00:26.35,0:00:26.89,Karaoke,,0,0,0,,He {\c&H4AE1FF&\fs71}sold{\c&H00FFFFFF&\fs68} the machine himself.
+Dialogue: 0,0:00:26.89,0:00:27.43,Karaoke,,0,0,0,,He sold {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} machine himself.
+Dialogue: 0,0:00:27.43,0:00:27.97,Karaoke,,0,0,0,,He sold the {\c&H4AE1FF&\fs71}machine{\c&H00FFFFFF&\fs68} himself.
+Dialogue: 0,0:00:27.97,0:00:28.52,Karaoke,,0,0,0,,He sold the machine {\c&H4AE1FF&\fs71}himself.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:28.62,0:00:29.19,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}It{\c&H00FFFFFF&\fs68} became a massive success.
+Dialogue: 0,0:00:29.19,0:00:29.76,Karaoke,,0,0,0,,It {\c&H4AE1FF&\fs71}became{\c&H00FFFFFF&\fs68} a massive success.
+Dialogue: 0,0:00:29.76,0:00:30.33,Karaoke,,0,0,0,,It became {\c&H4AE1FF&\fs71}a{\c&H00FFFFFF&\fs68} massive success.
+Dialogue: 0,0:00:30.33,0:00:30.90,Karaoke,,0,0,0,,It became a {\c&H4AE1FF&\fs71}massive{\c&H00FFFFFF&\fs68} success.
+Dialogue: 0,0:00:30.90,0:00:31.47,Karaoke,,0,0,0,,It became a massive {\c&H4AE1FF&\fs71}success.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:31.57,0:00:32.23,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}The{\c&H00FFFFFF&\fs68} machine everyone remembers
+Dialogue: 0,0:00:32.23,0:00:32.90,Karaoke,,0,0,0,,The {\c&H4AE1FF&\fs71}machine{\c&H00FFFFFF&\fs68} everyone remembers
+Dialogue: 0,0:00:32.90,0:00:33.56,Karaoke,,0,0,0,,The machine {\c&H4AE1FF&\fs71}everyone{\c&H00FFFFFF&\fs68} remembers
+Dialogue: 0,0:00:33.56,0:00:34.22,Karaoke,,0,0,0,,The machine everyone {\c&H4AE1FF&\fs71}remembers{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:34.22,0:00:34.88,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}needed{\c&H00FFFFFF&\fs68} the 5,126 nobody wanted.
+Dialogue: 0,0:00:34.88,0:00:35.54,Karaoke,,0,0,0,,needed {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} 5,126 nobody wanted.
+Dialogue: 0,0:00:35.54,0:00:36.20,Karaoke,,0,0,0,,needed the {\c&H4AE1FF&\fs71}5,126{\c&H00FFFFFF&\fs68} nobody wanted.
+Dialogue: 0,0:00:36.20,0:00:36.86,Karaoke,,0,0,0,,needed the 5,126 {\c&H4AE1FF&\fs71}nobody{\c&H00FFFFFF&\fs68} wanted.
+Dialogue: 0,0:00:36.86,0:00:37.52,Karaoke,,0,0,0,,needed the 5,126 nobody {\c&H4AE1FF&\fs71}wanted.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:37.62,0:00:38.23,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}Breakthroughs{\c&H00FFFFFF&\fs68} rarely look like
+Dialogue: 0,0:00:38.23,0:00:38.83,Karaoke,,0,0,0,,Breakthroughs {\c&H4AE1FF&\fs71}rarely{\c&H00FFFFFF&\fs68} look like
+Dialogue: 0,0:00:38.83,0:00:39.44,Karaoke,,0,0,0,,Breakthroughs rarely {\c&H4AE1FF&\fs71}look{\c&H00FFFFFF&\fs68} like
+Dialogue: 0,0:00:39.44,0:00:40.04,Karaoke,,0,0,0,,Breakthroughs rarely look {\c&H4AE1FF&\fs71}like{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:40.04,0:00:40.64,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}breakthroughs{\c&H00FFFFFF&\fs68} mid-build.
+Dialogue: 0,0:00:40.64,0:00:41.25,Karaoke,,0,0,0,,breakthroughs {\c&H4AE1FF&\fs71}mid-build.{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:41.35,0:00:41.74,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}If{\c&H00FFFFFF&\fs68} you're still on the next prototype,
+Dialogue: 0,0:00:41.74,0:00:42.13,Karaoke,,0,0,0,,If {\c&H4AE1FF&\fs71}you're{\c&H00FFFFFF&\fs68} still on the next prototype,
+Dialogue: 0,0:00:42.13,0:00:42.53,Karaoke,,0,0,0,,If you're {\c&H4AE1FF&\fs71}still{\c&H00FFFFFF&\fs68} on the next prototype,
+Dialogue: 0,0:00:42.53,0:00:42.92,Karaoke,,0,0,0,,If you're still {\c&H4AE1FF&\fs71}on{\c&H00FFFFFF&\fs68} the next prototype,
+Dialogue: 0,0:00:42.92,0:00:43.31,Karaoke,,0,0,0,,If you're still on {\c&H4AE1FF&\fs71}the{\c&H00FFFFFF&\fs68} next prototype,
+Dialogue: 0,0:00:43.31,0:00:43.71,Karaoke,,0,0,0,,If you're still on the {\c&H4AE1FF&\fs71}next{\c&H00FFFFFF&\fs68} prototype,
+Dialogue: 0,0:00:43.71,0:00:44.10,Karaoke,,0,0,0,,If you're still on the next {\c&H4AE1FF&\fs71}prototype,{\c&H00FFFFFF&\fs68}
+Dialogue: 0,0:00:44.10,0:00:44.49,Karaoke,,0,0,0,,{\c&H4AE1FF&\fs71}FocusStack{\c&H00FFFFFF&\fs68} helps you keep showing up.
+Dialogue: 0,0:00:44.49,0:00:44.89,Karaoke,,0,0,0,,FocusStack {\c&H4AE1FF&\fs71}helps{\c&H00FFFFFF&\fs68} you keep showing up.
+Dialogue: 0,0:00:44.89,0:00:45.28,Karaoke,,0,0,0,,FocusStack helps {\c&H4AE1FF&\fs71}you{\c&H00FFFFFF&\fs68} keep showing up.
+Dialogue: 0,0:00:45.28,0:00:45.67,Karaoke,,0,0,0,,FocusStack helps you {\c&H4AE1FF&\fs71}keep{\c&H00FFFFFF&\fs68} showing up.
+Dialogue: 0,0:00:45.67,0:00:46.07,Karaoke,,0,0,0,,FocusStack helps you keep {\c&H4AE1FF&\fs71}showing{\c&H00FFFFFF&\fs68} up.
+Dialogue: 0,0:00:46.07,0:00:46.46,Karaoke,,0,0,0,,FocusStack helps you keep showing {\c&H4AE1FF&\fs71}up.{\c&H00FFFFFF&\fs68}

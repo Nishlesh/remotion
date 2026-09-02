@@ -1,0 +1,7 @@
+# Production cover-crop (PIL). Optional; ffmpeg is the fallback.
+Pillow>=10.0.0
+
+# Production TTS (not installed in CI). See README "Production TTS".
+# kokoro-onnx
+# soundfile
+# numpy

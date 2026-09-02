@@ -1,0 +1,5 @@
+file '/workspace/episodes/_fixture-pipeline/audio/01.wav'
+file '/workspace/episodes/_fixture-pipeline/audio/gap.wav'
+file '/workspace/episodes/_fixture-pipeline/audio/02.wav'
+file '/workspace/episodes/_fixture-pipeline/audio/gap.wav'
+file '/workspace/episodes/_fixture-pipeline/audio/03.wav'

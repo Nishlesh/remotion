@@ -1,0 +1,3 @@
+VO synthesized with edge-tts (en-US-GuyNeural) at 24 kHz because kokoro-onnx models are not installed on this machine.
+Word timestamps aligned evenly across each line duration; words match script.json exactly.
+Replace with kokoro-onnx (am_michael @ 0.95) for production channel VO when models are available, then re-lock NARRATION_LOCKED.
