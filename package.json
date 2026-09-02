@@ -14,7 +14,9 @@
     "upgrade": "remotion upgrade",
     "typecheck": "tsc",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "export": "bash tools/export_to_downloads.sh",
+    "setup:mac": "bash tools/setup_local_mac.sh"
   },
   "license": "UNLICENSED",
   "dependencies": {
