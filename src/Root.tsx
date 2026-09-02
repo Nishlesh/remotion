@@ -36,6 +36,14 @@ import {
   fixturePipelineScenes,
   fixturePipelineSpec,
 } from './episodes/_fixture-pipeline';
+import {
+  WhatsApp2009Episode,
+  whatsapp2009DurationInFrames,
+  whatsapp2009EpisodeProps,
+  whatsapp2009EpisodeSchema,
+  whatsapp2009Scenes,
+  whatsapp2009Spec,
+} from './episodes/whatsapp-2009';
 import {z} from 'zod';
 
 const factoryActiveSchema = z.object({
@@ -142,6 +150,31 @@ export const RemotionRoot: React.FC = () => {
           height={HEIGHT}
           calculateMetadata={calculateFactoryActiveMetadata}
         />
+        <Composition
+          id={whatsapp2009Spec.compositionId}
+          component={WhatsApp2009Episode}
+          schema={whatsapp2009EpisodeSchema}
+          defaultProps={whatsapp2009EpisodeProps}
+          durationInFrames={whatsapp2009DurationInFrames}
+          fps={FPS}
+          width={WIDTH}
+          height={HEIGHT}
+          calculateMetadata={calculateEpisodeMetadata(whatsapp2009Spec)}
+        />
+        {whatsapp2009Scenes.map((scene) => (
+          <Composition
+            key={scene.compositionId}
+            id={scene.compositionId}
+            component={scene.component}
+            schema={sceneSchema}
+            defaultProps={scene.defaultProps}
+            durationInFrames={scene.defaultProps.timing.durationInFrames}
+            fps={FPS}
+            width={WIDTH}
+            height={HEIGHT}
+            calculateMetadata={calculateSceneMetadata}
+          />
+        ))}
       </Folder>
     </>
   );

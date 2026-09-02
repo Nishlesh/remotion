@@ -49,9 +49,9 @@ export const storyboardStage = async (slug: string): Promise<StoryboardDoc> => {
     sourcePreference: 'generate' as const,
   }));
 
-  if (!isFixture(slug) && (beats.length < 8 || beats.length > 12)) {
+  if (!isFixture(slug) && (beats.length < 8 || beats.length > 13)) {
     throw new Error(
-      `Storyboard must be 8–12 beats for production (got ${beats.length}). Split or merge against locked VO; script ≠ N stills.`,
+      `Storyboard must be 8–12 beats typically, 13 when locked VO is one line per beat (got ${beats.length}). Split or merge against locked VO; script ≠ N stills.`,
     );
   }
 

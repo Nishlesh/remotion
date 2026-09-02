@@ -4,14 +4,7 @@ import {LINE_GAP_SEC, SAMPLE_RATE} from '../../engine/constants';
 import type {TimestampsDoc, WordStamp} from '../schema/episode';
 import {spokenWords} from '../copy/engine';
 
-/** 16-bit PCM WAV, mono, 24 kHz. Fixture / mock TTS path. */
-export const encodeSilenceWav = (
-  durationSec: number,
-  sampleRate = SAMPLE_RATE,
-): Buffer => {
-  const samples = Math.max(1, Math.round(durationSec * sampleRate));
-  const dataSize = samples * 2;
-  const buffer = Buffer.alloc(44 + dataSize);
+const writeWavHeader = (buffer: Buffer, dataSize: number, sampleRate: number): void => {
   buffer.write('RIFF', 0);
   buffer.writeUInt32LE(36 + dataSize, 4);
   buffer.write('WAVE', 8);
@@ -25,6 +18,17 @@ export const encodeSilenceWav = (
   buffer.writeUInt16LE(16, 34);
   buffer.write('data', 36);
   buffer.writeUInt32LE(dataSize, 40);
+};
+
+/** 16-bit PCM WAV, mono, 24 kHz. Fixture / mock TTS path (low tone, not production VO). */
+export const encodeSilenceWav = (
+  durationSec: number,
+  sampleRate = SAMPLE_RATE,
+): Buffer => {
+  const samples = Math.max(1, Math.round(durationSec * sampleRate));
+  const dataSize = samples * 2;
+  const buffer = Buffer.alloc(44 + dataSize);
+  writeWavHeader(buffer, dataSize, sampleRate);
   for (let i = 0; i < samples; i++) {
     const t = i / sampleRate;
     const sample = Math.round(Math.sin(2 * Math.PI * 196 * t) * 1800);
@@ -33,9 +37,26 @@ export const encodeSilenceWav = (
   return buffer;
 };
 
+/** True digital silence for production timing beds when kokoro cannot run. */
+export const encodeTrueSilenceWav = (
+  durationSec: number,
+  sampleRate = SAMPLE_RATE,
+): Buffer => {
+  const samples = Math.max(1, Math.round(durationSec * sampleRate));
+  const dataSize = samples * 2;
+  const buffer = Buffer.alloc(44 + dataSize);
+  writeWavHeader(buffer, dataSize, sampleRate);
+  return buffer;
+};
+
 export const writeWav = (path: string, durationSec: number): void => {
   mkdirSync(dirname(path), {recursive: true});
   writeFileSync(path, encodeSilenceWav(durationSec));
+};
+
+export const writeSilentWav = (path: string, durationSec: number): void => {
+  mkdirSync(dirname(path), {recursive: true});
+  writeFileSync(path, encodeTrueSilenceWav(durationSec));
 };
 
 export const wordTimestampsForText = (

@@ -8,12 +8,13 @@ import {
   TTS_SPEED,
   TTS_VOICE,
 } from '../../engine/constants';
-import {repoRoot, resolveEpisodeDir, writeJson} from '../paths';
+import {isFixture, repoRoot, resolveEpisodeDir, writeJson, writeText} from '../paths';
 import {which} from '../karaoke/burn';
 import type {ScriptDoc, TimestampsDoc} from '../schema/episode';
 import {
   buildFixtureTimestamps,
   durationForLine,
+  writeSilentWav,
   writeWav,
 } from './fixture';
 
@@ -46,7 +47,12 @@ const tryKokoroLine = (
   return {ok: true, duration: durationForLine(text)};
 };
 
-const concatWavs = (files: string[], outPath: string, gapSec: number): void => {
+const concatWavs = (
+  files: string[],
+  outPath: string,
+  gapSec: number,
+  silentGap: boolean,
+): void => {
   const ffmpeg = which('ffmpeg');
   mkdirSync(join(outPath, '..'), {recursive: true});
   if (!ffmpeg) {
@@ -58,7 +64,11 @@ const concatWavs = (files: string[], outPath: string, gapSec: number): void => {
   }
   const listPath = `${outPath}.concat.txt`;
   const gapWav = `${outPath}.gap.wav`;
-  writeWav(gapWav, gapSec);
+  if (silentGap) {
+    writeSilentWav(gapWav, gapSec);
+  } else {
+    writeWav(gapWav, gapSec);
+  }
   const body = files
     .flatMap((file, i) => {
       const lines = [`file '${file}'`];
@@ -104,7 +114,12 @@ export const synthesizeEpisode = (script: ScriptDoc): TtsResult => {
     const kokoro = tryKokoroLine(line.text, wavPath);
     if (!kokoro.ok) {
       usedKokoro = false;
-      writeWav(wavPath, durationForLine(line.text));
+      const duration = durationForLine(line.text);
+      if (isFixture(script.slug)) {
+        writeWav(wavPath, duration);
+      } else {
+        writeSilentWav(wavPath, duration);
+      }
     }
     return {id: line.id, text: line.text, file, path: wavPath};
   });
@@ -128,12 +143,17 @@ export const synthesizeEpisode = (script: ScriptDoc): TtsResult => {
   timestamps.speed = TTS_SPEED;
   timestamps.sampleRate = SAMPLE_RATE;
   timestamps.gapSeconds = LINE_GAP_SEC;
+  if (!usedKokoro && !isFixture(script.slug)) {
+    timestamps.engine = 'silent-timing-bed';
+    timestamps.fixture = false;
+  }
 
   const concatPath = join(audioDir, 'vo_concat.wav');
   concatWavs(
     lineFiles.map((l) => l.path),
     concatPath,
     LINE_GAP_SEC,
+    !usedKokoro && !isFixture(script.slug),
   );
 
   writeJson(join(audioDir, 'timestamps.json'), timestamps);
@@ -144,9 +164,29 @@ export const synthesizeEpisode = (script: ScriptDoc): TtsResult => {
     speed: TTS_SPEED,
     engine: timestamps.engine,
     usedFallback: !usedKokoro,
+    silentTimingBed: !usedKokoro && !isFixture(script.slug),
     narrationLocked: false,
-    next: 'Listen to vo_concat.wav. If the read is correct, create NARRATION_LOCKED.',
+    next: usedKokoro
+      ? 'Listen to vo_concat.wav. If the read is correct, create NARRATION_LOCKED.'
+      : 'Kokoro could not run. Silent timing bed only. See AUDIO_BLOCKED. Do not treat this as a production read.',
   });
+
+  if (!usedKokoro && !isFixture(script.slug)) {
+    writeText(
+      join(dir, 'AUDIO_BLOCKED'),
+      [
+        'AUDIO_BLOCKED',
+        '',
+        'kokoro-onnx / Kokoro-82M could not run on this machine (no tools/models, no kokoro_onnx).',
+        'Production VO was NOT synthesized. Fixture cartoon-tone TTS was NOT used for the master.',
+        'audio/*.wav and vo_concat.wav are a silent 24 kHz timing bed with word-level timestamps',
+        'from the locked spoken lines (am_michael pacing estimate, speed 0.95).',
+        'Drop a real kokoro am_michael 0.95 24 kHz read on these line lengths, then re-measure.',
+        'Karaoke ASS is burned from this timing bed so the picture lock can proceed.',
+        '',
+      ].join('\n'),
+    );
+  }
 
   return {
     engine: timestamps.engine,

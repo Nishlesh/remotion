@@ -63,6 +63,9 @@ export const buildRemotionSpec = (slug: string): EpisodeSpec => {
     const src = existsSync(join(dir, 'stills', stillFile))
       ? `episodes/${slug}/stills/${stillFile}`
       : `episodes/${slug}/stills/${beat.stillId}.png`;
+    const ctaStill =
+      /focusstack/i.test(line?.text ?? script.lines[i]?.text ?? '') ||
+      /focusstack/i.test(beat.visual);
     return {
       id: beat.id,
       voiceoverLineId: beat.voiceoverLineId,
@@ -76,13 +79,33 @@ export const buildRemotionSpec = (slug: string): EpisodeSpec => {
         highlightBias: 0.45,
       },
       motion: {
-        kenBurns: {
-          ...DEFAULT_KEN_BURNS,
-          endX: i % 2 === 0 ? 8 : -8,
-        },
+        kenBurns: ctaStill
+          ? {
+              startScale: 1,
+              endScale: 1.025,
+              startX: 0,
+              endX: 2,
+              startY: 0,
+              endY: 2,
+            }
+          : {
+              ...DEFAULT_KEN_BURNS,
+              endX: i % 2 === 0 ? 8 : -8,
+            },
         parallax: {amount: 0},
         entrance: {damping: 22},
       },
+      grade: ctaStill
+        ? {
+            contrast: 1.02,
+            saturation: 0.96,
+            brightness: 1,
+            cool: 0,
+            warm: 0.04,
+            grain: 0.08,
+            vignette: 0.18,
+          }
+        : undefined,
       stills: {
         bg: {
           id: beat.stillId,

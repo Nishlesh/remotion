@@ -1,0 +1,8 @@
+AUDIO_BLOCKED
+
+kokoro-onnx / Kokoro-82M could not run on this machine (no tools/models, no kokoro_onnx).
+Production VO was NOT synthesized. Fixture cartoon-tone TTS was NOT used for the master.
+audio/*.wav and vo_concat.wav are a silent 24 kHz timing bed with word-level timestamps
+from the locked spoken lines (am_michael pacing estimate, speed 0.95).
+Drop a real kokoro am_michael 0.95 24 kHz read on these line lengths, then re-measure.
+Karaoke ASS is burned from this timing bed so the picture lock can proceed.

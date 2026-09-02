@@ -12,3 +12,6 @@ episodes/*/.cache/
 episodes/*/render/*.mp4
 episodes/*/package/*.mp4
 *.crop-tmp.jpg
+.firecrawl/
+episodes/whatsapp-2009/generate/*.src.png
+channel-brand/*.png
