@@ -1,0 +1,45 @@
+---
+description: Before It Was Famous factory pipeline — run one stage, never skip gates
+globs: src/factory/**/*,episodes/**/*,.cursor/rules/*.mdc
+alwaysApply: false
+---
+
+# Factory pipeline
+
+Channel: **Before It Was Famous** (`@beforeitwasfamous`). FocusStack is a Level-2 natural close, never an ad, never the story.
+
+Would someone watch this if FocusStack did not exist? If no, reject the story.
+
+## Command
+
+```bash
+pnpm factory <stage> --episode <slug>
+pnpm factory run --episode <slug> --until <stage>
+pnpm factory status --episode <slug>
+```
+
+Never skip: discover → score (≥70, pivotal ≥3/5, two reliable sources, fits ≤50s) → research spine → **FACT_APPROVED** → 2–4 hooks → script → TTS + measure → **NARRATION_LOCKED** → storyboard 8–12 beats → stills → Remotion assemble → karaoke from FINAL audio → QA → package.
+
+`publish` refuses unless `PUBLISH_GO` exists, and still does not post. Never auto-publish. No social APIs.
+
+## Human gates (files)
+
+| File | When |
+| --- | --- |
+| `episodes/<slug>/FACT_APPROVED` | After sourced research. Script stage refuses without it (except `_fixture-*`). |
+| `episodes/<slug>/NARRATION_LOCKED` | After listening to `audio/vo_concat.wav`. Storyboard refuses without it. |
+| `episodes/<slug>/PUBLISH_GO` | Human publish intent. Publish stub still will not upload. |
+
+## Facts
+
+Never invent facts. Mock LLM returns stubs. Production claims need source ids. `FACT_APPROVED` is a hard gate.
+
+## VO is source of truth
+
+Duration comes from audio. Script ≠ N Remotion stills. Karaoke does not rewrite spoken words.
+
+## Fixture
+
+`pnpm factory run --episode _fixture-pipeline --until qa`
+
+If Remotion/ffmpeg are missing, the render stage prints the command and writes `render/skipped.json`.

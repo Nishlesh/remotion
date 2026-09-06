@@ -1,0 +1,17 @@
+---
+description: Karaoke Highlight ASS burn — ffmpeg ass filter only
+globs: src/factory/karaoke/**/*,src/engine/captionLayout.ts,src/engine/CaptionBand.tsx
+alwaysApply: false
+---
+
+# Karaoke Highlight
+
+- Font: Montserrat Black.
+- Inactive: 68px white. Active: 71px `#FFE14A` (`{\c&H4AE1FF&\fs71}` in ASS).
+- 8px black stroke. Max 2 lines. Last-line baseline y=1320.
+- **ffmpeg `ass` filter only. Never `subtitles`.**
+- Sentence-final `.!?` ends a chunk. Do not rewrite spoken words.
+- ASS PlayRes 1080×1920, Alignment 2, MarginL/R 140, MarginV 600.
+- Active word highlight over the full visible chunk.
+- Remotion `CaptionBand` is Studio preview only. Production burns karaoke after assemble from FINAL audio timestamps.
+- Font file: `assets/fonts/Montserrat-Black.ttf` via `fontsdir`.

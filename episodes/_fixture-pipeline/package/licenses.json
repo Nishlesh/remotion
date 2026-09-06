@@ -1,0 +1,29 @@
+[
+  {
+    "stillId": "still-01",
+    "file": "stills/still-01.jpg",
+    "source": "fixture",
+    "license": "fixture-synthetic",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-02",
+    "file": "stills/still-02.jpg",
+    "source": "fixture",
+    "license": "fixture-synthetic",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  },
+  {
+    "stillId": "still-03",
+    "file": "stills/still-03.jpg",
+    "source": "fixture",
+    "license": "fixture-synthetic",
+    "coverCropped": true,
+    "width": 1080,
+    "height": 1920
+  }
+]

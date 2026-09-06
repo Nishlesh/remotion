@@ -1,0 +1,661 @@
+{
+  "id": "dyson-5126",
+  "title": "Dyson: 5,126 failures",
+  "compositionId": "FactoryActive",
+  "targetDurationSec": 46.46,
+  "captionsEnabled": false,
+  "fonts": {
+    "display": "Montserrat",
+    "body": "Montserrat"
+  },
+  "audio": {
+    "voiceover": "episodes/dyson-5126/audio/vo_concat.wav",
+    "bed": null
+  },
+  "grade": {
+    "contrast": 1.08,
+    "saturation": 0.9,
+    "brightness": 0.97,
+    "cool": 0,
+    "warm": 0.16,
+    "grain": 0.28,
+    "vignette": 0.42
+  },
+  "voiceover": [
+    {
+      "id": "vo-01",
+      "text": "Before Dyson's bagless vacuum conquered living rooms,",
+      "approximateDurationSec": 4.104,
+      "audioFile": "episodes/dyson-5126/audio/01.wav"
+    },
+    {
+      "id": "vo-02",
+      "text": "he built 5,126 that failed.",
+      "approximateDurationSec": 4.176,
+      "audioFile": "episodes/dyson-5126/audio/02.wav"
+    },
+    {
+      "id": "vo-03",
+      "text": "He wanted a vacuum cleaner that would not lose suction.",
+      "approximateDurationSec": 3.96,
+      "audioFile": "episodes/dyson-5126/audio/03.wav"
+    },
+    {
+      "id": "vo-04",
+      "text": "Prototype after prototype for five years.",
+      "approximateDurationSec": 3.552,
+      "audioFile": "episodes/dyson-5126/audio/04.wav"
+    },
+    {
+      "id": "vo-05",
+      "text": "Manufacturers still rejected the one that worked.",
+      "approximateDurationSec": 3.912,
+      "audioFile": "episodes/dyson-5126/audio/05.wav"
+    },
+    {
+      "id": "vo-06",
+      "text": "Bags paid their bills.",
+      "approximateDurationSec": 2.496,
+      "audioFile": "episodes/dyson-5126/audio/06.wav"
+    },
+    {
+      "id": "vo-07",
+      "text": "So he stopped asking permission.",
+      "approximateDurationSec": 2.904,
+      "audioFile": "episodes/dyson-5126/audio/07.wav"
+    },
+    {
+      "id": "vo-08",
+      "text": "He sold the machine himself.",
+      "approximateDurationSec": 2.712,
+      "audioFile": "episodes/dyson-5126/audio/08.wav"
+    },
+    {
+      "id": "vo-09",
+      "text": "It became a massive success.",
+      "approximateDurationSec": 2.856,
+      "audioFile": "episodes/dyson-5126/audio/09.wav"
+    },
+    {
+      "id": "vo-10",
+      "text": "The machine everyone remembers needed the 5,126 nobody wanted.",
+      "approximateDurationSec": 5.952,
+      "audioFile": "episodes/dyson-5126/audio/10.wav"
+    },
+    {
+      "id": "vo-11",
+      "text": "Breakthroughs rarely look like breakthroughs mid-build.",
+      "approximateDurationSec": 3.624,
+      "audioFile": "episodes/dyson-5126/audio/11.wav"
+    },
+    {
+      "id": "vo-12",
+      "text": "If you're still on the next prototype, FocusStack helps you keep showing up.",
+      "approximateDurationSec": 5.112,
+      "audioFile": "episodes/dyson-5126/audio/12.wav"
+    }
+  ],
+  "scenes": [
+    {
+      "id": "b01",
+      "voiceoverLineId": "vo-01",
+      "durationInFrames": 123,
+      "fadeInFrames": 10,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Before Dyson's bagless vacuum conquered living rooms,",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-01",
+          "src": "episodes/dyson-5126/stills/still-01.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b02",
+      "voiceoverLineId": "vo-02",
+      "durationInFrames": 125,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "he built 5,126 that failed.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-02",
+          "src": "episodes/dyson-5126/stills/still-02.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b03",
+      "voiceoverLineId": "vo-03",
+      "durationInFrames": 119,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "He wanted a vacuum cleaner that would not lose suction.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-03",
+          "src": "episodes/dyson-5126/stills/still-03.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b04",
+      "voiceoverLineId": "vo-04",
+      "durationInFrames": 107,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Prototype after prototype for five years.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-04",
+          "src": "episodes/dyson-5126/stills/still-04.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b05",
+      "voiceoverLineId": "vo-05",
+      "durationInFrames": 117,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Manufacturers still rejected the one that worked.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-05",
+          "src": "episodes/dyson-5126/stills/still-05.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b06",
+      "voiceoverLineId": "vo-06",
+      "durationInFrames": 75,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Bags paid their bills.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-06",
+          "src": "episodes/dyson-5126/stills/still-06.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b07",
+      "voiceoverLineId": "vo-07",
+      "durationInFrames": 87,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "So he stopped asking permission.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-07",
+          "src": "episodes/dyson-5126/stills/still-07.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b08",
+      "voiceoverLineId": "vo-08",
+      "durationInFrames": 81,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "He sold the machine himself.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-08",
+          "src": "episodes/dyson-5126/stills/still-08.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b09",
+      "voiceoverLineId": "vo-09",
+      "durationInFrames": 86,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "It became a massive success.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-09",
+          "src": "episodes/dyson-5126/stills/still-09.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b10",
+      "voiceoverLineId": "vo-10",
+      "durationInFrames": 179,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "The machine everyone remembers needed the 5,126 nobody wanted.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": -8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-10",
+          "src": "episodes/dyson-5126/stills/still-10.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b11",
+      "voiceoverLineId": "vo-11",
+      "durationInFrames": 109,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "Breakthroughs rarely look like breakthroughs mid-build.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.06,
+          "startX": 0,
+          "endX": 8,
+          "startY": 0,
+          "endY": 6
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "stills": {
+        "bg": {
+          "id": "still-11",
+          "src": "episodes/dyson-5126/stills/still-11.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    },
+    {
+      "id": "b12",
+      "voiceoverLineId": "vo-12",
+      "durationInFrames": 153,
+      "fadeInFrames": 8,
+      "fadeOutFrames": 8,
+      "osLockup": null,
+      "captions": {
+        "text": "If you're still on the next prototype, FocusStack helps you keep showing up.",
+        "kicker": "",
+        "highlightBias": 0.45
+      },
+      "motion": {
+        "kenBurns": {
+          "startScale": 1,
+          "endScale": 1.025,
+          "startX": 0,
+          "endX": 2,
+          "startY": 0,
+          "endY": 2
+        },
+        "parallax": {
+          "amount": 0
+        },
+        "entrance": {
+          "damping": 22
+        }
+      },
+      "grade": {
+        "contrast": 1.02,
+        "saturation": 0.96,
+        "brightness": 1,
+        "cool": 0,
+        "warm": 0.04,
+        "grain": 0.08,
+        "vignette": 0.18
+      },
+      "stills": {
+        "bg": {
+          "id": "still-12",
+          "src": "episodes/dyson-5126/stills/still-12.jpg",
+          "x": 0,
+          "y": 0,
+          "width": 1080,
+          "height": 1920,
+          "scale": 1,
+          "opacity": 1,
+          "depth": 0,
+          "objectFit": "fill",
+          "objectPosition": "top",
+          "transformOrigin": "center top"
+        },
+        "layers": []
+      }
+    }
+  ]
+}

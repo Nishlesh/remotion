@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" fill="none">
+  <defs>
+    <linearGradient id="haze" x1="540" y1="500" x2="540" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#c9a888" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#c9a888" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#1a1420" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#haze)"/>
+</svg>

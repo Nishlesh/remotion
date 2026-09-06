@@ -1,0 +1,110 @@
+{
+  "slug": "whatsapp-2009",
+  "famousEntity": "WhatsApp",
+  "selectedHookId": "h1",
+  "hooks": [
+    {
+      "id": "h1",
+      "text": "Years before WhatsApp was worth billions, its founder was collecting food stamps.",
+      "selected": true
+    },
+    {
+      "id": "h2",
+      "text": "WhatsApp started as statuses beside names.",
+      "selected": false
+    },
+    {
+      "id": "h3",
+      "text": "WhatsApp first pinged gym status, not chat.",
+      "selected": false
+    },
+    {
+      "id": "h4",
+      "text": "WhatsApp began as pings beside names.",
+      "selected": false
+    }
+  ],
+  "spine": {
+    "famous_entity": "WhatsApp",
+    "unexpected_beginning": "Years before WhatsApp was worth billions, its founder was collecting food stamps.",
+    "human_detail": "In 2009, Jan Koum built a tiny iPhone app that let people post statuses beside their names.",
+    "constraint": "It wasn't even a messaging app.",
+    "choice": "Then Apple introduced push notifications. People started using those notifications to talk. Koum noticed.",
+    "consequence": "And WhatsApp became a messenger.",
+    "realization": "Years later, Facebook acquired it for billions. Koum signed the deal at a social services office— the same kind of office where he once collected food stamps.",
+    "viewer": "He didn't know what WhatsApp would become. He just kept building.",
+    "focusstack": "If you're building something after work, FocusStack helps you keep showing up."
+  },
+  "spoken": "Years before WhatsApp was worth billions, its founder was collecting food stamps. In 2009, Jan Koum built a tiny iPhone app that let people post statuses beside their names. It wasn't even a messaging app. Then Apple introduced push notifications. People started using those notifications to talk. Koum noticed. And WhatsApp became a messenger. Years later, Facebook acquired it for billions. Koum signed the deal at a social services office— the same kind of office where he once collected food stamps. He didn't know what WhatsApp would become. He just kept building. If you're building something after work, FocusStack helps you keep showing up.",
+  "spokenWordCount": 104,
+  "lines": [
+    {
+      "id": "vo-01",
+      "text": "Years before WhatsApp was worth billions, its founder was collecting food stamps.",
+      "spine": "unexpected_beginning"
+    },
+    {
+      "id": "vo-02",
+      "text": "In 2009, Jan Koum built a tiny iPhone app that let people post statuses beside their names.",
+      "spine": "human_detail"
+    },
+    {
+      "id": "vo-03",
+      "text": "It wasn't even a messaging app.",
+      "spine": "constraint"
+    },
+    {
+      "id": "vo-04",
+      "text": "Then Apple introduced push notifications.",
+      "spine": "choice"
+    },
+    {
+      "id": "vo-05",
+      "text": "People started using those notifications to talk.",
+      "spine": "choice"
+    },
+    {
+      "id": "vo-06",
+      "text": "Koum noticed.",
+      "spine": "choice"
+    },
+    {
+      "id": "vo-07",
+      "text": "And WhatsApp became a messenger.",
+      "spine": "consequence"
+    },
+    {
+      "id": "vo-08",
+      "text": "Years later, Facebook acquired it for billions.",
+      "spine": "realization"
+    },
+    {
+      "id": "vo-09",
+      "text": "Koum signed the deal at a social services office—",
+      "spine": "realization"
+    },
+    {
+      "id": "vo-10",
+      "text": "the same kind of office where he once collected food stamps.",
+      "spine": "realization"
+    },
+    {
+      "id": "vo-11",
+      "text": "He didn't know what WhatsApp would become.",
+      "spine": "viewer"
+    },
+    {
+      "id": "vo-12",
+      "text": "He just kept building.",
+      "spine": "viewer"
+    },
+    {
+      "id": "vo-13",
+      "text": "If you're building something after work, FocusStack helps you keep showing up.",
+      "spine": "focusstack"
+    }
+  ],
+  "cta": "If you're building something after work, FocusStack helps you keep showing up.",
+  "dropRuleApplied": true,
+  "factApproved": true
+}

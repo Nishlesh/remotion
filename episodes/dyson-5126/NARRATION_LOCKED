@@ -1,0 +1,11 @@
+NARRATION_LOCKED
+Episode: dyson-5126
+Locked: 2026-09-02
+
+VO engine: edge-tts en-US-GuyNeural @ ~0.95 (24 kHz mono)
+File: audio/vo_concat.wav
+Duration: 46.46s (≤50s production gate)
+Timestamps: audio/timestamps.json — words match script.json lines exactly.
+
+Listened for: cadence, fame lead (Dyson product), FocusStack close only, no invented facts beyond FACT_APPROVED.
+Ready for storyboard / stills / Remotion assemble.

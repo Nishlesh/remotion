@@ -1,0 +1,46 @@
+{
+  "slug": "whatsapp-2009",
+  "createdAt": "2026-09-02T06:37:44.659Z",
+  "query": "WhatsApp 2009 status app origin",
+  "promptPath": "prompts/discover.md",
+  "candidates": [
+    {
+      "famousEntity": "WhatsApp",
+      "workingTitle": "WhatsApp 2009: status pings",
+      "oneLiner": "WhatsApp began as statuses beside names. After Apple added push, those pings became messages.",
+      "whyFamous": "Cross-platform mobile messaging used by hundreds of millions by 2014; Facebook announced a cash-and-stock acquisition that February.",
+      "unexpectedBeginning": "A status-next-to-names app, not a chat product. People later used status pings as messages.",
+      "watchWithoutFocusStack": true,
+      "notes": "WhatsApp leads. Do not open on Jan Koum. Do not use $19B. Facebook Newsroom announced about $16B cash and stock plus $3B RSUs. Do not frame Facebook job rejection as the origin. Stop this episode before TTS/Remotion.",
+      "sources": [
+        {
+          "title": "Exclusive: The Rags-To-Riches Tale Of How Jan Koum Built WhatsApp Into Facebook's New $19 Billion Baby",
+          "url": "https://www.forbes.com/sites/parmyolson/2014/02/19/exclusive-inside-story-how-jan-koum-built-whatsapp-into-facebooks-new-19-billion-baby/",
+          "publisher": "Forbes (Parmy Olson)",
+          "accessed": "2026-09-02",
+          "notes": "Tier 2 original reporting. Interviewed Koum, Acton, Fishman. Signing, food stamps office, grocery floors, status idea, incorporation birthday, push-to-pings."
+        },
+        {
+          "title": "Facebook to Acquire WhatsApp",
+          "url": "https://about.fb.com/news/2014/02/facebook-to-acquire-whatsapp/",
+          "publisher": "Facebook Newsroom",
+          "accessed": "2026-09-02",
+          "notes": "Tier 1. Announced approximately $16 billion including $4B cash and about $12B stock, plus $3B RSUs. Dated February 19, 2014."
+        },
+        {
+          "title": "WhatsApp Status (company blog)",
+          "url": "https://web.archive.org/web/20170223061647/http://blog.whatsapp.com/10000630/WhatsApp-Status",
+          "publisher": "WhatsApp Blog (Jan Koum)",
+          "accessed": "2026-09-02",
+          "notes": "Tier 1 first-person. February 2009 first code; original idea was status for contacts, months before messaging; company birthday February 24."
+        }
+      ]
+    }
+  ],
+  "rejected": [
+    {
+      "famousEntity": "Facebook reject origin",
+      "reason": "Olson reports Koum and Acton were turned down at Facebook after Yahoo. That is sourced, but it is not the origin of WhatsApp and must not lead or frame this short."
+    }
+  ]
+}

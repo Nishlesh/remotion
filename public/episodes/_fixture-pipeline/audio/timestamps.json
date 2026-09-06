@@ -1,0 +1,173 @@
+{
+  "episode": "_fixture-pipeline",
+  "engine": "fixture-tts",
+  "voice": "am_michael",
+  "speed": 0.95,
+  "lang": "en-us",
+  "sampleRate": 24000,
+  "gapSeconds": 0.1,
+  "totalDuration": 8.53,
+  "fixture": true,
+  "lines": [
+    {
+      "i": 1,
+      "text": "The first version shipped from a kitchen table.",
+      "file": "01.wav",
+      "start": 0,
+      "end": 2.5900000000000003,
+      "duration": 2.5900000000000003,
+      "words": [
+        {
+          "word": "The",
+          "start": 0.08,
+          "end": 0.2653
+        },
+        {
+          "word": "first",
+          "start": 0.2653,
+          "end": 0.574
+        },
+        {
+          "word": "version",
+          "start": 0.574,
+          "end": 1.0063
+        },
+        {
+          "word": "shipped",
+          "start": 1.0063,
+          "end": 1.4385
+        },
+        {
+          "word": "from",
+          "start": 1.4385,
+          "end": 1.6855
+        },
+        {
+          "word": "a",
+          "start": 1.6855,
+          "end": 1.7473
+        },
+        {
+          "word": "kitchen",
+          "start": 1.7473,
+          "end": 2.1795
+        },
+        {
+          "word": "table.",
+          "start": 2.1795,
+          "end": 2.55
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "text": "They had one weekend. No spare rooms.",
+      "file": "02.wav",
+      "start": 2.6900000000000004,
+      "end": 5,
+      "duration": 2.31,
+      "words": [
+        {
+          "word": "They",
+          "start": 2.77,
+          "end": 3.0526
+        },
+        {
+          "word": "had",
+          "start": 3.0526,
+          "end": 3.2645
+        },
+        {
+          "word": "one",
+          "start": 3.2645,
+          "end": 3.4765
+        },
+        {
+          "word": "weekend.",
+          "start": 3.4765,
+          "end": 4.0416
+        },
+        {
+          "word": "No",
+          "start": 4.0416,
+          "end": 4.1829
+        },
+        {
+          "word": "spare",
+          "start": 4.1829,
+          "end": 4.5361
+        },
+        {
+          "word": "rooms.",
+          "start": 4.5361,
+          "end": 4.96
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "text": "That choice became the company. Keep the next one in FocusStack.",
+      "file": "03.wav",
+      "start": 5.1,
+      "end": 8.53,
+      "duration": 3.43,
+      "words": [
+        {
+          "word": "That",
+          "start": 5.18,
+          "end": 5.4252
+        },
+        {
+          "word": "choice",
+          "start": 5.4252,
+          "end": 5.793
+        },
+        {
+          "word": "became",
+          "start": 5.793,
+          "end": 6.1607
+        },
+        {
+          "word": "the",
+          "start": 6.1607,
+          "end": 6.3446
+        },
+        {
+          "word": "company.",
+          "start": 6.3446,
+          "end": 6.835
+        },
+        {
+          "word": "Keep",
+          "start": 6.835,
+          "end": 7.0802
+        },
+        {
+          "word": "the",
+          "start": 7.0802,
+          "end": 7.2641
+        },
+        {
+          "word": "next",
+          "start": 7.2641,
+          "end": 7.5093
+        },
+        {
+          "word": "one",
+          "start": 7.5093,
+          "end": 7.6931
+        },
+        {
+          "word": "in",
+          "start": 7.6931,
+          "end": 7.8157
+        },
+        {
+          "word": "FocusStack.",
+          "start": 7.8157,
+          "end": 8.49
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+---
+description: Human file gates — FACT_APPROVED, NARRATION_LOCKED, PUBLISH_GO
+globs: episodes/**/*
+alwaysApply: false
+---
+
+# Human gates
+
+These are files, not chat confirmations.
+
+1. `FACT_APPROVED` — research spine is sourced. Required before script.
+2. `NARRATION_LOCKED` — VO was listened to. Required before storyboard.
+3. `PUBLISH_GO` — human intends to upload. Publish stage still refuses to implement social posting.
+
+Never skip. Never auto-publish.

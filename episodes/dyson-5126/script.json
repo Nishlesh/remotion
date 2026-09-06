@@ -1,0 +1,105 @@
+{
+  "slug": "dyson-5126",
+  "famousEntity": "Dyson",
+  "selectedHookId": "h1",
+  "hooks": [
+    {
+      "id": "h1",
+      "text": "Before Dyson's bagless vacuum conquered living rooms, he built 5,126 that failed.",
+      "selected": true
+    },
+    {
+      "id": "h2",
+      "text": "Dyson's vacuum took 5,126 failures first.",
+      "selected": false
+    },
+    {
+      "id": "h3",
+      "text": "Dyson built 5,126 vacuums nobody wanted.",
+      "selected": false
+    },
+    {
+      "id": "h4",
+      "text": "Before Dyson was a brand, it was 5,126 failures.",
+      "selected": false
+    }
+  ],
+  "spine": {
+    "famous_entity": "Dyson",
+    "unexpected_beginning": "Before Dyson's bagless vacuum conquered living rooms, he built 5,126 that failed.",
+    "human_detail": "He wanted a vacuum cleaner that would not lose suction. Prototype after prototype for five years.",
+    "constraint": "Manufacturers still rejected the one that worked. Bags paid their bills.",
+    "choice": "So he stopped asking permission. He sold the machine himself.",
+    "consequence": "It became a massive success.",
+    "realization": "The machine everyone remembers needed the 5,126 nobody wanted.",
+    "viewer": "Breakthroughs rarely look like breakthroughs mid-build.",
+    "focusstack": "If you're still on the next prototype, FocusStack helps you keep showing up."
+  },
+  "spoken": "Before Dyson's bagless vacuum conquered living rooms, he built 5,126 that failed. He wanted a vacuum cleaner that would not lose suction. Prototype after prototype for five years. Manufacturers still rejected the one that worked. Bags paid their bills. So he stopped asking permission. He sold the machine himself. It became a massive success. The machine everyone remembers needed the 5,126 nobody wanted. Breakthroughs rarely look like breakthroughs mid-build. If you're still on the next prototype, FocusStack helps you keep showing up.",
+  "spokenWordCount": 82,
+  "lines": [
+    {
+      "id": "vo-01",
+      "text": "Before Dyson's bagless vacuum conquered living rooms,",
+      "spine": "unexpected_beginning"
+    },
+    {
+      "id": "vo-02",
+      "text": "he built 5,126 that failed.",
+      "spine": "unexpected_beginning"
+    },
+    {
+      "id": "vo-03",
+      "text": "He wanted a vacuum cleaner that would not lose suction.",
+      "spine": "human_detail"
+    },
+    {
+      "id": "vo-04",
+      "text": "Prototype after prototype for five years.",
+      "spine": "human_detail"
+    },
+    {
+      "id": "vo-05",
+      "text": "Manufacturers still rejected the one that worked.",
+      "spine": "constraint"
+    },
+    {
+      "id": "vo-06",
+      "text": "Bags paid their bills.",
+      "spine": "constraint"
+    },
+    {
+      "id": "vo-07",
+      "text": "So he stopped asking permission.",
+      "spine": "choice"
+    },
+    {
+      "id": "vo-08",
+      "text": "He sold the machine himself.",
+      "spine": "choice"
+    },
+    {
+      "id": "vo-09",
+      "text": "It became a massive success.",
+      "spine": "consequence"
+    },
+    {
+      "id": "vo-10",
+      "text": "The machine everyone remembers needed the 5,126 nobody wanted.",
+      "spine": "realization"
+    },
+    {
+      "id": "vo-11",
+      "text": "Breakthroughs rarely look like breakthroughs mid-build.",
+      "spine": "viewer"
+    },
+    {
+      "id": "vo-12",
+      "text": "If you're still on the next prototype, FocusStack helps you keep showing up.",
+      "spine": "focusstack"
+    }
+  ],
+  "cta": "If you're still on the next prototype, FocusStack helps you keep showing up.",
+  "dropRuleApplied": true,
+  "factApproved": true
+}

@@ -1,0 +1,543 @@
+{
+  "episode": "dyson-5126",
+  "engine": "edge-tts",
+  "voice": "en-US-GuyNeural",
+  "speed": 0.95,
+  "lang": "en-US",
+  "sampleRate": 24000,
+  "gapSeconds": 0.1,
+  "totalDuration": 46.46,
+  "fixture": false,
+  "lines": [
+    {
+      "i": 0,
+      "text": "Before Dyson's bagless vacuum conquered living rooms,",
+      "file": "01.wav",
+      "start": 0.0,
+      "end": 4.104,
+      "duration": 4.104,
+      "words": [
+        {
+          "word": "Before",
+          "start": 0.0,
+          "end": 0.586
+        },
+        {
+          "word": "Dyson's",
+          "start": 0.586,
+          "end": 1.173
+        },
+        {
+          "word": "bagless",
+          "start": 1.173,
+          "end": 1.759
+        },
+        {
+          "word": "vacuum",
+          "start": 1.759,
+          "end": 2.345
+        },
+        {
+          "word": "conquered",
+          "start": 2.345,
+          "end": 2.931
+        },
+        {
+          "word": "living",
+          "start": 2.931,
+          "end": 3.518
+        },
+        {
+          "word": "rooms,",
+          "start": 3.518,
+          "end": 4.104
+        }
+      ]
+    },
+    {
+      "i": 1,
+      "text": "he built 5,126 that failed.",
+      "file": "02.wav",
+      "start": 4.204,
+      "end": 8.38,
+      "duration": 4.176,
+      "words": [
+        {
+          "word": "he",
+          "start": 4.204,
+          "end": 5.039
+        },
+        {
+          "word": "built",
+          "start": 5.039,
+          "end": 5.874
+        },
+        {
+          "word": "5,126",
+          "start": 5.874,
+          "end": 6.71
+        },
+        {
+          "word": "that",
+          "start": 6.71,
+          "end": 7.545
+        },
+        {
+          "word": "failed.",
+          "start": 7.545,
+          "end": 8.38
+        }
+      ]
+    },
+    {
+      "i": 2,
+      "text": "He wanted a vacuum cleaner that would not lose suction.",
+      "file": "03.wav",
+      "start": 8.48,
+      "end": 12.44,
+      "duration": 3.96,
+      "words": [
+        {
+          "word": "He",
+          "start": 8.48,
+          "end": 8.876
+        },
+        {
+          "word": "wanted",
+          "start": 8.876,
+          "end": 9.272
+        },
+        {
+          "word": "a",
+          "start": 9.272,
+          "end": 9.668
+        },
+        {
+          "word": "vacuum",
+          "start": 9.668,
+          "end": 10.064
+        },
+        {
+          "word": "cleaner",
+          "start": 10.064,
+          "end": 10.46
+        },
+        {
+          "word": "that",
+          "start": 10.46,
+          "end": 10.856
+        },
+        {
+          "word": "would",
+          "start": 10.856,
+          "end": 11.252
+        },
+        {
+          "word": "not",
+          "start": 11.252,
+          "end": 11.648
+        },
+        {
+          "word": "lose",
+          "start": 11.648,
+          "end": 12.044
+        },
+        {
+          "word": "suction.",
+          "start": 12.044,
+          "end": 12.44
+        }
+      ]
+    },
+    {
+      "i": 3,
+      "text": "Prototype after prototype for five years.",
+      "file": "04.wav",
+      "start": 12.54,
+      "end": 16.092,
+      "duration": 3.552,
+      "words": [
+        {
+          "word": "Prototype",
+          "start": 12.54,
+          "end": 13.132
+        },
+        {
+          "word": "after",
+          "start": 13.132,
+          "end": 13.724
+        },
+        {
+          "word": "prototype",
+          "start": 13.724,
+          "end": 14.316
+        },
+        {
+          "word": "for",
+          "start": 14.316,
+          "end": 14.908
+        },
+        {
+          "word": "five",
+          "start": 14.908,
+          "end": 15.5
+        },
+        {
+          "word": "years.",
+          "start": 15.5,
+          "end": 16.092
+        }
+      ]
+    },
+    {
+      "i": 4,
+      "text": "Manufacturers still rejected the one that worked.",
+      "file": "05.wav",
+      "start": 16.192,
+      "end": 20.104,
+      "duration": 3.912,
+      "words": [
+        {
+          "word": "Manufacturers",
+          "start": 16.192,
+          "end": 16.751
+        },
+        {
+          "word": "still",
+          "start": 16.751,
+          "end": 17.31
+        },
+        {
+          "word": "rejected",
+          "start": 17.31,
+          "end": 17.869
+        },
+        {
+          "word": "the",
+          "start": 17.869,
+          "end": 18.427
+        },
+        {
+          "word": "one",
+          "start": 18.427,
+          "end": 18.986
+        },
+        {
+          "word": "that",
+          "start": 18.986,
+          "end": 19.545
+        },
+        {
+          "word": "worked.",
+          "start": 19.545,
+          "end": 20.104
+        }
+      ]
+    },
+    {
+      "i": 5,
+      "text": "Bags paid their bills.",
+      "file": "06.wav",
+      "start": 20.204,
+      "end": 22.7,
+      "duration": 2.496,
+      "words": [
+        {
+          "word": "Bags",
+          "start": 20.204,
+          "end": 20.828
+        },
+        {
+          "word": "paid",
+          "start": 20.828,
+          "end": 21.452
+        },
+        {
+          "word": "their",
+          "start": 21.452,
+          "end": 22.076
+        },
+        {
+          "word": "bills.",
+          "start": 22.076,
+          "end": 22.7
+        }
+      ]
+    },
+    {
+      "i": 6,
+      "text": "So he stopped asking permission.",
+      "file": "07.wav",
+      "start": 22.8,
+      "end": 25.704,
+      "duration": 2.904,
+      "words": [
+        {
+          "word": "So",
+          "start": 22.8,
+          "end": 23.381
+        },
+        {
+          "word": "he",
+          "start": 23.381,
+          "end": 23.962
+        },
+        {
+          "word": "stopped",
+          "start": 23.962,
+          "end": 24.542
+        },
+        {
+          "word": "asking",
+          "start": 24.542,
+          "end": 25.123
+        },
+        {
+          "word": "permission.",
+          "start": 25.123,
+          "end": 25.704
+        }
+      ]
+    },
+    {
+      "i": 7,
+      "text": "He sold the machine himself.",
+      "file": "08.wav",
+      "start": 25.804,
+      "end": 28.516,
+      "duration": 2.712,
+      "words": [
+        {
+          "word": "He",
+          "start": 25.804,
+          "end": 26.346
+        },
+        {
+          "word": "sold",
+          "start": 26.346,
+          "end": 26.889
+        },
+        {
+          "word": "the",
+          "start": 26.889,
+          "end": 27.431
+        },
+        {
+          "word": "machine",
+          "start": 27.431,
+          "end": 27.974
+        },
+        {
+          "word": "himself.",
+          "start": 27.974,
+          "end": 28.516
+        }
+      ]
+    },
+    {
+      "i": 8,
+      "text": "It became a massive success.",
+      "file": "09.wav",
+      "start": 28.616,
+      "end": 31.472,
+      "duration": 2.856,
+      "words": [
+        {
+          "word": "It",
+          "start": 28.616,
+          "end": 29.187
+        },
+        {
+          "word": "became",
+          "start": 29.187,
+          "end": 29.758
+        },
+        {
+          "word": "a",
+          "start": 29.758,
+          "end": 30.33
+        },
+        {
+          "word": "massive",
+          "start": 30.33,
+          "end": 30.901
+        },
+        {
+          "word": "success.",
+          "start": 30.901,
+          "end": 31.472
+        }
+      ]
+    },
+    {
+      "i": 9,
+      "text": "The machine everyone remembers needed the 5,126 nobody wanted.",
+      "file": "10.wav",
+      "start": 31.572,
+      "end": 37.524,
+      "duration": 5.952,
+      "words": [
+        {
+          "word": "The",
+          "start": 31.572,
+          "end": 32.233
+        },
+        {
+          "word": "machine",
+          "start": 32.233,
+          "end": 32.895
+        },
+        {
+          "word": "everyone",
+          "start": 32.895,
+          "end": 33.556
+        },
+        {
+          "word": "remembers",
+          "start": 33.556,
+          "end": 34.217
+        },
+        {
+          "word": "needed",
+          "start": 34.217,
+          "end": 34.879
+        },
+        {
+          "word": "the",
+          "start": 34.879,
+          "end": 35.54
+        },
+        {
+          "word": "5,126",
+          "start": 35.54,
+          "end": 36.201
+        },
+        {
+          "word": "nobody",
+          "start": 36.201,
+          "end": 36.863
+        },
+        {
+          "word": "wanted.",
+          "start": 36.863,
+          "end": 37.524
+        }
+      ]
+    },
+    {
+      "i": 10,
+      "text": "Breakthroughs rarely look like breakthroughs mid-build.",
+      "file": "11.wav",
+      "start": 37.624,
+      "end": 41.248,
+      "duration": 3.624,
+      "words": [
+        {
+          "word": "Breakthroughs",
+          "start": 37.624,
+          "end": 38.228
+        },
+        {
+          "word": "rarely",
+          "start": 38.228,
+          "end": 38.832
+        },
+        {
+          "word": "look",
+          "start": 38.832,
+          "end": 39.436
+        },
+        {
+          "word": "like",
+          "start": 39.436,
+          "end": 40.04
+        },
+        {
+          "word": "breakthroughs",
+          "start": 40.04,
+          "end": 40.644
+        },
+        {
+          "word": "mid-build.",
+          "start": 40.644,
+          "end": 41.248
+        }
+      ]
+    },
+    {
+      "i": 11,
+      "text": "If you're still on the next prototype, FocusStack helps you keep showing up.",
+      "file": "12.wav",
+      "start": 41.348,
+      "end": 46.46,
+      "duration": 5.112,
+      "words": [
+        {
+          "word": "If",
+          "start": 41.348,
+          "end": 41.741
+        },
+        {
+          "word": "you're",
+          "start": 41.741,
+          "end": 42.134
+        },
+        {
+          "word": "still",
+          "start": 42.134,
+          "end": 42.528
+        },
+        {
+          "word": "on",
+          "start": 42.528,
+          "end": 42.921
+        },
+        {
+          "word": "the",
+          "start": 42.921,
+          "end": 43.314
+        },
+        {
+          "word": "next",
+          "start": 43.314,
+          "end": 43.707
+        },
+        {
+          "word": "prototype,",
+          "start": 43.707,
+          "end": 44.101
+        },
+        {
+          "word": "FocusStack",
+          "start": 44.101,
+          "end": 44.494
+        },
+        {
+          "word": "helps",
+          "start": 44.494,
+          "end": 44.887
+        },
+        {
+          "word": "you",
+          "start": 44.887,
+          "end": 45.28
+        },
+        {
+          "word": "keep",
+          "start": 45.28,
+          "end": 45.674
+        },
+        {
+          "word": "showing",
+          "start": 45.674,
+          "end": 46.067
+        },
+        {
+          "word": "up.",
+          "start": 46.067,
+          "end": 46.46
+        }
+      ]
+    }
+  ]
+}

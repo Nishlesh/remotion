@@ -1,0 +1,41 @@
+{
+  "slug": "dyson-5126",
+  "createdAt": "2026-09-02T07:26:00.000Z",
+  "query": "Dyson bagless vacuum 5126 prototypes",
+  "promptPath": "prompts/discover.md",
+  "candidates": [
+    {
+      "famousEntity": "Dyson",
+      "workingTitle": "Dyson: 5,126 failures",
+      "oneLiner": "Before Dyson's bagless vacuum was famous, he built 5,126 that failed — then manufacturers still said no.",
+      "whyFamous": "Dyson is a household premium vacuum / appliance brand; bagless cyclone redesign is the origin myth.",
+      "unexpectedBeginning": "5,127 prototypes / 5,126 failures over ~five years before the machine manufacturers would touch.",
+      "watchWithoutFocusStack": true,
+      "notes": "Lead with Dyson the product/brand. James appears only as builder of the famous machine, not as the hook subject. FocusStack is Level-2 close only.",
+      "sources": [
+        {
+          "title": "Frustration and failure fuel Dyson's success",
+          "url": "https://www.bbc.com/future/article/20130312-failure-is-the-best-medicine",
+          "publisher": "BBC Future",
+          "accessed": "2026-09-02",
+          "notes": "Tier 1/2 interview. 5,127 tweaks 1979–1984; sawmill cyclone; rejected by British retailers; Japan royalties → Malmesbury 1993; path to billionaire."
+        },
+        {
+          "title": "James Dyson",
+          "url": "https://en.wikipedia.org/wiki/James_Dyson",
+          "publisher": "Wikipedia (cites Fast Company May 2007)",
+          "accessed": "2026-09-02",
+          "notes": "About 5,127 prototypes; Fast Company quote: 5,126 failures; manufacturers refused UK (bag market); G-Force Japan; own company June 1993."
+        },
+        {
+          "title": "James Dyson on His Vacuum Failure and Success",
+          "url": "https://nymag.com/vindicated/2016/11/james-dyson-on-5-126-vacuums-that-didnt-work-and-1-that-did.html",
+          "publisher": "New York Magazine",
+          "accessed": "2026-09-02",
+          "notes": "Tier 2. Manufacturer razor-and-blade bag model; 'I'd have to do it myself'; Japan G-Force via Apex."
+        }
+      ]
+    }
+  ],
+  "rejected": []
+}

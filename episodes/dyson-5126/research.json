@@ -1,0 +1,82 @@
+{
+  "slug": "dyson-5126",
+  "famousEntity": "Dyson",
+  "promptPath": "prompts/research.md",
+  "sources": [
+    {
+      "id": "s-bbc-future-2013-03-14",
+      "title": "Frustration and failure fuel Dyson's success",
+      "url": "https://www.bbc.com/future/article/20130312-failure-is-the-best-medicine",
+      "publisher": "BBC Future (Stephen Dowling)",
+      "accessed": "2026-09-02",
+      "notes": "Tier 1/2 exclusive interview, 14 March 2013. States initial vacuum design had 5,127 changes; miniaturising cyclone took 5,127 tweaks between 1979 and 1984; rejected by British retailers; wife's income helped; Japan sales funded Malmesbury 1993; 'helped him on the way to becoming a billionaire'; inspiration from sawmill cyclone; first bagless was G-Force."
+    },
+    {
+      "id": "s-wikipedia-james-dyson",
+      "title": "James Dyson",
+      "url": "https://en.wikipedia.org/wiki/James_Dyson",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-02",
+      "notes": "Summarises ~5,127 prototypes over five years; G-Force 1983 Japan catalogue; no UK manufacturer/distributor would handle it because of replacement dust-bag market; dual cyclone patent EP0037674 (1980); founded own manufacturing; Malmesbury June 1993. Quotes Fast Company (May 2007): 'I made about 5,127 prototypes... There were 5,126 failures.'"
+    },
+    {
+      "id": "s-nymag-2016-11",
+      "title": "James Dyson on His Vacuum Failure and Success",
+      "url": "https://nymag.com/vindicated/2016/11/james-dyson-on-5-126-vacuums-that-didnt-work-and-1-that-did.html",
+      "publisher": "New York Magazine",
+      "accessed": "2026-09-02",
+      "notes": "Tier 2. Manufacturers had razor-and-blade bag/filter profits; refused license; 'if I wanted the technology out there, I'd have to do it myself'; Japan G-Force via Apex Limited; mid-80s Japan sales funded founding Dyson company 1993."
+    },
+    {
+      "id": "s-jdf-our-story",
+      "title": "Our Story",
+      "url": "https://www.jamesdysonfoundation.co.uk/who-we-are/our-story/",
+      "publisher": "James Dyson Foundation",
+      "accessed": "2026-09-02",
+      "notes": "First-party foundation page. Affirms 5,127 prototypes headline and Hoover Junior / sawmill cyclone origin. Note: page conflates DC01 as 'first bagless' — prefer BBC/Wikipedia timeline (G-Force first). Used only as corroboration for prototype count and suction/bag frustration, not for DC01-as-first claim."
+    }
+  ],
+  "facts": [
+    {
+      "id": "f-5126-failures",
+      "claim": "Dyson has said he made about 5,127 vacuum prototypes and that there were 5,126 failures before he got it right.",
+      "sourceIds": ["s-wikipedia-james-dyson", "s-bbc-future-2013-03-14", "s-nymag-2016-11"],
+      "spine": "unexpected_beginning"
+    },
+    {
+      "id": "f-five-years",
+      "claim": "The bagless cyclone vacuum work ran roughly five years, with BBC placing the 5,127 tweaks between 1979 and 1984.",
+      "sourceIds": ["s-bbc-future-2013-03-14", "s-wikipedia-james-dyson"],
+      "spine": "human_detail"
+    },
+    {
+      "id": "f-lose-suction",
+      "claim": "The frustration was a vacuum that lost suction / clogging bag performance; cyclone idea came from industrial sawdust separation.",
+      "sourceIds": ["s-bbc-future-2013-03-14", "s-jdf-our-story"],
+      "spine": "human_detail"
+    },
+    {
+      "id": "f-manufacturers-reject",
+      "claim": "Major manufacturers and UK distributors refused the bagless design because replacement dust bags were a profitable razor-and-blade business.",
+      "sourceIds": ["s-wikipedia-james-dyson", "s-nymag-2016-11", "s-bbc-future-2013-03-14"],
+      "spine": "constraint"
+    },
+    {
+      "id": "f-do-it-himself",
+      "claim": "After licensing attempts failed, Dyson concluded he had to bring the technology to market himself (Japan G-Force sales, then his own manufacturing company).",
+      "sourceIds": ["s-nymag-2016-11", "s-wikipedia-james-dyson", "s-bbc-future-2013-03-14"],
+      "spine": "choice"
+    },
+    {
+      "id": "f-success",
+      "claim": "The bagless machines succeeded commercially (Japan hit → UK factory 1993; Dual Cyclone became a major UK seller). BBC notes the redesign helped him toward becoming a billionaire.",
+      "sourceIds": ["s-bbc-future-2013-03-14", "s-wikipedia-james-dyson"],
+      "spine": "consequence"
+    }
+  ],
+  "unknown": [
+    "Exact calendar date of each prototype count milestone (2,627 / 3,727) is memoir-sourced via secondary press — not used in spoken script.",
+    "Whether 'sold it himself' should mean Japan catalogue licensing vs later Malmesbury manufacturing — spoken uses the NY Mag 'do it myself' framing without inventing a single retail channel."
+  ],
+  "inventedFactsForbidden": true
+}

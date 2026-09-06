@@ -1,0 +1,28 @@
+{
+  "slug": "_fixture-pipeline",
+  "createdAt": "2026-09-01T00:00:00.000Z",
+  "query": "fixture pipeline",
+  "promptPath": "prompts/discover.md",
+  "candidates": [
+    {
+      "famousEntity": "Kitchen-table ship",
+      "workingTitle": "Fixture: kitchen-table ship",
+      "oneLiner": "Synthetic VO to prove assemble + karaoke, not a public episode.",
+      "whyFamous": "fixture",
+      "unexpectedBeginning": "A kitchen table.",
+      "watchWithoutFocusStack": true,
+      "notes": "kind=fixture. Fame test is skipped for this slug only.",
+      "sources": [
+        {
+          "title": "Fixture (in-repo)",
+          "url": "https://github.com/Nishlesh/remotion"
+        },
+        {
+          "title": "Factory README",
+          "url": "https://github.com/Nishlesh/remotion"
+        }
+      ]
+    }
+  ],
+  "rejected": []
+}

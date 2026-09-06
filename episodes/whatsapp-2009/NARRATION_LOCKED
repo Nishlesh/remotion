@@ -1,0 +1,4 @@
+NARRATION_LOCKED — whatsapp-2009
+The spoken words in script.json are operator-locked (13 lines, punctuation kept).
+
+If AUDIO_BLOCKED is present, vo_concat.wav is a silent 24 kHz timing bed, not a Kokoro production read. Picture + karaoke may proceed so a real am_michael 0.95 VO can be dropped later. Do not treat the silent bed as aired narration.

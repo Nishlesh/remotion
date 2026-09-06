@@ -1,0 +1,48 @@
+{
+  "slug": "_fixture-pipeline",
+  "narrationLocked": true,
+  "durationSec": 8.53,
+  "beats": [
+    {
+      "id": "b01",
+      "index": 1,
+      "startSec": 0,
+      "endSec": 2.5900000000000003,
+      "voiceoverLineId": "vo-01",
+      "visual": "The first version shipped from a kitchen table.",
+      "stillId": "still-01",
+      "osLockup": {
+        "text": "Kitchen table",
+        "y": 180,
+        "size": "plate"
+      },
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b02",
+      "index": 2,
+      "startSec": 2.6900000000000004,
+      "endSec": 5,
+      "voiceoverLineId": "vo-02",
+      "visual": "They had one weekend. No spare rooms.",
+      "stillId": "still-02",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b03",
+      "index": 3,
+      "startSec": 5.1,
+      "endSec": 8.53,
+      "voiceoverLineId": "vo-03",
+      "visual": "That choice became the company. Keep the next one in FocusStack.",
+      "stillId": "still-03",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    }
+  ],
+  "identityPlates": []
+}

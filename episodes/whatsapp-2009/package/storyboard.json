@@ -1,0 +1,171 @@
+{
+  "slug": "whatsapp-2009",
+  "narrationLocked": true,
+  "durationSec": 35.69,
+  "beats": [
+    {
+      "id": "b01",
+      "index": 1,
+      "startSec": 0,
+      "endSec": 3.71,
+      "voiceoverLineId": "vo-01",
+      "visual": "1990s social services waiting room. A teenager stands in line. No logos.",
+      "stillId": "still-01",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b02",
+      "index": 2,
+      "startSec": 3.81,
+      "endSec": 8.92,
+      "voiceoverLineId": "vo-02",
+      "visual": "Jan Koum identity plate. Kitchen, early iPhone, statuses beside names. No logos.",
+      "stillId": "still-02",
+      "osLockup": null,
+      "identityPlate": "id-koum",
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b03",
+      "index": 3,
+      "startSec": 9.02,
+      "endSec": 11.05,
+      "voiceoverLineId": "vo-03",
+      "visual": "Early iPhone contacts list. Status dots. Not a messenger. No trademarks.",
+      "stillId": "still-03",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b04",
+      "index": 4,
+      "startSec": 11.15,
+      "endSec": 12.9,
+      "voiceoverLineId": "vo-04",
+      "visual": "Nightstand. A phone lights up with a push notification glow. No logos.",
+      "stillId": "still-04",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b05",
+      "index": 5,
+      "startSec": 13,
+      "endSec": 15.31,
+      "voiceoverLineId": "vo-05",
+      "visual": "Two people using notification pings to talk. No brand marks.",
+      "stillId": "still-05",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b06",
+      "index": 6,
+      "startSec": 15.41,
+      "endSec": 17.01,
+      "voiceoverLineId": "vo-06",
+      "visual": "Koum identity plate. He notices the pings becoming messages.",
+      "stillId": "still-06",
+      "osLockup": null,
+      "identityPlate": "id-koum",
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b07",
+      "index": 7,
+      "startSec": 17.11,
+      "endSec": 18.86,
+      "voiceoverLineId": "vo-07",
+      "visual": "Generic message thread on an early phone. No WhatsApp glyph.",
+      "stillId": "still-07",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b08",
+      "index": 8,
+      "startSec": 18.96,
+      "endSec": 21.27,
+      "voiceoverLineId": "vo-08",
+      "visual": "Acquisition papers on a table. No Facebook logo.",
+      "stillId": "still-08",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b09",
+      "index": 9,
+      "startSec": 21.37,
+      "endSec": 24.24,
+      "voiceoverLineId": "vo-09",
+      "visual": "Koum identity plate. He signs papers on a disused office door.",
+      "stillId": "still-09",
+      "osLockup": null,
+      "identityPlate": "id-koum",
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b10",
+      "index": 10,
+      "startSec": 24.34,
+      "endSec": 27.77,
+      "voiceoverLineId": "vo-10",
+      "visual": "Disused white social services building across the tracks. No logos.",
+      "stillId": "still-10",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b11",
+      "index": 11,
+      "startSec": 27.87,
+      "endSec": 30.18,
+      "voiceoverLineId": "vo-11",
+      "visual": "Koum identity plate. Uncertain at a cheap desk at night.",
+      "stillId": "still-11",
+      "osLockup": null,
+      "identityPlate": "id-koum",
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b12",
+      "index": 12,
+      "startSec": 30.28,
+      "endSec": 31.88,
+      "voiceoverLineId": "vo-12",
+      "visual": "Koum identity plate. He keeps building at a cheap table.",
+      "stillId": "still-12",
+      "osLockup": null,
+      "identityPlate": "id-koum",
+      "sourcePreference": "generate"
+    },
+    {
+      "id": "b13",
+      "index": 13,
+      "startSec": 31.98,
+      "endSec": 35.69,
+      "voiceoverLineId": "vo-13",
+      "visual": "Real FocusStack session. Focus elapsed 38:03. Started 9:44 PM. Keep UI readable. Mild Ken Burns. Karaoke band y=1200-1440 stays photo.",
+      "stillId": "still-13",
+      "osLockup": null,
+      "identityPlate": null,
+      "sourcePreference": "generate"
+    }
+  ],
+  "identityPlates": [
+    {
+      "personName": "Jan Koum",
+      "stillId": "still-02",
+      "appearances": 5,
+      "notes": "Founder-face representation on still-02, still-06, still-09, still-11, still-12. Product still leads the spoken open."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "dyson-5126",
+  "famousEntity": "Dyson",
+  "total": 80,
+  "pass": true,
+  "threshold": 70,
+  "pivotal": 4,
+  "sourceCount": 3,
+  "fitsFiftySeconds": true,
+  "watchWithoutFocusStack": true,
+  "fameTestPass": true,
+  "breakdown": {
+    "fame": 20,
+    "unexpectedBeginning": 15,
+    "humanStakes": 15,
+    "visualSpine": 15,
+    "runtimeFit": 15
+  },
+  "reasons": [
+    "Dyson the brand/product leads. 5,126-failure beginning sourced in BBC + Wikipedia/Fast Company + NY Mag. Manufacturer rejection and self-go-to-market sourced. Fits ~80–100 word short. Watchable without FocusStack."
+  ],
+  "sources": [
+    {
+      "title": "Frustration and failure fuel Dyson's success",
+      "url": "https://www.bbc.com/future/article/20130312-failure-is-the-best-medicine",
+      "publisher": "BBC Future",
+      "accessed": "2026-09-02"
+    },
+    {
+      "title": "James Dyson",
+      "url": "https://en.wikipedia.org/wiki/James_Dyson",
+      "publisher": "Wikipedia",
+      "accessed": "2026-09-02"
+    },
+    {
+      "title": "James Dyson on His Vacuum Failure and Success",
+      "url": "https://nymag.com/vindicated/2016/11/james-dyson-on-5-126-vacuums-that-didnt-work-and-1-that-did.html",
+      "publisher": "New York Magazine",
+      "accessed": "2026-09-02"
+    }
+  ]
+}
