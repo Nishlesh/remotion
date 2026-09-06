@@ -38,14 +38,14 @@ export const filmHash = (n: number, salt: number): number => {
   return x - Math.floor(x);
 };
 
-/** Stepped gate-weave offset. Peak travel is `GATE_WEAVE_TRAVEL_PX` (±2.5px). */
+/** Stepped gate-weave offset. Peak travel is `GATE_WEAVE_TRAVEL_PX` on each axis. */
 export const gateWeaveOffset = (
   frame: number,
   fps: number,
 ): {x: number; y: number} => {
   const tick = filmTick(frame, fps);
   return {
-    x: (filmHash(tick, 1) - 0.5) * GATE_WEAVE_TRAVEL_PX,
-    y: (filmHash(tick, 19) - 0.5) * GATE_WEAVE_TRAVEL_PX,
+    x: (filmHash(tick, 1) * 2 - 1) * GATE_WEAVE_TRAVEL_PX,
+    y: (filmHash(tick, 19) * 2 - 1) * GATE_WEAVE_TRAVEL_PX,
   };
 };

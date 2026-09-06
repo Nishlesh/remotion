@@ -39,8 +39,8 @@ describe('filmTime posterize', () => {
     const c = gateWeaveOffset(3, 30);
     expect(a).toEqual(b);
     expect(c).not.toEqual(a);
-    expect(Math.abs(a.x)).toBeLessThanOrEqual(GATE_WEAVE_TRAVEL_PX / 2);
-    expect(Math.abs(a.y)).toBeLessThanOrEqual(GATE_WEAVE_TRAVEL_PX / 2);
+    expect(Math.abs(a.x)).toBeLessThanOrEqual(GATE_WEAVE_TRAVEL_PX);
+    expect(Math.abs(a.y)).toBeLessThanOrEqual(GATE_WEAVE_TRAVEL_PX);
     expect(GATE_WEAVE_SCALE).toBe(1.012);
   });
 });
