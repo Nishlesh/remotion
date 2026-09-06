@@ -8,6 +8,9 @@ import {
   calculateFactoryActiveMetadata,
   calculateSceneMetadata,
   FactoryPlayer,
+  FilmTreatmentDemo,
+  filmTreatmentDemoProps,
+  filmTreatmentDemoSchema,
   sceneSchema,
 } from './engine';
 import type {EpisodeSpec} from './engine/types';
@@ -112,6 +115,18 @@ export const RemotionRoot: React.FC = () => {
             calculateMetadata={calculateSceneMetadata}
           />
         ))}
+      </Folder>
+      <Folder name="Engine">
+        <Composition
+          id="FilmTreatmentDemo"
+          component={FilmTreatmentDemo}
+          schema={filmTreatmentDemoSchema}
+          defaultProps={filmTreatmentDemoProps}
+          durationInFrames={90}
+          fps={FPS}
+          width={WIDTH}
+          height={HEIGHT}
+        />
       </Folder>
       <Folder name="Factory">
         <Composition

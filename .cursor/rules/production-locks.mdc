@@ -15,4 +15,5 @@ alwaysApply: false
 - Always PIL cover-crop stills to 1080×1920 (`tools/cover_crop.py`; ffmpeg fallback). Image models ignore 9:16.
 - Runtime 25–50s, never above 50.0. Target 35–45. Fixture slugs may be shorter.
 - Shared grade / grain / Ken Burns are tunables on `LookEngine`. Do not clone third-party 12fps kits.
+- `FilmTreatment` is an opt-in wrapper (scanlines, committed `grain.jpg`/`grunge.jpg`, vignette, sepia grade, 12fps gate-weave). Do not rewrite LookEngine into film-only.
 - Channel brand is Before It Was Famous, not FocusStack.

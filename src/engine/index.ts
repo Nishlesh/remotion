@@ -19,6 +19,30 @@ export {
 } from './constants';
 export {LookEngine} from './LookEngine';
 export {SceneFrame} from './SceneFrame';
+export type {FilmTreatmentOptIn} from './SceneFrame';
+export {
+  FilmTreatment,
+  FILM_TREATMENT_DEFAULTS,
+  FILM_GRAIN_SRC,
+  FILM_GRUNGE_SRC,
+} from './FilmTreatment';
+export type {FilmTreatmentProps} from './FilmTreatment';
+export {
+  FilmTreatmentDemo,
+  filmTreatmentDemoSchema,
+  filmTreatmentDemoProps,
+  FILM_TREATMENT_DEMO_STILL,
+} from './FilmTreatmentDemo';
+export type {FilmTreatmentDemoProps} from './FilmTreatmentDemo';
+export {
+  FILM_POSTERIZE_FPS,
+  GATE_WEAVE_TRAVEL_PX,
+  GATE_WEAVE_SCALE,
+  posterizeFrame,
+  filmTick,
+  filmHash,
+  gateWeaveOffset,
+} from './filmTime';
 export {CaptionBand} from './CaptionBand';
 export {PictureWindow, StillLayer} from './StillLayer';
 export {OsLockup} from './OsLockup';
