@@ -25,6 +25,9 @@ export const filmTreatmentDemoSchema = z.object({
   contrast: z.number().min(0).max(2),
   sepia: z.number().min(0).max(1),
   brightness: z.number().min(0).max(2),
+  scanLineOpacity: z.number().min(0).max(1),
+  grainOpacity: z.number().min(0).max(1),
+  vignetteEdge: z.number().min(0).max(1),
   stillSrc: z.string(),
   /** Nest like SceneFrame: LookEngine around FilmTreatment. */
   stackLookEngine: z.boolean(),
@@ -71,6 +74,9 @@ const Plate: React.FC<
   contrast,
   sepia,
   brightness,
+  scanLineOpacity,
+  grainOpacity,
+  vignetteEdge,
   stackLookEngine,
 }) => {
   const still = <StillPlate src={stillSrc} />;
@@ -87,6 +93,9 @@ const Plate: React.FC<
       contrast={contrast}
       sepia={sepia}
       brightness={brightness}
+      scanLineOpacity={scanLineOpacity}
+      grainOpacity={grainOpacity}
+      vignetteEdge={vignetteEdge}
     >
       {still}
     </FilmTreatment>

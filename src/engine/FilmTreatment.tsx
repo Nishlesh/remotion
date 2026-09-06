@@ -31,11 +31,11 @@
  * without a live invert filter. Existing film-grain.png stays on LookEngine.
  *
  * Layer stack when enabled, top → bottom:
- *   1. Scan lines — 1.6px black @ 16%, every 8px, blur 0.7px
- *   2. Texture sandwich — grain plate multiply @ 55%; then grunge plate
+ *   1. Scan lines — VERTICAL only, 1.6px black @ 8%, every 8px, blur 0.7px
+ *   2. Texture sandwich — grain plate multiply @ 40%; then grunge plate
  *      color-burn @ 16%
  *   3. Vignette — ellipse 92% × 82% at 50% / 48%, clear to 55%,
- *      black 50% at the edge
+ *      black 35% at the edge
  *   4. Grade — saturate / contrast / sepia / brightness (props)
  *   5. Gate-weave — 12fps stepped wiggle, ~5px travel, scale 1.012
  *
@@ -75,6 +75,9 @@ export const FILM_TREATMENT_DEFAULTS = {
   contrast: 1.08,
   sepia: 0.16,
   brightness: 0.95,
+  scanLineOpacity: 0.08,
+  grainOpacity: 0.4,
+  vignetteEdge: 0.35,
 } as const;
 
 export type FilmTreatmentProps = {
@@ -89,6 +92,12 @@ export type FilmTreatmentProps = {
   contrast?: number;
   sepia?: number;
   brightness?: number;
+  /** Vertical scanline opacity. Default 0.08. */
+  scanLineOpacity?: number;
+  /** Grain multiply opacity. Default 0.4. */
+  grainOpacity?: number;
+  /** Vignette edge black opacity. Default 0.35. */
+  vignetteEdge?: number;
   children: React.ReactNode;
 };
 
@@ -102,23 +111,23 @@ const coverImg: React.CSSProperties = {
   objectFit: 'cover',
 };
 
-const ScanLinesLayer: React.FC = () => (
+const ScanLinesLayer: React.FC<{opacity: number}> = ({opacity}) => (
   <AbsoluteFill
     style={{
       ...overlayFill,
-      backgroundImage:
-        'repeating-linear-gradient(90deg, rgba(0,0,0,0.16) 0px, rgba(0,0,0,0.16) 1.6px, transparent 1.6px, transparent 8px)',
+      // 90deg = vertical bars only. Do not add a second axis.
+      backgroundImage: `repeating-linear-gradient(90deg, rgba(0,0,0,${opacity}) 0px, rgba(0,0,0,${opacity}) 1.6px, transparent 1.6px, transparent 8px)`,
       filter: 'blur(0.7px)',
     }}
   />
 );
 
-const GrainLayer: React.FC = () => (
+const GrainLayer: React.FC<{opacity: number}> = ({opacity}) => (
   <AbsoluteFill
     style={{
       ...overlayFill,
       mixBlendMode: 'multiply',
-      opacity: 0.55,
+      opacity,
     }}
   >
     <Img src={staticFile(FILM_GRAIN_PLATE_SRC)} style={coverImg} />
@@ -137,12 +146,11 @@ const GrungeLayer: React.FC = () => (
   </AbsoluteFill>
 );
 
-const VignetteLayer: React.FC = () => (
+const VignetteLayer: React.FC<{edge: number}> = ({edge}) => (
   <AbsoluteFill
     style={{
       ...overlayFill,
-      background:
-        'radial-gradient(ellipse 92% 82% at 50% 48%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.5) 100%)',
+      background: `radial-gradient(ellipse 92% 82% at 50% 48%, rgba(0,0,0,0) 55%, rgba(0,0,0,${edge}) 100%)`,
     }}
   />
 );
@@ -159,6 +167,9 @@ export const FilmTreatment: React.FC<FilmTreatmentProps> = ({
   contrast = FILM_TREATMENT_DEFAULTS.contrast,
   sepia = FILM_TREATMENT_DEFAULTS.sepia,
   brightness = FILM_TREATMENT_DEFAULTS.brightness,
+  scanLineOpacity = FILM_TREATMENT_DEFAULTS.scanLineOpacity,
+  grainOpacity = FILM_TREATMENT_DEFAULTS.grainOpacity,
+  vignetteEdge = FILM_TREATMENT_DEFAULTS.vignetteEdge,
   children,
 }) => {
   const frame = useCurrentFrame();
@@ -190,10 +201,10 @@ export const FilmTreatment: React.FC<FilmTreatmentProps> = ({
             <AbsoluteFill>{children}</AbsoluteFill>
           </Freeze>
         </AbsoluteFill>
-        {vignette ? <VignetteLayer /> : null}
+        {vignette ? <VignetteLayer edge={vignetteEdge} /> : null}
         {grunge ? <GrungeLayer /> : null}
-        {grain ? <GrainLayer /> : null}
-        {scanLines ? <ScanLinesLayer /> : null}
+        {grain ? <GrainLayer opacity={grainOpacity} /> : null}
+        {scanLines ? <ScanLinesLayer opacity={scanLineOpacity} /> : null}
       </AbsoluteFill>
     </AbsoluteFill>
   );

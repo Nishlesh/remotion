@@ -72,6 +72,9 @@ describe('FilmTreatment assets + defaults', () => {
       contrast: 1.08,
       sepia: 0.16,
       brightness: 0.95,
+      scanLineOpacity: 0.08,
+      grainOpacity: 0.4,
+      vignetteEdge: 0.35,
     });
   });
 });

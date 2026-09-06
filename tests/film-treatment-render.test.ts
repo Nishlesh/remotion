@@ -19,6 +19,9 @@ const PROPS = {
   contrast: 1.08,
   sepia: 0.16,
   brightness: 0.95,
+  scanLineOpacity: 0.08,
+  grainOpacity: 0.4,
+  vignetteEdge: 0.35,
   stillSrc: 'episodes/whatsapp-2009/stills/still-01.jpg',
   stackLookEngine: true,
 };
