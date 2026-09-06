@@ -79,10 +79,11 @@ FAMOUS ENTITY → unexpected beginning → human detail → constraint → choic
 - **1080×1920 @ 30fps** full bleed (`WIDTH=1080` — never 1088)
 - VO is source of truth; `calculateEpisodeMetadata` reads the wav
 - Shared `LookEngine`: grade, **warm**, **grain**, vignette as tunables
+- Opt-in `FilmTreatment` wrapper (12fps posterize + gate-weave, scanlines, baked `grain-plate` / `grunge-plate` from `grain.jpg` / `grunge.jpg`, vignette, sepia grade). Does not replace LookEngine. Studio QC: `FilmTreatmentDemo`
 - Ken Burns on already cover-cropped 1080×1920 plates (`object-fit: fill`)
 - `CaptionBand` for Studio preview (Karaoke Highlight)
 - Production captions: **ffmpeg `ass` filter only** (never `subtitles`)
-- Existing compositions: `Github2008`, `QuietHour`, `FixturePipeline`, `FactoryActive`
+- Existing compositions: `Github2008`, `QuietHour`, `FixturePipeline`, `FactoryActive`, `FilmTreatmentDemo`
 
 Channel default grade is Magnates-style warm film + grain. Github 2008 keeps its cool/neutral grade (grain 0).
 
