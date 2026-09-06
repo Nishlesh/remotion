@@ -21,19 +21,26 @@
  *   <FilmTreatment grain={false} saturate={0.8}>...</FilmTreatment>
  *   <FilmTreatment enabled={false}>...</FilmTreatment>
  *
- * Textures (committed, do not swap): public/engine/grain.jpg + grunge.jpg.
- * Existing public/engine/film-grain.png stays on LookEngine only.
+ * Source textures: public/engine/grain.jpg + grunge.jpg (do not swap).
+ * Render uses luma plates baked by tools/bake_film_plates.py:
+ *   grain-plate.png = invert + brightness 1.35 + contrast 1.02 (CSS order)
+ *   grunge-plate.png = luma-only grunge
+ * CSS invert() on a mix-blend layer is unsafe in Remotion headless Chromium
+ * (swangle): invert can leak onto the composited backdrop, and inverted
+ * sepia reads as neon / night-vision green. Plates keep the locked ops
+ * without a live invert filter. Existing film-grain.png stays on LookEngine.
  *
  * Layer stack when enabled, top → bottom:
  *   1. Scan lines — 1.6px black @ 16%, every 8px, blur 0.7px
- *   2. Texture sandwich — grain.jpg invert+brightness 1.35+contrast 1.02,
- *      multiply @ 55%; then grunge.jpg color-burn @ 16%
+ *   2. Texture sandwich — grain plate multiply @ 55%; then grunge plate
+ *      color-burn @ 16%
  *   3. Vignette — ellipse 92% × 82% at 50% / 48%, clear to 55%,
  *      black 50% at the edge
  *   4. Grade — saturate / contrast / sepia / brightness (props)
  *   5. Gate-weave — 12fps stepped wiggle, ~5px travel, scale 1.012
  *
  * Children are Freeze'd to the shared 12fps posterize step in filmTime.ts.
+ * isolation:isolate flattens blends before LookEngine's parent filter.
  * Canvas is 1080×1920 AbsoluteFill. Overlays are pointer-events: none.
  */
 import React from 'react';
@@ -53,6 +60,8 @@ import {
 
 export const FILM_GRAIN_SRC = 'engine/grain.jpg';
 export const FILM_GRUNGE_SRC = 'engine/grunge.jpg';
+export const FILM_GRAIN_PLATE_SRC = 'engine/grain-plate.png';
+export const FILM_GRUNGE_PLATE_SRC = 'engine/grunge-plate.png';
 
 export const FILM_TREATMENT_DEFAULTS = {
   enabled: true,
@@ -87,6 +96,12 @@ const overlayFill: React.CSSProperties = {
   pointerEvents: 'none',
 };
 
+const coverImg: React.CSSProperties = {
+  width: '100%',
+  height: '100%',
+  objectFit: 'cover',
+};
+
 const ScanLinesLayer: React.FC = () => (
   <AbsoluteFill
     style={{
@@ -106,15 +121,7 @@ const GrainLayer: React.FC = () => (
       opacity: 0.55,
     }}
   >
-    <Img
-      src={staticFile(FILM_GRAIN_SRC)}
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-        filter: 'invert(1) brightness(1.35) contrast(1.02)',
-      }}
-    />
+    <Img src={staticFile(FILM_GRAIN_PLATE_SRC)} style={coverImg} />
   </AbsoluteFill>
 );
 
@@ -126,14 +133,7 @@ const GrungeLayer: React.FC = () => (
       opacity: 0.16,
     }}
   >
-    <Img
-      src={staticFile(FILM_GRUNGE_SRC)}
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-      }}
-    />
+    <Img src={staticFile(FILM_GRUNGE_PLATE_SRC)} style={coverImg} />
   </AbsoluteFill>
 );
 
@@ -172,9 +172,10 @@ export const FilmTreatment: React.FC<FilmTreatmentProps> = ({
   }
 
   return (
-    <AbsoluteFill style={{overflow: 'hidden'}}>
+    <AbsoluteFill style={{overflow: 'hidden', isolation: 'isolate'}}>
       <AbsoluteFill
         style={{
+          isolation: 'isolate',
           transform: `translate(${weave.x}px, ${weave.y}px) scale(${scale})`,
         }}
       >

@@ -2,7 +2,9 @@ import {existsSync} from 'node:fs';
 import {join} from 'node:path';
 import {describe, expect, it} from 'vitest';
 import {
+  FILM_GRAIN_PLATE_SRC,
   FILM_GRAIN_SRC,
+  FILM_GRUNGE_PLATE_SRC,
   FILM_GRUNGE_SRC,
   FILM_POSTERIZE_FPS,
   FILM_TREATMENT_DEFAULTS,
@@ -50,6 +52,8 @@ describe('FilmTreatment assets + defaults', () => {
     const root = repoRoot();
     expect(existsSync(join(root, 'public', FILM_GRAIN_SRC))).toBe(true);
     expect(existsSync(join(root, 'public', FILM_GRUNGE_SRC))).toBe(true);
+    expect(existsSync(join(root, 'public', FILM_GRAIN_PLATE_SRC))).toBe(true);
+    expect(existsSync(join(root, 'public', FILM_GRUNGE_PLATE_SRC))).toBe(true);
     expect(existsSync(join(root, 'public', 'engine', 'film-grain.png'))).toBe(
       true,
     );

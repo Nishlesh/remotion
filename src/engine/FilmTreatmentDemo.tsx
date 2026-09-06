@@ -5,6 +5,8 @@ import {CaptionBand} from './CaptionBand';
 import {HEIGHT, WIDTH} from './constants';
 import {FilmTreatment, FILM_TREATMENT_DEFAULTS} from './FilmTreatment';
 import {montserratBlack} from './fonts';
+import {CHANNEL_GRADE} from './gradeDefaults';
+import {LookEngine} from './LookEngine';
 
 export const FILM_TREATMENT_DEMO_STILL =
   'episodes/whatsapp-2009/stills/still-01.jpg';
@@ -24,6 +26,8 @@ export const filmTreatmentDemoSchema = z.object({
   sepia: z.number().min(0).max(1),
   brightness: z.number().min(0).max(2),
   stillSrc: z.string(),
+  /** Nest like SceneFrame: LookEngine around FilmTreatment. */
+  stackLookEngine: z.boolean(),
 });
 
 export type FilmTreatmentDemoProps = z.infer<typeof filmTreatmentDemoSchema>;
@@ -32,6 +36,7 @@ export const filmTreatmentDemoProps: FilmTreatmentDemoProps = {
   compare: true,
   captions: true,
   stillSrc: FILM_TREATMENT_DEMO_STILL,
+  stackLookEngine: true,
   ...FILM_TREATMENT_DEFAULTS,
 };
 
@@ -66,9 +71,10 @@ const Plate: React.FC<
   contrast,
   sepia,
   brightness,
+  stackLookEngine,
 }) => {
   const still = <StillPlate src={stillSrc} />;
-  const body = treated ? (
+  const treatedBody = (
     <FilmTreatment
       enabled={enabled}
       scanLines={scanLines}
@@ -84,9 +90,12 @@ const Plate: React.FC<
     >
       {still}
     </FilmTreatment>
-  ) : (
-    still
   );
+  const body = treated
+    ? stackLookEngine
+      ? <LookEngine grade={CHANNEL_GRADE}>{treatedBody}</LookEngine>
+      : treatedBody
+    : still;
 
   return (
     <AbsoluteFill>

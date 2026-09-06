@@ -25,6 +25,8 @@ export {
   FILM_TREATMENT_DEFAULTS,
   FILM_GRAIN_SRC,
   FILM_GRUNGE_SRC,
+  FILM_GRAIN_PLATE_SRC,
+  FILM_GRUNGE_PLATE_SRC,
 } from './FilmTreatment';
 export type {FilmTreatmentProps} from './FilmTreatment';
 export {
